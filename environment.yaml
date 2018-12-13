@@ -1,6 +1,8 @@
 channels:
   - bioconda
   - conda-forge
+  - johanneskoester
+  - icm-iconics
 dependencies:
   - snakemake-minimal =5.2.4
   - python =3.6
@@ -12,3 +14,8 @@ dependencies:
   - samtools =1.9
   - bwa =0.7.17
   - pysam =0.15.0
+  - kallisto =0.44
+  - hdf5 =1.8.17
+  - r-sleuth =0.30
+  - bioconductor-rhdf5lib =1.4
+  - bioconductor-rhdf5 =2.26
