@@ -5,6 +5,6 @@ in_data = {'sample': ["a", "b"], 'fq1': ["data/reads/a.chr21.1.fq", "data/reads/
 
 table_path_of_reads = pd.DataFrame(data=in_data, columns=['sample', 'fq1', 'fq2', 'condition'])
 
-table_path_of_reads.to_csv(path_or_buf="../table_for_reads", sep='\t', index=True, header=True)
+table_path_of_reads.to_csv(path_or_buf="../table_for_reads.csv", sep='\t', header=True)
 
 # print(table_path_of_reads)
