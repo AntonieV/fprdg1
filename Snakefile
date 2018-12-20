@@ -26,11 +26,11 @@ rule kallisto_quant:
 		"kallisto quant -i {input.id} -o {output} {input.fq1} {input.fq2}"
 
 rule sleuth:
-    input:
+        input:
 	    expand("kallisto/{sample}.h5", sample = samples) #Liste der Kallisto-Pfade
-    conda:
+        conda:
 	    "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
-    output:
+        output:
 	    "/sleuth/significant_transcripts.csv"
-    script:
+        script:
 	    "r_scripts/sleuth_script.R"
