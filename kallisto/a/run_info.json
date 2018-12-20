@@ -1,0 +1,13 @@
+{
+	"n_targets": 2457,
+	"n_bootstraps": 0,
+	"n_processed": 4857,
+	"n_pseudoaligned": 1292,
+	"n_unique": 576,
+	"p_pseudoaligned": 26.6,
+	"p_unique": 11.9,
+	"kallisto_version": "0.44.0",
+	"index_version": 10,
+	"start_time": "Thu Dec 20 15:52:42 2018",
+	"call": "kallisto quant -i kallisto/transcripts.idx -o kallisto/a data/reads/a.chr21.1.fq data/reads/a.chr21.2.fq"
+}

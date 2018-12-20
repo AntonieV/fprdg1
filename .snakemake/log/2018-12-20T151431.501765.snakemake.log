@@ -1,0 +1,5 @@
+Building DAG of jobs...
+InputFunctionException in line 16 of /home/jansen00/Fachprojekt/fprdg1/Snakefile:
+KeyError: 'the label [0] is not in the [index]'
+Wildcards:
+sample=0

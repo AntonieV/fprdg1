@@ -1,0 +1,17 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	kallisto_quant
+	1
+
+[Thu Dec 20 14:42:48 2018]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx
+    jobid: 0
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/jansen00/Fachprojekt/fprdg1/.snakemake/log/2018-12-20T144248.383761.snakemake.log
