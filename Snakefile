@@ -27,7 +27,7 @@ rule kallisto_quant:
 
 rule sleuth:
         input:
-	        kal_path = expand("kallisto/{sample}.h5", sample = samples['sample']) #Liste der Kallisto-Pfade
+	        kal_path = expand("kallisto/{sample}/abundance.h5", sample = samples['sample']) #Liste der Kallisto-Pfade
                 sam_tab = config["samples"]
         conda:
 	        "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
