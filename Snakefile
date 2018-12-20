@@ -1,6 +1,7 @@
 configfile: "config.yaml"
 import pandas as pd
 
+
 samples = pd.read_csv(config["samples"], sep = "\t")
 
 rule kallisto_idx:
@@ -23,4 +24,14 @@ rule kallisto_quant:
 	shell:
 		"kallisto quant -i {input.id} -o {output} {input.fq1} {input.fq2}"
 
-		
+rule sleuth:
+    input:
+	    expand("kallisto/{sample}.h5", sample = samples) #Liste der Kallisto-Pfade
+
+	conda:
+	    "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
+    output:
+	    "/sleuth/significant_transcripts.csv"
+
+	script:
+		"r_scripts/sleuth_script.R"
