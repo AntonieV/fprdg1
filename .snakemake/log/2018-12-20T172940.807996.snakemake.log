@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	2	kallisto_quant
+	1	sleuth
+	3
+
+[Thu Dec 20 17:29:42 2018]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx
+    output: kallisto/b/abundance.h5
+    jobid: 1
+    wildcards: sample=b/abundance.h5
+
+kallisto quant -i kallisto/transcripts.idx -o  kallisto/b/abundance.h5  
+[Thu Dec 20 17:29:42 2018]
+Error in rule kallisto_quant:
+    jobid: 1
+    output: kallisto/b/abundance.h5
+
+RuleException:
+CalledProcessError in line 26 of /home/sattle00/Fachprojekt/fprdg1/Snakefile:
+Command ' set -euo pipefail;  kallisto quant -i kallisto/transcripts.idx -o  kallisto/b/abundance.h5 ' returned non-zero exit status 1.
+  File "/home/sattle00/Fachprojekt/fprdg1/Snakefile", line 26, in __rule_kallisto_quant
+  File "/home/sattle00/miniconda3/envs/fprdg1/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job kallisto_quant since they might be corrupted:
+kallisto/b/abundance.h5
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/sattle00/Fachprojekt/fprdg1/.snakemake/log/2018-12-20T172940.807996.snakemake.log

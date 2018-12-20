@@ -23,11 +23,11 @@ rule kallisto_quant:
 	output:
 		directory("kallisto/{sample}")
 	shell:
-		"kallisto quant -i {input.id} -o {output} {input.fq1} {input.fq2}"
+		"kallisto quant -i {input.id} -o  {output} {input.fq1} {input.fq2}"
 
 rule sleuth:
         input:
-	        kal_path = expand("kallisto/{sample}/abundance.h5", sample = samples['sample']) #Liste der Kallisto-Pfade
+	        kal_path = expand("kallisto/{sample}", sample = samples['sample']), #Liste der Kallisto-Pfade
                 sam_tab = config["samples"]
         conda:
 	        "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
