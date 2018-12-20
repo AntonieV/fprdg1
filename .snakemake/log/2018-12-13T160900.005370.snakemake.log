@@ -1,3 +1,0 @@
-WorkflowError in line 1 of /home/sattle00/Fachprojekt/Fachprojekt-Reproduzierbare-Datenanlyse-Gruppe1/Snakefile:
-Config file is not valid JSON or YAML. In case of YAML, make sure to not mix whitespace and tab indentation.
-  File "/home/sattle00/Fachprojekt/Fachprojekt-Reproduzierbare-Datenanlyse-Gruppe1/Snakefile", line 1, in <module>

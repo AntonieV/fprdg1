@@ -1,0 +1,43 @@
+CONFIG +=  compile_examples system-sqlite qpa largefile precompile_header use_gold_linker enable_new_dtags sse2 sse3 ssse3 sse4_1 sse4_2 pcre
+QT_BUILD_PARTS += libs tools
+QT_SKIP_MODULES +=  qtenginio qtlocation qtsensors qtserialport qtserialbus qtquickcontrols2 qtwayland qtcanvas3d qt3d qtwebengine
+QT_NO_DEFINES =  ALSA CUPS EGL EGLFS EGL_X11 ICONV IMAGEFORMAT_JPEG LIBPROXY OPENVG PULSEAUDIO TSLIB ZLIB
+QT_QCONFIG_PATH = 
+host_build {
+    QT_CPU_FEATURES.x86_64 =  mmx sse sse2
+} else {
+    QT_CPU_FEATURES.x86_64 =  mmx sse sse2
+}
+QT_COORD_TYPE = double
+QT_CFLAGS_SQLITE   = -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include  
+QT_LFLAGS_SQLITE   = -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -lsqlite3  
+QT_LFLAGS_ODBC   = -lodbc
+QMAKE_LINK = g++
+QMAKE_CC = gcc
+QMAKE_CXX = g++
+styles += mac fusion windows
+DEFINES += QT_NO_MTDEV
+QT_LIBS_DBUS = -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -ldbus-1  
+QT_CFLAGS_DBUS = -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/dbus-1.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib/dbus-1.0/include  
+QT_HOST_CFLAGS_DBUS = -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/dbus-1.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib/dbus-1.0/include  
+QT_CFLAGS_GLIB = -pthread -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/glib-2.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib/glib-2.0/include -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include  
+QT_LIBS_GLIB = -pthread -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -lgthread-2.0 -lrt -lglib-2.0  
+QT_CFLAGS_QGTKSTYLE = -pthread -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/gtk-2.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib/gtk-2.0/include -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/atk-1.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/cairo -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/gdk-pixbuf-2.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/pango-1.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/glib-2.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib/glib-2.0/include -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/harfbuzz -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/freetype2 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/uuid -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/libxml2 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/pixman-1 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/libpng16  
+QT_LIBS_QGTKSTYLE = -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -lgobject-2.0 -lglib-2.0  
+QT_CFLAGS_QGTK2 = -pthread -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/gtk-2.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib/gtk-2.0/include -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/atk-1.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/cairo -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/gdk-pixbuf-2.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/pango-1.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/glib-2.0 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib/glib-2.0/include -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/harfbuzz -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/freetype2 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/uuid -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/libxml2 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/pixman-1 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/libpng16  
+QT_LIBS_QGTK2 = -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype  
+QMAKE_INCDIR_OPENGL =  "/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include" "/usr/include/libdrm"
+QMAKE_LIBDIR_OPENGL = 
+QMAKE_LIBS_OPENGL =  "-lGL"
+QMAKE_CFLAGS_OPENGL = 
+QMAKE_CFLAGS_FONTCONFIG = -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/uuid -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/libxml2 -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include/freetype2  
+QMAKE_LIBS_FONTCONFIG = -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -lfontconfig -lfreetype  
+DEFINES += QT_NO_LIBUDEV
+DEFINES += QT_NO_TSLIB
+DEFINES += QT_NO_LIBINPUT
+QMAKE_X11_PREFIX = /home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc
+QMAKE_XKB_CONFIG_ROOT = /home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib
+QMAKE_CFLAGS_XCB = -I/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/include  
+QMAKE_LIBS_XCB = -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -lxcb  
+sql-drivers = 
+sql-plugins =  sqlite

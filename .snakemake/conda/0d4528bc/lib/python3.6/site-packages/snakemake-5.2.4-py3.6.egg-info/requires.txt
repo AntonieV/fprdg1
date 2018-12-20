@@ -1,0 +1,14 @@
+wrapt
+requests
+ratelimiter
+pyyaml
+configargparse
+appdirs
+datrie
+jsonschema
+docutils
+gitpython
+
+[reports]
+jinja2
+networkx

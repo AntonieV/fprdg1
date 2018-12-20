@@ -1,2 +1,0 @@
-SyntaxError in line 24 of /home/jansen00/Fachprojekt/fprdg1/Snakefile:
-Missing parentheses in call to 'print'. Did you mean print(samples)?

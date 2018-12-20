@@ -1,0 +1,6 @@
+
+[test]
+pytest>=3.0
+
+[test:python_version>="3.5"]
+pytest-asyncio

@@ -1,0 +1,319 @@
+{
+  "arch": "x86_64",
+  "build": "r351hfc679d8_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "bioconductor-rhdf5lib >=1.4.0,<1.5.0",
+    "libgcc-ng >=4.9",
+    "libstdcxx-ng >=4.9",
+    "r-base >=3.5.1,<3.5.2.0a0"
+  ],
+  "extracted_package_dir": "/home/jana/Programme/miniconda3/pkgs/bioconductor-rhdf5-2.26.1-r351hfc679d8_0",
+  "features": "",
+  "files": [
+    "lib/R/library/rhdf5/DESCRIPTION",
+    "lib/R/library/rhdf5/INDEX",
+    "lib/R/library/rhdf5/Meta/Rd.rds",
+    "lib/R/library/rhdf5/Meta/features.rds",
+    "lib/R/library/rhdf5/Meta/hsearch.rds",
+    "lib/R/library/rhdf5/Meta/links.rds",
+    "lib/R/library/rhdf5/Meta/nsInfo.rds",
+    "lib/R/library/rhdf5/Meta/package.rds",
+    "lib/R/library/rhdf5/Meta/vignette.rds",
+    "lib/R/library/rhdf5/NAMESPACE",
+    "lib/R/library/rhdf5/NEWS.Rd",
+    "lib/R/library/rhdf5/R/rhdf5",
+    "lib/R/library/rhdf5/R/rhdf5.rdb",
+    "lib/R/library/rhdf5/R/rhdf5.rdx",
+    "lib/R/library/rhdf5/demoChunkSize/chunksize-1.png",
+    "lib/R/library/rhdf5/demoChunkSize/chunksize.pdf",
+    "lib/R/library/rhdf5/demoChunkSize/demoChunkSize.R",
+    "lib/R/library/rhdf5/doc/index.html",
+    "lib/R/library/rhdf5/doc/rhdf5.R",
+    "lib/R/library/rhdf5/doc/rhdf5.Rmd",
+    "lib/R/library/rhdf5/doc/rhdf5.html",
+    "lib/R/library/rhdf5/downloadHDF5/README.txt",
+    "lib/R/library/rhdf5/downloadHDF5/downloadHDF5.sh",
+    "lib/R/library/rhdf5/downloadHDF5/replacestr.R",
+    "lib/R/library/rhdf5/help/AnIndex",
+    "lib/R/library/rhdf5/help/aliases.rds",
+    "lib/R/library/rhdf5/help/paths.rds",
+    "lib/R/library/rhdf5/help/rhdf5.rdb",
+    "lib/R/library/rhdf5/help/rhdf5.rdx",
+    "lib/R/library/rhdf5/html/00Index.html",
+    "lib/R/library/rhdf5/html/R.css",
+    "lib/R/library/rhdf5/libs/rhdf5.so",
+    "lib/R/library/rhdf5/testfiles/h5ex_t_array.h5",
+    "lib/R/library/rhdf5/testfiles/h5ex_t_cmpd.h5",
+    "lib/R/library/rhdf5/testfiles/h5ex_t_enum.h5"
+  ],
+  "fn": "bioconductor-rhdf5-2.26.1-r351hfc679d8_0.tar.bz2",
+  "license": "Artistic-2.0",
+  "link": {
+    "source": "/home/jana/Programme/miniconda3/pkgs/bioconductor-rhdf5-2.26.1-r351hfc679d8_0",
+    "type": 1
+  },
+  "md5": "805952ea82fd45295b5923f1e3ea5e2f",
+  "name": "bioconductor-rhdf5",
+  "package_tarball_full_path": "/home/jana/Programme/miniconda3/pkgs/bioconductor-rhdf5-2.26.1-r351hfc679d8_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/rhdf5/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "613f92a9e231f57520f4be0831b361dab461232f9d79f4ec921bccbcaedf0895",
+        "sha256_in_prefix": "613f92a9e231f57520f4be0831b361dab461232f9d79f4ec921bccbcaedf0895",
+        "size_in_bytes": 1696
+      },
+      {
+        "_path": "lib/R/library/rhdf5/INDEX",
+        "path_type": "hardlink",
+        "sha256": "f9f70b31899beb7ea6d1dbea61d08dab209e26dc046156f95b4c1b0a04212815",
+        "sha256_in_prefix": "f9f70b31899beb7ea6d1dbea61d08dab209e26dc046156f95b4c1b0a04212815",
+        "size_in_bytes": 2106
+      },
+      {
+        "_path": "lib/R/library/rhdf5/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "e0aa3baf520f2265bb2fa7f212013491903889e7d2a567d0ae4d1c6881434c32",
+        "sha256_in_prefix": "e0aa3baf520f2265bb2fa7f212013491903889e7d2a567d0ae4d1c6881434c32",
+        "size_in_bytes": 2172
+      },
+      {
+        "_path": "lib/R/library/rhdf5/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "c22d9d242fd52a4bbbe805dae5c5df6a19451d10060881260200999f9115b12d",
+        "sha256_in_prefix": "c22d9d242fd52a4bbbe805dae5c5df6a19451d10060881260200999f9115b12d",
+        "size_in_bytes": 113
+      },
+      {
+        "_path": "lib/R/library/rhdf5/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "5ce9b7de275274600112c2c063b202e196cc013f5321849da36e2dd802fb325d",
+        "sha256_in_prefix": "5ce9b7de275274600112c2c063b202e196cc013f5321849da36e2dd802fb325d",
+        "size_in_bytes": 2287
+      },
+      {
+        "_path": "lib/R/library/rhdf5/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "b7d66eb1c14d82158ed232c670927ad283224abbe144aca3a0760a9ab26216be",
+        "sha256_in_prefix": "b7d66eb1c14d82158ed232c670927ad283224abbe144aca3a0760a9ab26216be",
+        "size_in_bytes": 1485
+      },
+      {
+        "_path": "lib/R/library/rhdf5/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "41ac72cad8af5f50840a204b8586e69a453654860593a9fae7b71cd6e9591da6",
+        "sha256_in_prefix": "41ac72cad8af5f50840a204b8586e69a453654860593a9fae7b71cd6e9591da6",
+        "size_in_bytes": 1173
+      },
+      {
+        "_path": "lib/R/library/rhdf5/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "041480c9947448742fb1a7c943ce0dc2c05e03f1a7811a16b44bc9f6523a243a",
+        "sha256_in_prefix": "041480c9947448742fb1a7c943ce0dc2c05e03f1a7811a16b44bc9f6523a243a",
+        "size_in_bytes": 1391
+      },
+      {
+        "_path": "lib/R/library/rhdf5/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "b001347920fe8fb6401865fca3f5cc47abcba0a9e075ca2533759ebb6ebb49e7",
+        "sha256_in_prefix": "b001347920fe8fb6401865fca3f5cc47abcba0a9e075ca2533759ebb6ebb49e7",
+        "size_in_bytes": 192
+      },
+      {
+        "_path": "lib/R/library/rhdf5/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "ebe055023237a6326f2440d822ed6888e338663974236d9251ebdc3345cd916f",
+        "sha256_in_prefix": "ebe055023237a6326f2440d822ed6888e338663974236d9251ebdc3345cd916f",
+        "size_in_bytes": 9079
+      },
+      {
+        "_path": "lib/R/library/rhdf5/NEWS.Rd",
+        "path_type": "hardlink",
+        "sha256": "ab859e9f6e682c559b081bbcf88e122beca2c723fc53cdc7f5b2c879d58d0e3b",
+        "sha256_in_prefix": "ab859e9f6e682c559b081bbcf88e122beca2c723fc53cdc7f5b2c879d58d0e3b",
+        "size_in_bytes": 7999
+      },
+      {
+        "_path": "lib/R/library/rhdf5/R/rhdf5",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/rhdf5/R/rhdf5.rdb",
+        "path_type": "hardlink",
+        "sha256": "9ea0e0f59c73bc3f442f43598322b0e7573389a35a35e95855e4b93655eae41a",
+        "sha256_in_prefix": "9ea0e0f59c73bc3f442f43598322b0e7573389a35a35e95855e4b93655eae41a",
+        "size_in_bytes": 210026
+      },
+      {
+        "_path": "lib/R/library/rhdf5/R/rhdf5.rdx",
+        "path_type": "hardlink",
+        "sha256": "817f28a68346c3b4cd555a04b49b4b55cf763889a54d30664b708306aec75f60",
+        "sha256_in_prefix": "817f28a68346c3b4cd555a04b49b4b55cf763889a54d30664b708306aec75f60",
+        "size_in_bytes": 2633
+      },
+      {
+        "_path": "lib/R/library/rhdf5/demoChunkSize/chunksize-1.png",
+        "path_type": "hardlink",
+        "sha256": "24bcca6313a65450db5991d66bbff5feccf349c7fdd5ae199f669e42366f00db",
+        "sha256_in_prefix": "24bcca6313a65450db5991d66bbff5feccf349c7fdd5ae199f669e42366f00db",
+        "size_in_bytes": 76541
+      },
+      {
+        "_path": "lib/R/library/rhdf5/demoChunkSize/chunksize.pdf",
+        "path_type": "hardlink",
+        "sha256": "c906298e9b46e1428af08f8fc29d0c67b88bcb55d72a4e7f5a4509b55a1f36cb",
+        "sha256_in_prefix": "c906298e9b46e1428af08f8fc29d0c67b88bcb55d72a4e7f5a4509b55a1f36cb",
+        "size_in_bytes": 7006
+      },
+      {
+        "_path": "lib/R/library/rhdf5/demoChunkSize/demoChunkSize.R",
+        "path_type": "hardlink",
+        "sha256": "c518a382c83a204048343f55671d7444a2754e9c1bce856c14d4264765a31d24",
+        "sha256_in_prefix": "c518a382c83a204048343f55671d7444a2754e9c1bce856c14d4264765a31d24",
+        "size_in_bytes": 2042
+      },
+      {
+        "_path": "lib/R/library/rhdf5/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "b645727f5de18d894ce0ffd13a725267185f67da89ca1ac18162e684ab3994aa",
+        "sha256_in_prefix": "b645727f5de18d894ce0ffd13a725267185f67da89ca1ac18162e684ab3994aa",
+        "size_in_bytes": 1296
+      },
+      {
+        "_path": "lib/R/library/rhdf5/doc/rhdf5.R",
+        "path_type": "hardlink",
+        "sha256": "81f26159afd761f1ba97603532bcfeebcf8076748b3d4efb8fb37ef59af3bf70",
+        "sha256_in_prefix": "81f26159afd761f1ba97603532bcfeebcf8076748b3d4efb8fb37ef59af3bf70",
+        "size_in_bytes": 7915
+      },
+      {
+        "_path": "lib/R/library/rhdf5/doc/rhdf5.Rmd",
+        "path_type": "hardlink",
+        "sha256": "fb9aa95bfe3f093f08067ca21272b0cd8888338f67e040bafdcf9d160d8bc62c",
+        "sha256_in_prefix": "fb9aa95bfe3f093f08067ca21272b0cd8888338f67e040bafdcf9d160d8bc62c",
+        "size_in_bytes": 20482
+      },
+      {
+        "_path": "lib/R/library/rhdf5/doc/rhdf5.html",
+        "path_type": "hardlink",
+        "sha256": "efff3c968586ecbd2ba6d542ecd764639df6066dd7e4a4bc25ee68a4cbb5446c",
+        "sha256_in_prefix": "efff3c968586ecbd2ba6d542ecd764639df6066dd7e4a4bc25ee68a4cbb5446c",
+        "size_in_bytes": 772991
+      },
+      {
+        "_path": "lib/R/library/rhdf5/downloadHDF5/README.txt",
+        "path_type": "hardlink",
+        "sha256": "9cdf8cb2c5b6c7d8e4ec47c9048f54ca969f8f9db974cb4b6a5ee885d913078d",
+        "sha256_in_prefix": "9cdf8cb2c5b6c7d8e4ec47c9048f54ca969f8f9db974cb4b6a5ee885d913078d",
+        "size_in_bytes": 1438
+      },
+      {
+        "_path": "lib/R/library/rhdf5/downloadHDF5/downloadHDF5.sh",
+        "path_type": "hardlink",
+        "sha256": "40d7e176b4436585b030f0af67578c8481ece4ba6428f7de71434bb28ae87c67",
+        "sha256_in_prefix": "40d7e176b4436585b030f0af67578c8481ece4ba6428f7de71434bb28ae87c67",
+        "size_in_bytes": 2369
+      },
+      {
+        "_path": "lib/R/library/rhdf5/downloadHDF5/replacestr.R",
+        "path_type": "hardlink",
+        "sha256": "bc6a0a1fe9d5203afe4e19d2b9338b137d40e9d7aee6bd244335a9348f11a6ed",
+        "sha256_in_prefix": "bc6a0a1fe9d5203afe4e19d2b9338b137d40e9d7aee6bd244335a9348f11a6ed",
+        "size_in_bytes": 2839
+      },
+      {
+        "_path": "lib/R/library/rhdf5/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "68237c3bda8ff5281b2500a971743362b98a2cc175c3c483b09f5ba516865985",
+        "sha256_in_prefix": "68237c3bda8ff5281b2500a971743362b98a2cc175c3c483b09f5ba516865985",
+        "size_in_bytes": 4133
+      },
+      {
+        "_path": "lib/R/library/rhdf5/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "7d41500b0b9a3534a334d66cef0226c9e707b747f0dbf910372c9dae799ac417",
+        "sha256_in_prefix": "7d41500b0b9a3534a334d66cef0226c9e707b747f0dbf910372c9dae799ac417",
+        "size_in_bytes": 1420
+      },
+      {
+        "_path": "lib/R/library/rhdf5/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "ec697860611618ca2a61793fa06a8ef3d2755fda78843b59c857a7dc17718390",
+        "sha256_in_prefix": "ec697860611618ca2a61793fa06a8ef3d2755fda78843b59c857a7dc17718390",
+        "size_in_bytes": 413
+      },
+      {
+        "_path": "lib/R/library/rhdf5/help/rhdf5.rdb",
+        "path_type": "hardlink",
+        "sha256": "9d96fed46b1c8111e8f2ce5053bc358fd3d4ad21cdae3ccd5ab147ddc58351f7",
+        "sha256_in_prefix": "9d96fed46b1c8111e8f2ce5053bc358fd3d4ad21cdae3ccd5ab147ddc58351f7",
+        "size_in_bytes": 108967
+      },
+      {
+        "_path": "lib/R/library/rhdf5/help/rhdf5.rdx",
+        "path_type": "hardlink",
+        "sha256": "20bf2a065a596106e39c444bc84f62a6ca25dc570ae9d3dc4b5eb7415fe7a7df",
+        "sha256_in_prefix": "20bf2a065a596106e39c444bc84f62a6ca25dc570ae9d3dc4b5eb7415fe7a7df",
+        "size_in_bytes": 916
+      },
+      {
+        "_path": "lib/R/library/rhdf5/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "7b262ca97f40eef79b94c18fcda3c4b397538ac221e387f7fdaca0b2a750ca56",
+        "sha256_in_prefix": "7b262ca97f40eef79b94c18fcda3c4b397538ac221e387f7fdaca0b2a750ca56",
+        "size_in_bytes": 22319
+      },
+      {
+        "_path": "lib/R/library/rhdf5/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/rhdf5/libs/rhdf5.so",
+        "path_type": "hardlink",
+        "sha256": "7a4cf24be82d8fc92e53ec8fda6ff48660e5ccb73be2b3f7d55bad37737b4838",
+        "sha256_in_prefix": "7a4cf24be82d8fc92e53ec8fda6ff48660e5ccb73be2b3f7d55bad37737b4838",
+        "size_in_bytes": 4133981
+      },
+      {
+        "_path": "lib/R/library/rhdf5/testfiles/h5ex_t_array.h5",
+        "path_type": "hardlink",
+        "sha256": "8d03ff5f6d2136910a739e58e8ac858d07c72c2dfe795a847085bd2b4455d7ce",
+        "sha256_in_prefix": "8d03ff5f6d2136910a739e58e8ac858d07c72c2dfe795a847085bd2b4455d7ce",
+        "size_in_bytes": 2528
+      },
+      {
+        "_path": "lib/R/library/rhdf5/testfiles/h5ex_t_cmpd.h5",
+        "path_type": "hardlink",
+        "sha256": "81a20310e2cea138161160508a07bde13c4403a25a0aa84c5fbec345237628c8",
+        "sha256_in_prefix": "81a20310e2cea138161160508a07bde13c4403a25a0aa84c5fbec345237628c8",
+        "size_in_bytes": 6336
+      },
+      {
+        "_path": "lib/R/library/rhdf5/testfiles/h5ex_t_enum.h5",
+        "path_type": "hardlink",
+        "sha256": "259fa960941547ebb9cb4568496ee234f5399d38c53c74d154c1f6965aeef73a",
+        "sha256_in_prefix": "259fa960941547ebb9cb4568496ee234f5399d38c53c74d154c1f6965aeef73a",
+        "size_in_bytes": 2104
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "bioconductor-rhdf5=2.26",
+  "size": 2206566,
+  "subdir": "linux-64",
+  "timestamp": 1545263097341,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/bioconductor-rhdf5-2.26.1-r351hfc679d8_0.tar.bz2",
+  "version": "2.26.1"
+}

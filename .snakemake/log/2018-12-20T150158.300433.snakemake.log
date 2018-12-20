@@ -1,5 +1,0 @@
-Building DAG of jobs...
-InputFunctionException in line 16 of /home/jansen00/Fachprojekt/fprdg1/Snakefile:
-AttributeError: 'Wildcards' object has no attribute 'sample'
-Wildcards:
-

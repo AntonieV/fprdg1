@@ -1,0 +1,1603 @@
+{
+  "arch": "x86_64",
+  "build": "py36haaf12d0_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "cairo >=1.14.12,<1.15.0a0",
+    "glib >=2.56.2,<2.57.0a0",
+    "libffi >=3.2.1,<3.3.0a0",
+    "libgcc-ng >=4.9",
+    "python >=3.6,<3.7.0a0"
+  ],
+  "extracted_package_dir": "/home/jana/Programme/miniconda3/pkgs/gobject-introspection-1.56.1-py36haaf12d0_1",
+  "features": "",
+  "files": [
+    "bin/g-ir-annotation-tool",
+    "bin/g-ir-compiler",
+    "bin/g-ir-generate",
+    "bin/g-ir-inspect",
+    "bin/g-ir-scanner",
+    "include/gobject-introspection-1.0/giarginfo.h",
+    "include/gobject-introspection-1.0/gibaseinfo.h",
+    "include/gobject-introspection-1.0/gicallableinfo.h",
+    "include/gobject-introspection-1.0/giconstantinfo.h",
+    "include/gobject-introspection-1.0/gienuminfo.h",
+    "include/gobject-introspection-1.0/gifieldinfo.h",
+    "include/gobject-introspection-1.0/gifunctioninfo.h",
+    "include/gobject-introspection-1.0/giinterfaceinfo.h",
+    "include/gobject-introspection-1.0/giobjectinfo.h",
+    "include/gobject-introspection-1.0/gipropertyinfo.h",
+    "include/gobject-introspection-1.0/giregisteredtypeinfo.h",
+    "include/gobject-introspection-1.0/girepository.h",
+    "include/gobject-introspection-1.0/girffi.h",
+    "include/gobject-introspection-1.0/gisignalinfo.h",
+    "include/gobject-introspection-1.0/gistructinfo.h",
+    "include/gobject-introspection-1.0/gitypeinfo.h",
+    "include/gobject-introspection-1.0/gitypelib.h",
+    "include/gobject-introspection-1.0/gitypes.h",
+    "include/gobject-introspection-1.0/giunioninfo.h",
+    "include/gobject-introspection-1.0/giversionmacros.h",
+    "include/gobject-introspection-1.0/givfuncinfo.h",
+    "lib/girepository-1.0/DBus-1.0.typelib",
+    "lib/girepository-1.0/DBusGLib-1.0.typelib",
+    "lib/girepository-1.0/GIRepository-2.0.typelib",
+    "lib/girepository-1.0/GL-1.0.typelib",
+    "lib/girepository-1.0/GLib-2.0.typelib",
+    "lib/girepository-1.0/GModule-2.0.typelib",
+    "lib/girepository-1.0/GObject-2.0.typelib",
+    "lib/girepository-1.0/Gio-2.0.typelib",
+    "lib/girepository-1.0/cairo-1.0.typelib",
+    "lib/girepository-1.0/fontconfig-2.0.typelib",
+    "lib/girepository-1.0/freetype2-2.0.typelib",
+    "lib/girepository-1.0/libxml2-2.0.typelib",
+    "lib/girepository-1.0/win32-1.0.typelib",
+    "lib/girepository-1.0/xfixes-4.0.typelib",
+    "lib/girepository-1.0/xft-2.0.typelib",
+    "lib/girepository-1.0/xlib-2.0.typelib",
+    "lib/girepository-1.0/xrandr-1.3.typelib",
+    "lib/gobject-introspection/giscanner/__init__.py",
+    "lib/gobject-introspection/giscanner/__pycache__/__init__.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/annotationmain.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/annotationparser.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/ast.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/cachestore.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/ccompiler.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/codegen.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/docmain.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/docwriter.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/dumper.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/gdumpparser.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/girparser.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/girwriter.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/introspectablepass.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/libtoolimporter.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/maintransformer.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/message.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/msvccompiler.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/scannermain.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/sectionparser.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/shlibs.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/sourcescanner.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/testcodegen.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/transformer.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/utils.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/__pycache__/xmlwriter.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/_giscanner.a",
+    "lib/gobject-introspection/giscanner/_giscanner.so",
+    "lib/gobject-introspection/giscanner/annotationmain.py",
+    "lib/gobject-introspection/giscanner/annotationparser.py",
+    "lib/gobject-introspection/giscanner/ast.py",
+    "lib/gobject-introspection/giscanner/cachestore.py",
+    "lib/gobject-introspection/giscanner/ccompiler.py",
+    "lib/gobject-introspection/giscanner/codegen.py",
+    "lib/gobject-introspection/giscanner/collections/__init__.py",
+    "lib/gobject-introspection/giscanner/collections/__pycache__/__init__.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/collections/__pycache__/counter.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/collections/__pycache__/ordereddict.cpython-36.pyc",
+    "lib/gobject-introspection/giscanner/collections/counter.py",
+    "lib/gobject-introspection/giscanner/collections/ordereddict.py",
+    "lib/gobject-introspection/giscanner/docmain.py",
+    "lib/gobject-introspection/giscanner/doctemplates/C/callback.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/class.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/constructor.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/default.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/enum.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/field.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/function.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/interface.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/method.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/namespace.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/property.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/record.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/signal.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/C/vfunc.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/callback.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/class.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/constructor.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/default.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/enum.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/field.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/function.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/interface.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/method.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/namespace.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/property.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/record.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/signal.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Gjs/vfunc.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/callback.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/class.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/constructor.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/default.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/enum.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/field.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/function.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/interface.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/method.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/namespace.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/property.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/record.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/signal.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/Python/vfunc.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/base.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/class.tmpl",
+    "lib/gobject-introspection/giscanner/doctemplates/namespace.tmpl",
+    "lib/gobject-introspection/giscanner/docwriter.py",
+    "lib/gobject-introspection/giscanner/dumper.py",
+    "lib/gobject-introspection/giscanner/gdumpparser.py",
+    "lib/gobject-introspection/giscanner/girparser.py",
+    "lib/gobject-introspection/giscanner/girwriter.py",
+    "lib/gobject-introspection/giscanner/introspectablepass.py",
+    "lib/gobject-introspection/giscanner/libtoolimporter.py",
+    "lib/gobject-introspection/giscanner/maintransformer.py",
+    "lib/gobject-introspection/giscanner/message.py",
+    "lib/gobject-introspection/giscanner/msvccompiler.py",
+    "lib/gobject-introspection/giscanner/scannermain.py",
+    "lib/gobject-introspection/giscanner/sectionparser.py",
+    "lib/gobject-introspection/giscanner/shlibs.py",
+    "lib/gobject-introspection/giscanner/sourcescanner.py",
+    "lib/gobject-introspection/giscanner/testcodegen.py",
+    "lib/gobject-introspection/giscanner/transformer.py",
+    "lib/gobject-introspection/giscanner/utils.py",
+    "lib/gobject-introspection/giscanner/xmlwriter.py",
+    "lib/libgirepository-1.0.so",
+    "lib/libgirepository-1.0.so.1",
+    "lib/libgirepository-1.0.so.1.0.0",
+    "lib/pkgconfig/gobject-introspection-1.0.pc",
+    "lib/pkgconfig/gobject-introspection-no-export-1.0.pc",
+    "share/aclocal/introspection.m4",
+    "share/gir-1.0/DBus-1.0.gir",
+    "share/gir-1.0/DBusGLib-1.0.gir",
+    "share/gir-1.0/GIRepository-2.0.gir",
+    "share/gir-1.0/GL-1.0.gir",
+    "share/gir-1.0/GLib-2.0.gir",
+    "share/gir-1.0/GModule-2.0.gir",
+    "share/gir-1.0/GObject-2.0.gir",
+    "share/gir-1.0/Gio-2.0.gir",
+    "share/gir-1.0/cairo-1.0.gir",
+    "share/gir-1.0/fontconfig-2.0.gir",
+    "share/gir-1.0/freetype2-2.0.gir",
+    "share/gir-1.0/gir-1.2.rnc",
+    "share/gir-1.0/libxml2-2.0.gir",
+    "share/gir-1.0/win32-1.0.gir",
+    "share/gir-1.0/xfixes-4.0.gir",
+    "share/gir-1.0/xft-2.0.gir",
+    "share/gir-1.0/xlib-2.0.gir",
+    "share/gir-1.0/xrandr-1.3.gir",
+    "share/gobject-introspection-1.0/Makefile.introspection",
+    "share/gobject-introspection-1.0/gdump.c",
+    "share/gobject-introspection-1.0/tests/annotation.c",
+    "share/gobject-introspection-1.0/tests/annotation.h",
+    "share/gobject-introspection-1.0/tests/drawable.c",
+    "share/gobject-introspection-1.0/tests/drawable.h",
+    "share/gobject-introspection-1.0/tests/everything.c",
+    "share/gobject-introspection-1.0/tests/everything.h",
+    "share/gobject-introspection-1.0/tests/foo.c",
+    "share/gobject-introspection-1.0/tests/foo.h",
+    "share/gobject-introspection-1.0/tests/gimarshallingtests.c",
+    "share/gobject-introspection-1.0/tests/gimarshallingtests.h",
+    "share/gobject-introspection-1.0/tests/gitestmacros.h",
+    "share/gobject-introspection-1.0/tests/regress.c",
+    "share/gobject-introspection-1.0/tests/regress.h",
+    "share/gobject-introspection-1.0/tests/utility.c",
+    "share/gobject-introspection-1.0/tests/utility.h",
+    "share/gobject-introspection-1.0/tests/warnlib.c",
+    "share/gobject-introspection-1.0/tests/warnlib.h",
+    "share/man/man1/g-ir-compiler.1",
+    "share/man/man1/g-ir-generate.1",
+    "share/man/man1/g-ir-scanner.1"
+  ],
+  "fn": "gobject-introspection-1.56.1-py36haaf12d0_1.tar.bz2",
+  "license": "LGPLv2+",
+  "license_family": "LGPL",
+  "link": {
+    "source": "/home/jana/Programme/miniconda3/pkgs/gobject-introspection-1.56.1-py36haaf12d0_1",
+    "type": 1
+  },
+  "md5": "6fed190da8619c60b0a74dfbbab97611",
+  "name": "gobject-introspection",
+  "package_tarball_full_path": "/home/jana/Programme/miniconda3/pkgs/gobject-introspection-1.56.1-py36haaf12d0_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/g-ir-annotation-tool",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "f03cd9767208c152476d0ded9bf2687478a96cec5693036f343ff91151e80e9e",
+        "sha256_in_prefix": "c79e7c186f9bbd3fd9d8c5db594c0bbe48bfdb56c8f7e0f9038c9bdaf6320986",
+        "size_in_bytes": 2296
+      },
+      {
+        "_path": "bin/g-ir-compiler",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/gobject-introspection_1539194504969/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold",
+        "sha256": "1a8e4ce2bba73357d8844268376b0531e669037165d029002e5029a22e18f978",
+        "sha256_in_prefix": "3f669e1c6d106724ec803ba56f53419024f26a2fccfa7ed3aa1e8badc3d0a300",
+        "size_in_bytes": 270094
+      },
+      {
+        "_path": "bin/g-ir-generate",
+        "path_type": "hardlink",
+        "sha256": "79db94ac6dabaeaab6246adeb98fc06609075a6babbe3c8b3035f2d4624ab4aa",
+        "sha256_in_prefix": "79db94ac6dabaeaab6246adeb98fc06609075a6babbe3c8b3035f2d4624ab4aa",
+        "size_in_bytes": 49651
+      },
+      {
+        "_path": "bin/g-ir-inspect",
+        "path_type": "hardlink",
+        "sha256": "865de83e416a5e1e9773965ef35eb0e849071d470b448d56f2cf9eb960aeef7e",
+        "sha256_in_prefix": "865de83e416a5e1e9773965ef35eb0e849071d470b448d56f2cf9eb960aeef7e",
+        "size_in_bytes": 11652
+      },
+      {
+        "_path": "bin/g-ir-scanner",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "94467074bfea517d85c516c00b89927d49b5f578c7d3b3dd8b7536590803d8da",
+        "sha256_in_prefix": "6ef5ebf3d9fde094bf260e375e8c66b4d6f363ee804ce2afc7d55f88b20fd43c",
+        "size_in_bytes": 2287
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/giarginfo.h",
+        "path_type": "hardlink",
+        "sha256": "213f077e8354394ccc7184a6c2fc21724313b7e7f2b67c0eedca949b715fab37",
+        "sha256_in_prefix": "213f077e8354394ccc7184a6c2fc21724313b7e7f2b67c0eedca949b715fab37",
+        "size_in_bytes": 2622
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gibaseinfo.h",
+        "path_type": "hardlink",
+        "sha256": "b0345432f4f5d60f392045f25c90b243e2ac2b8878947029ee3dc3a80f71a2f2",
+        "sha256_in_prefix": "b0345432f4f5d60f392045f25c90b243e2ac2b8878947029ee3dc3a80f71a2f2",
+        "size_in_bytes": 3512
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gicallableinfo.h",
+        "path_type": "hardlink",
+        "sha256": "0aaa2fca5e0d94ec12e07c5697e6543921fa82762383744d7df49d9cff9fb87a",
+        "sha256_in_prefix": "0aaa2fca5e0d94ec12e07c5697e6543921fa82762383744d7df49d9cff9fb87a",
+        "size_in_bytes": 4523
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/giconstantinfo.h",
+        "path_type": "hardlink",
+        "sha256": "32efc8201b9c9fb077ead3b700818ab10b64ce3b3773d7d83afa60d2d1def651",
+        "sha256_in_prefix": "32efc8201b9c9fb077ead3b700818ab10b64ce3b3773d7d83afa60d2d1def651",
+        "size_in_bytes": 1769
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gienuminfo.h",
+        "path_type": "hardlink",
+        "sha256": "54e8dd165aa2c5e246e446fae2faf5fdc83e49834342751eefb2a2ecee2ee357",
+        "sha256_in_prefix": "54e8dd165aa2c5e246e446fae2faf5fdc83e49834342751eefb2a2ecee2ee357",
+        "size_in_bytes": 2348
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gifieldinfo.h",
+        "path_type": "hardlink",
+        "sha256": "80b3e4bc0213bdb41029ef0baa14cdb6e2809c6b8a2a6e039e7d8d119b232070",
+        "sha256_in_prefix": "80b3e4bc0213bdb41029ef0baa14cdb6e2809c6b8a2a6e039e7d8d119b232070",
+        "size_in_bytes": 2129
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gifunctioninfo.h",
+        "path_type": "hardlink",
+        "sha256": "c58da357677de54ed19077a2db011f45d178c7c342f00624fc7276850a2a3859",
+        "sha256_in_prefix": "c58da357677de54ed19077a2db011f45d178c7c342f00624fc7276850a2a3859",
+        "size_in_bytes": 2877
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/giinterfaceinfo.h",
+        "path_type": "hardlink",
+        "sha256": "626c14aed1e83af4c6e6b23a03ccdecbb8d4e8fa032f4c4a15a83b866a60caf6",
+        "sha256_in_prefix": "626c14aed1e83af4c6e6b23a03ccdecbb8d4e8fa032f4c4a15a83b866a60caf6",
+        "size_in_bytes": 3418
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/giobjectinfo.h",
+        "path_type": "hardlink",
+        "sha256": "0cfb94096a4e768ef0460b165332e6a79f73deed6aacc5794b8443bb41eefa50",
+        "sha256_in_prefix": "0cfb94096a4e768ef0460b165332e6a79f73deed6aacc5794b8443bb41eefa50",
+        "size_in_bytes": 6060
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gipropertyinfo.h",
+        "path_type": "hardlink",
+        "sha256": "d49a6239db61e64e93f9d8576cf70ab8948c636bda61e7c77177a30dc0597f44",
+        "sha256_in_prefix": "d49a6239db61e64e93f9d8576cf70ab8948c636bda61e7c77177a30dc0597f44",
+        "size_in_bytes": 1685
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/giregisteredtypeinfo.h",
+        "path_type": "hardlink",
+        "sha256": "6a24fac7bdc1a3b9fb416c1de0647d6fe8c8b8df1abb93efb65ae46735b31b02",
+        "sha256_in_prefix": "6a24fac7bdc1a3b9fb416c1de0647d6fe8c8b8df1abb93efb65ae46735b31b02",
+        "size_in_bytes": 2363
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/girepository.h",
+        "path_type": "hardlink",
+        "sha256": "cc1c8bf1b6168e80666ec74a06c6d5e6bfd096bc63227905e250543e4da66898",
+        "sha256_in_prefix": "cc1c8bf1b6168e80666ec74a06c6d5e6bfd096bc63227905e250543e4da66898",
+        "size_in_bytes": 7649
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/girffi.h",
+        "path_type": "hardlink",
+        "sha256": "e5b339e41ca47262b8d10af315eb99688294b7f76b3b77eff5237b4cda890568",
+        "sha256_in_prefix": "e5b339e41ca47262b8d10af315eb99688294b7f76b3b77eff5237b4cda890568",
+        "size_in_bytes": 3468
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gisignalinfo.h",
+        "path_type": "hardlink",
+        "sha256": "c904ab826e653a02461c6a38933e636896ef8a47dc1be2f14c563078fffdcf66",
+        "sha256_in_prefix": "c904ab826e653a02461c6a38933e636896ef8a47dc1be2f14c563078fffdcf66",
+        "size_in_bytes": 1696
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gistructinfo.h",
+        "path_type": "hardlink",
+        "sha256": "a9c51472977296ee0152f65a3ae9118c2eed7b1cd5b4ba83fd38cf6c7851319b",
+        "sha256_in_prefix": "a9c51472977296ee0152f65a3ae9118c2eed7b1cd5b4ba83fd38cf6c7851319b",
+        "size_in_bytes": 2402
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gitypeinfo.h",
+        "path_type": "hardlink",
+        "sha256": "f85a6964f5483140070a212d35db6161c17048e58f78db9a61242d9e6c574299",
+        "sha256_in_prefix": "f85a6964f5483140070a212d35db6161c17048e58f78db9a61242d9e6c574299",
+        "size_in_bytes": 2556
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gitypelib.h",
+        "path_type": "hardlink",
+        "sha256": "4ffe1caa01d3a2ad0925228402b74353b00a81c40b68bb9f42ae365fca8a5ef7",
+        "sha256_in_prefix": "4ffe1caa01d3a2ad0925228402b74353b00a81c40b68bb9f42ae365fca8a5ef7",
+        "size_in_bytes": 2327
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/gitypes.h",
+        "path_type": "hardlink",
+        "sha256": "28fd6f09b862191c88c8b6ddda70df8a81cc07522aa0f72fa881f20bc557dfce",
+        "sha256_in_prefix": "28fd6f09b862191c88c8b6ddda70df8a81cc07522aa0f72fa881f20bc557dfce",
+        "size_in_bytes": 13885
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/giunioninfo.h",
+        "path_type": "hardlink",
+        "sha256": "001d94d11c5f87f51e7ace232b10c33e11f44ba01cbdc9b72ccb9526531fb12d",
+        "sha256_in_prefix": "001d94d11c5f87f51e7ace232b10c33e11f44ba01cbdc9b72ccb9526531fb12d",
+        "size_in_bytes": 2558
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/giversionmacros.h",
+        "path_type": "hardlink",
+        "sha256": "383ae352b4ea6b4c25fbadea1cda8bb2fc9c5fc035278399c5e331c30480a3cb",
+        "sha256_in_prefix": "383ae352b4ea6b4c25fbadea1cda8bb2fc9c5fc035278399c5e331c30480a3cb",
+        "size_in_bytes": 5010
+      },
+      {
+        "_path": "include/gobject-introspection-1.0/givfuncinfo.h",
+        "path_type": "hardlink",
+        "sha256": "73e5d309b5d4c784d6978ef6cd380bdbbb2a211a7aeaa9249bcc8ae42ea30b0f",
+        "sha256_in_prefix": "73e5d309b5d4c784d6978ef6cd380bdbbb2a211a7aeaa9249bcc8ae42ea30b0f",
+        "size_in_bytes": 2572
+      },
+      {
+        "_path": "lib/girepository-1.0/DBus-1.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "0843f4d6a549703df7c07f8e96d3c47752123ecf910c7571d786f5347fa02234",
+        "sha256_in_prefix": "0843f4d6a549703df7c07f8e96d3c47752123ecf910c7571d786f5347fa02234",
+        "size_in_bytes": 712
+      },
+      {
+        "_path": "lib/girepository-1.0/DBusGLib-1.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "2aa3277d88103f0c475700cd56fcadbcd7ddb2a588cff93696efd4922e151807",
+        "sha256_in_prefix": "2aa3277d88103f0c475700cd56fcadbcd7ddb2a588cff93696efd4922e151807",
+        "size_in_bytes": 560
+      },
+      {
+        "_path": "lib/girepository-1.0/GIRepository-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "bea0414ae033941e87022228639a5f660b4181b43908498bf356a191910dc246",
+        "sha256_in_prefix": "bea0414ae033941e87022228639a5f660b4181b43908498bf356a191910dc246",
+        "size_in_bytes": 26736
+      },
+      {
+        "_path": "lib/girepository-1.0/GL-1.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "e6677facd41cc99b3e3e1a9007d9762b00a446b42206d78dd28ea2653478bc80",
+        "sha256_in_prefix": "e6677facd41cc99b3e3e1a9007d9762b00a446b42206d78dd28ea2653478bc80",
+        "size_in_bytes": 948
+      },
+      {
+        "_path": "lib/girepository-1.0/GLib-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "c1e4d56de141a75efa344101fc12ba0a9a1d48a0d171ce0fd95ed58919bc21b8",
+        "sha256_in_prefix": "c1e4d56de141a75efa344101fc12ba0a9a1d48a0d171ce0fd95ed58919bc21b8",
+        "size_in_bytes": 185712
+      },
+      {
+        "_path": "lib/girepository-1.0/GModule-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "7bc362f60318f3a313498585ee80c9d70ea64d81e6f913b17a094dd92f2d86c6",
+        "sha256_in_prefix": "7bc362f60318f3a313498585ee80c9d70ea64d81e6f913b17a094dd92f2d86c6",
+        "size_in_bytes": 1340
+      },
+      {
+        "_path": "lib/girepository-1.0/GObject-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "ea8f5b2477f5c80ad46d7ad052cac4f433537160fbde3b9d966a2381b1490695",
+        "sha256_in_prefix": "ea8f5b2477f5c80ad46d7ad052cac4f433537160fbde3b9d966a2381b1490695",
+        "size_in_bytes": 59120
+      },
+      {
+        "_path": "lib/girepository-1.0/Gio-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "03f71e1d9a4bd4726fd652971e61312be155a3b32d301057fd1373c57d642a23",
+        "sha256_in_prefix": "03f71e1d9a4bd4726fd652971e61312be155a3b32d301057fd1373c57d642a23",
+        "size_in_bytes": 343452
+      },
+      {
+        "_path": "lib/girepository-1.0/cairo-1.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "c34bd16411d70d5798ae8ca794beed97ecf874c6c7b1191c07be76bdfb66bb3c",
+        "sha256_in_prefix": "c34bd16411d70d5798ae8ca794beed97ecf874c6c7b1191c07be76bdfb66bb3c",
+        "size_in_bytes": 14168
+      },
+      {
+        "_path": "lib/girepository-1.0/fontconfig-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "17dd220833e93884c4b261336c9bcd1bd546ed2c10920d578de04138182debec",
+        "sha256_in_prefix": "17dd220833e93884c4b261336c9bcd1bd546ed2c10920d578de04138182debec",
+        "size_in_bytes": 348
+      },
+      {
+        "_path": "lib/girepository-1.0/freetype2-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "03a385fb9e769b084d5df54aae60bbcfa7ca06b14d5a514f5251a175ddb77b3d",
+        "sha256_in_prefix": "03a385fb9e769b084d5df54aae60bbcfa7ca06b14d5a514f5251a175ddb77b3d",
+        "size_in_bytes": 420
+      },
+      {
+        "_path": "lib/girepository-1.0/libxml2-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "b56a965c2f25aec5a6ddd613ecac8a8307e1aae39fd270654954e2a099c9d934",
+        "sha256_in_prefix": "b56a965c2f25aec5a6ddd613ecac8a8307e1aae39fd270654954e2a099c9d934",
+        "size_in_bytes": 668
+      },
+      {
+        "_path": "lib/girepository-1.0/win32-1.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "f58e32852eeba023aa69ffc0a384452a99df362d91c17ebf1c7e6d72baa8b75c",
+        "sha256_in_prefix": "f58e32852eeba023aa69ffc0a384452a99df362d91c17ebf1c7e6d72baa8b75c",
+        "size_in_bytes": 176
+      },
+      {
+        "_path": "lib/girepository-1.0/xfixes-4.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "e55b4e0489c9aac5c7f055f4a1b40e0f92417e0db7c02d1611d342a3396c0890",
+        "sha256_in_prefix": "e55b4e0489c9aac5c7f055f4a1b40e0f92417e0db7c02d1611d342a3396c0890",
+        "size_in_bytes": 240
+      },
+      {
+        "_path": "lib/girepository-1.0/xft-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "78ccbbf8ded465b955c2dd1b78a8005dfb89bf78db03f57d37ffa849b574261d",
+        "sha256_in_prefix": "78ccbbf8ded465b955c2dd1b78a8005dfb89bf78db03f57d37ffa849b574261d",
+        "size_in_bytes": 464
+      },
+      {
+        "_path": "lib/girepository-1.0/xlib-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "4450fa0426b410db5a219f64b4e0d7f9b0be17ae81b9a6947045aeaacf417f91",
+        "sha256_in_prefix": "4450fa0426b410db5a219f64b4e0d7f9b0be17ae81b9a6947045aeaacf417f91",
+        "size_in_bytes": 836
+      },
+      {
+        "_path": "lib/girepository-1.0/xrandr-1.3.typelib",
+        "path_type": "hardlink",
+        "sha256": "860b43fd4ff40bae47b48111ff49d432acf96c0211a95b26df5ae8c32179591e",
+        "sha256_in_prefix": "860b43fd4ff40bae47b48111ff49d432acf96c0211a95b26df5ae8c32179591e",
+        "size_in_bytes": 640
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cd3ca263468b46f86613fc85d306dee17e967e1cc91f1bf972b5b8bfb04ee639",
+        "sha256_in_prefix": "cd3ca263468b46f86613fc85d306dee17e967e1cc91f1bf972b5b8bfb04ee639",
+        "size_in_bytes": 1055
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f52d6c5a1f3d01792d76399afc0ad9dbc9899bf708ee663408b6beb3b4a6dad0",
+        "sha256_in_prefix": "f52d6c5a1f3d01792d76399afc0ad9dbc9899bf708ee663408b6beb3b4a6dad0",
+        "size_in_bytes": 341
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/annotationmain.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ee15de4890877c36e80cb292df1788a29cc5758db26f12fdcd7fe3f0c2bc83d1",
+        "sha256_in_prefix": "ee15de4890877c36e80cb292df1788a29cc5758db26f12fdcd7fe3f0c2bc83d1",
+        "size_in_bytes": 2282
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/annotationparser.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "07dac223b2a42d54baf74c0ddc7a1f8be83ffcb6796ccc489a7ff6feb17de777",
+        "sha256_in_prefix": "07dac223b2a42d54baf74c0ddc7a1f8be83ffcb6796ccc489a7ff6feb17de777",
+        "size_in_bytes": 69552
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/ast.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "940fd20412532c43c4b9ad1339069868b3eea53445bbca84a75b342d1bbc1b19",
+        "sha256_in_prefix": "940fd20412532c43c4b9ad1339069868b3eea53445bbca84a75b342d1bbc1b19",
+        "size_in_bytes": 37267
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/cachestore.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "65ddd1c29cbfcefd87100dba981ed23032188178efcb2fafa4388a21727bf9a0",
+        "sha256_in_prefix": "65ddd1c29cbfcefd87100dba981ed23032188178efcb2fafa4388a21727bf9a0",
+        "size_in_bytes": 4302
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/ccompiler.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "0d5b50b41cfbeb1859acf7d5d905933863c75de7a2286d37926a06c9bbe1af0d",
+        "sha256_in_prefix": "0d5b50b41cfbeb1859acf7d5d905933863c75de7a2286d37926a06c9bbe1af0d",
+        "size_in_bytes": 7341
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/codegen.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "91eb3bb14cf62116608dc40dcf723d1717d336e22244767d2b5c3fb005d673fe",
+        "sha256_in_prefix": "91eb3bb14cf62116608dc40dcf723d1717d336e22244767d2b5c3fb005d673fe",
+        "size_in_bytes": 4810
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/docmain.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e19f5c849b488f3b23ce3ed862e7a9e2501b77e2e66bda0b7fc0438adbbc64e4",
+        "sha256_in_prefix": "e19f5c849b488f3b23ce3ed862e7a9e2501b77e2e66bda0b7fc0438adbbc64e4",
+        "size_in_bytes": 1662
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/docwriter.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e3dcb915f15efae6ea220b4ae9cc73dec6d1d8b2bd0aeb4618bdc90a2c1f23df",
+        "sha256_in_prefix": "e3dcb915f15efae6ea220b4ae9cc73dec6d1d8b2bd0aeb4618bdc90a2c1f23df",
+        "size_in_bytes": 27668
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/dumper.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "17d5fc564f30493d3f90f276339e082b2678aee5fc92cd9adf997f14360a0e80",
+        "sha256_in_prefix": "17d5fc564f30493d3f90f276339e082b2678aee5fc92cd9adf997f14360a0e80",
+        "size_in_bytes": 6844
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/gdumpparser.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ad0d91193aa67c4749f7c03200db6c529050ffb4e2665afe4dbf5f50c401ae1d",
+        "sha256_in_prefix": "ad0d91193aa67c4749f7c03200db6c529050ffb4e2665afe4dbf5f50c401ae1d",
+        "size_in_bytes": 14876
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/girparser.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "5e90ae3cc276888a154ae761955213e86ef8f743184d70bdebfc6529ea66fa9f",
+        "sha256_in_prefix": "5e90ae3cc276888a154ae761955213e86ef8f743184d70bdebfc6529ea66fa9f",
+        "size_in_bytes": 17377
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/girwriter.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "dabaa03e02f361793756eb4e6ccd6116535b4d3eb0c457804dd1eb4b90a882f4",
+        "sha256_in_prefix": "dabaa03e02f361793756eb4e6ccd6116535b4d3eb0c457804dd1eb4b90a882f4",
+        "size_in_bytes": 18083
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/introspectablepass.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "2a0a2de6b3052869f0c0e21705fb44d7a0fe2bc7d40867173985ade9c6414e8e",
+        "sha256_in_prefix": "2a0a2de6b3052869f0c0e21705fb44d7a0fe2bc7d40867173985ade9c6414e8e",
+        "size_in_bytes": 5980
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/libtoolimporter.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1b52ef5a5a76efe8db893cbaa42a4307972880380fc75014814d56e12a245d04",
+        "sha256_in_prefix": "1b52ef5a5a76efe8db893cbaa42a4307972880380fc75014814d56e12a245d04",
+        "size_in_bytes": 1730
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/maintransformer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a4f920b77c8485eeb1fd0d8bd24da801060b4751a9c5a2f49444ee92ebb29513",
+        "sha256_in_prefix": "a4f920b77c8485eeb1fd0d8bd24da801060b4751a9c5a2f49444ee92ebb29513",
+        "size_in_bytes": 35282
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/message.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b24253a72d1a92d3fa3de9e38eca251623013fd2551195a101b7127dcf17b296",
+        "sha256_in_prefix": "b24253a72d1a92d3fa3de9e38eca251623013fd2551195a101b7127dcf17b296",
+        "size_in_bytes": 6982
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/msvccompiler.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "37739b804fab5ab906342eef70f033aa0e0b83c178dbcc3f464e2a8727f54f3c",
+        "sha256_in_prefix": "37739b804fab5ab906342eef70f033aa0e0b83c178dbcc3f464e2a8727f54f3c",
+        "size_in_bytes": 2153
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/scannermain.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "3ca38c369a2240fe4de890f2f91a541f00aa0f9d881d678515d7ef16d3ddea32",
+        "sha256_in_prefix": "3ca38c369a2240fe4de890f2f91a541f00aa0f9d881d678515d7ef16d3ddea32",
+        "size_in_bytes": 15387
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/sectionparser.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "87bba6eee2986da322abd1dfdf650c34c20488284c90a42d91b932f903d5af0a",
+        "sha256_in_prefix": "87bba6eee2986da322abd1dfdf650c34c20488284c90a42d91b932f903d5af0a",
+        "size_in_bytes": 3690
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/shlibs.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "391927c31d1d9c56c9c230102f1334d29aab1c8e003ffe23e586fd9af9eab358",
+        "sha256_in_prefix": "391927c31d1d9c56c9c230102f1334d29aab1c8e003ffe23e586fd9af9eab358",
+        "size_in_bytes": 2591
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/sourcescanner.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "44afa6060c1ba11123f0b26d0cf9ffaac899e870570ad3204cccd2f483dca769",
+        "sha256_in_prefix": "44afa6060c1ba11123f0b26d0cf9ffaac899e870570ad3204cccd2f483dca769",
+        "size_in_bytes": 9264
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/testcodegen.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b7fd49b3842e1691730e045e7282bf30aea2f359549cb210a7adb9b7a284ceff",
+        "sha256_in_prefix": "b7fd49b3842e1691730e045e7282bf30aea2f359549cb210a7adb9b7a284ceff",
+        "size_in_bytes": 2967
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/transformer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "638cc530c7888b6ef886ab8e3bb77a8e9fcdc7189689de4124f775df89f4fced",
+        "sha256_in_prefix": "638cc530c7888b6ef886ab8e3bb77a8e9fcdc7189689de4124f775df89f4fced",
+        "size_in_bytes": 24850
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/utils.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "4ef2c583b2e060140c3cf6308bc83b7c5546d8525065513369fbb88e2510a75c",
+        "sha256_in_prefix": "4ef2c583b2e060140c3cf6308bc83b7c5546d8525065513369fbb88e2510a75c",
+        "size_in_bytes": 7492
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/__pycache__/xmlwriter.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8ee55c1bc77a20811f0d8be15413ab74d1766b4bd6ac738333528d70ac6c953d",
+        "sha256_in_prefix": "8ee55c1bc77a20811f0d8be15413ab74d1766b4bd6ac738333528d70ac6c953d",
+        "size_in_bytes": 4597
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/_giscanner.a",
+        "path_type": "hardlink",
+        "sha256": "eaa0b6466064696585dcfefb11cca86d0b25a4bd4307b2e8cc02252cd449f367",
+        "sha256_in_prefix": "eaa0b6466064696585dcfefb11cca86d0b25a4bd4307b2e8cc02252cd449f367",
+        "size_in_bytes": 159754
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/_giscanner.so",
+        "path_type": "hardlink",
+        "sha256": "89eaec78c90bfef9c4eb04032f4b2baff7ed2cb66607b1699d9035890c971c9a",
+        "sha256_in_prefix": "89eaec78c90bfef9c4eb04032f4b2baff7ed2cb66607b1699d9035890c971c9a",
+        "size_in_bytes": 118928
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/annotationmain.py",
+        "path_type": "hardlink",
+        "sha256": "c4a7537497b454ae237f497a492d56fa2b5aef2821a2f8168f4055e1f1362ead",
+        "sha256_in_prefix": "c4a7537497b454ae237f497a492d56fa2b5aef2821a2f8168f4055e1f1362ead",
+        "size_in_bytes": 3837
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/annotationparser.py",
+        "path_type": "hardlink",
+        "sha256": "b09f5bef9a61357c20485dfaa36eef9e035cccad10bd8d735aba2b7a43b29614",
+        "sha256_in_prefix": "b09f5bef9a61357c20485dfaa36eef9e035cccad10bd8d735aba2b7a43b29614",
+        "size_in_bytes": 101519
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/ast.py",
+        "path_type": "hardlink",
+        "sha256": "166d83ee87b0bf362e9a32db79f0b566ea5c7dd0e39cc951cac58ee7f0f61a51",
+        "sha256_in_prefix": "166d83ee87b0bf362e9a32db79f0b566ea5c7dd0e39cc951cac58ee7f0f61a51",
+        "size_in_bytes": 42727
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/cachestore.py",
+        "path_type": "hardlink",
+        "sha256": "93736fabc1a393425ebbb1892f416a751fca038c6f968bc4b8f700df6d4c2012",
+        "sha256_in_prefix": "93736fabc1a393425ebbb1892f416a751fca038c6f968bc4b8f700df6d4c2012",
+        "size_in_bytes": 6055
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/ccompiler.py",
+        "path_type": "hardlink",
+        "sha256": "d4ec83f3e2f58e1a6677ad3b09243520393a4e81dee28a817aee0e0df24d5b86",
+        "sha256_in_prefix": "d4ec83f3e2f58e1a6677ad3b09243520393a4e81dee28a817aee0e0df24d5b86",
+        "size_in_bytes": 16869
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/codegen.py",
+        "path_type": "hardlink",
+        "sha256": "714726a66be07b426af0e28229f63341d1ffa08992b134da6f494c3186b23e38",
+        "sha256_in_prefix": "714726a66be07b426af0e28229f63341d1ffa08992b134da6f494c3186b23e38",
+        "size_in_bytes": 6249
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/collections/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ad270cefd958cffc05b36e391f7bf91cbfcc64d8afbacbc1ce5080b70258ab7f",
+        "sha256_in_prefix": "ad270cefd958cffc05b36e391f7bf91cbfcc64d8afbacbc1ce5080b70258ab7f",
+        "size_in_bytes": 1092
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/collections/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "20ccb70c062f3cb5f0b0b98cd6cc8135f0e2b5ed3f4620d2ddf1228ba1b02677",
+        "sha256_in_prefix": "20ccb70c062f3cb5f0b0b98cd6cc8135f0e2b5ed3f4620d2ddf1228ba1b02677",
+        "size_in_bytes": 390
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/collections/__pycache__/counter.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e8e472eca6addccb32d5982861a69aad8f2780bc734783d3fe4c84eac76e03dc",
+        "sha256_in_prefix": "e8e472eca6addccb32d5982861a69aad8f2780bc734783d3fe4c84eac76e03dc",
+        "size_in_bytes": 9290
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/collections/__pycache__/ordereddict.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "81cc30888b07e81925b13fadcd4b5ce484eb4b5812f8ba316cf7d82b7210c3d1",
+        "sha256_in_prefix": "81cc30888b07e81925b13fadcd4b5ce484eb4b5812f8ba316cf7d82b7210c3d1",
+        "size_in_bytes": 3842
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/collections/counter.py",
+        "path_type": "hardlink",
+        "sha256": "032b69fbe109c72e6e6991c35c5cce7e69ce8f2b0629d7075c7dc8d31b6b67e4",
+        "sha256_in_prefix": "032b69fbe109c72e6e6991c35c5cce7e69ce8f2b0629d7075c7dc8d31b6b67e4",
+        "size_in_bytes": 12239
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/collections/ordereddict.py",
+        "path_type": "hardlink",
+        "sha256": "5227582bf9c18062d1bc492a9d7e1210d40f358baddd270615561f89c276bb65",
+        "sha256_in_prefix": "5227582bf9c18062d1bc492a9d7e1210d40f358baddd270615561f89c276bb65",
+        "size_in_bytes": 3893
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/docmain.py",
+        "path_type": "hardlink",
+        "sha256": "be17eb3bcd2060a302e2787d3d4402b924f8d74748b44ab368fdc21a61da273b",
+        "sha256_in_prefix": "be17eb3bcd2060a302e2787d3d4402b924f8d74748b44ab368fdc21a61da273b",
+        "size_in_bytes": 2836
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/callback.tmpl",
+        "path_type": "hardlink",
+        "sha256": "d33c69b28bcd1811393d72d3425fa0da268421c9a70d22eb23cf9e4837e59e2f",
+        "sha256_in_prefix": "d33c69b28bcd1811393d72d3425fa0da268421c9a70d22eb23cf9e4837e59e2f",
+        "size_in_bytes": 141
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/class.tmpl",
+        "path_type": "hardlink",
+        "sha256": "17549ea547deb30accfd14ec12910a3573684d5fa410821ec9c95c924247f9b6",
+        "sha256_in_prefix": "17549ea547deb30accfd14ec12910a3573684d5fa410821ec9c95c924247f9b6",
+        "size_in_bytes": 57
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/constructor.tmpl",
+        "path_type": "hardlink",
+        "sha256": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "sha256_in_prefix": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "size_in_bytes": 35
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/default.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "sha256_in_prefix": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "size_in_bytes": 30
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/enum.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aac4ef75b70cacc718349a3449b18b9c1964dee337a64057dfaee1a4d9b725ee",
+        "sha256_in_prefix": "aac4ef75b70cacc718349a3449b18b9c1964dee337a64057dfaee1a4d9b725ee",
+        "size_in_bytes": 56
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/field.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "sha256_in_prefix": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "size_in_bytes": 30
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/function.tmpl",
+        "path_type": "hardlink",
+        "sha256": "7e8277d9cbe529993aa0c7c1a81f8746536e27470bb41f62dccc0a740e5a98bd",
+        "sha256_in_prefix": "7e8277d9cbe529993aa0c7c1a81f8746536e27470bb41f62dccc0a740e5a98bd",
+        "size_in_bytes": 1654
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/interface.tmpl",
+        "path_type": "hardlink",
+        "sha256": "17549ea547deb30accfd14ec12910a3573684d5fa410821ec9c95c924247f9b6",
+        "sha256_in_prefix": "17549ea547deb30accfd14ec12910a3573684d5fa410821ec9c95c924247f9b6",
+        "size_in_bytes": 57
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/method.tmpl",
+        "path_type": "hardlink",
+        "sha256": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "sha256_in_prefix": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "size_in_bytes": 35
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/namespace.tmpl",
+        "path_type": "hardlink",
+        "sha256": "a0a1b42ec8f22ed140c769f188dc5ff526a376f58ab32e2bc9cbe6e61643ecf3",
+        "sha256_in_prefix": "a0a1b42ec8f22ed140c769f188dc5ff526a376f58ab32e2bc9cbe6e61643ecf3",
+        "size_in_bytes": 35
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/property.tmpl",
+        "path_type": "hardlink",
+        "sha256": "2e53991ec3782664dae2ec58e92a287536a5b3a914425b97dbf337a107df0c41",
+        "sha256_in_prefix": "2e53991ec3782664dae2ec58e92a287536a5b3a914425b97dbf337a107df0c41",
+        "size_in_bytes": 191
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/record.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "sha256_in_prefix": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "size_in_bytes": 30
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/signal.tmpl",
+        "path_type": "hardlink",
+        "sha256": "9b55b7105610e3b094df5ccba26f763082d8159d165af0a6f9fb93c67b3c6a29",
+        "sha256_in_prefix": "9b55b7105610e3b094df5ccba26f763082d8159d165af0a6f9fb93c67b3c6a29",
+        "size_in_bytes": 196
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/C/vfunc.tmpl",
+        "path_type": "hardlink",
+        "sha256": "19b8ccf773d3cbfd1607c91456f6f3d0c0f629b36b19bbb580fae209c6af51f9",
+        "sha256_in_prefix": "19b8ccf773d3cbfd1607c91456f6f3d0c0f629b36b19bbb580fae209c6af51f9",
+        "size_in_bytes": 139
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/callback.tmpl",
+        "path_type": "hardlink",
+        "sha256": "81b44b99a74938983a06f86ca494f828931a29f779fa5dd3b4ad8e1612396149",
+        "sha256_in_prefix": "81b44b99a74938983a06f86ca494f828931a29f779fa5dd3b4ad8e1612396149",
+        "size_in_bytes": 780
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/class.tmpl",
+        "path_type": "hardlink",
+        "sha256": "9f4c1c102efb39392fd1207f2d28724e033a119938324f6a14a48be25b1c79b7",
+        "sha256_in_prefix": "9f4c1c102efb39392fd1207f2d28724e033a119938324f6a14a48be25b1c79b7",
+        "size_in_bytes": 863
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/constructor.tmpl",
+        "path_type": "hardlink",
+        "sha256": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "sha256_in_prefix": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "size_in_bytes": 35
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/default.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "sha256_in_prefix": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "size_in_bytes": 30
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/enum.tmpl",
+        "path_type": "hardlink",
+        "sha256": "514acc86bf3d8c277b5b5c61d533f9d1396b33a1e9024799927a386a4f8953dd",
+        "sha256_in_prefix": "514acc86bf3d8c277b5b5c61d533f9d1396b33a1e9024799927a386a4f8953dd",
+        "size_in_bytes": 511
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/field.tmpl",
+        "path_type": "hardlink",
+        "sha256": "0d114aeb9eda261d60e9788d33d58dfb51b6b63626729d022cd71353ecb3bb73",
+        "sha256_in_prefix": "0d114aeb9eda261d60e9788d33d58dfb51b6b63626729d022cd71353ecb3bb73",
+        "size_in_bytes": 423
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/function.tmpl",
+        "path_type": "hardlink",
+        "sha256": "742aa18aca4f060d8e1c11a1fbe20d5b95f026f7ff6b582b6120a1c7b1854779",
+        "sha256_in_prefix": "742aa18aca4f060d8e1c11a1fbe20d5b95f026f7ff6b582b6120a1c7b1854779",
+        "size_in_bytes": 1469
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/interface.tmpl",
+        "path_type": "hardlink",
+        "sha256": "e78e93dc3ef1e2bba7cbbd34f8452b093fc1df28f60f5c6b9f0eec4c4bdf265d",
+        "sha256_in_prefix": "e78e93dc3ef1e2bba7cbbd34f8452b093fc1df28f60f5c6b9f0eec4c4bdf265d",
+        "size_in_bytes": 558
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/method.tmpl",
+        "path_type": "hardlink",
+        "sha256": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "sha256_in_prefix": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "size_in_bytes": 35
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/namespace.tmpl",
+        "path_type": "hardlink",
+        "sha256": "db32daffa97476b6159eeedb6f2ca93e1bd9109c7a0ab8a5959103815da558ea",
+        "sha256_in_prefix": "db32daffa97476b6159eeedb6f2ca93e1bd9109c7a0ab8a5959103815da558ea",
+        "size_in_bytes": 61
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/property.tmpl",
+        "path_type": "hardlink",
+        "sha256": "0d114aeb9eda261d60e9788d33d58dfb51b6b63626729d022cd71353ecb3bb73",
+        "sha256_in_prefix": "0d114aeb9eda261d60e9788d33d58dfb51b6b63626729d022cd71353ecb3bb73",
+        "size_in_bytes": 423
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/record.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aac4ef75b70cacc718349a3449b18b9c1964dee337a64057dfaee1a4d9b725ee",
+        "sha256_in_prefix": "aac4ef75b70cacc718349a3449b18b9c1964dee337a64057dfaee1a4d9b725ee",
+        "size_in_bytes": 56
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/signal.tmpl",
+        "path_type": "hardlink",
+        "sha256": "f17a768b62ad44a68b5e454703527fc5da3e7481c54fc0b422b9159679bf765f",
+        "sha256_in_prefix": "f17a768b62ad44a68b5e454703527fc5da3e7481c54fc0b422b9159679bf765f",
+        "size_in_bytes": 1185
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Gjs/vfunc.tmpl",
+        "path_type": "hardlink",
+        "sha256": "522572cd410035d1d0c123e2b7b1c35fe5ea86d3b19d356820507f6408bdad60",
+        "sha256_in_prefix": "522572cd410035d1d0c123e2b7b1c35fe5ea86d3b19d356820507f6408bdad60",
+        "size_in_bytes": 746
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/callback.tmpl",
+        "path_type": "hardlink",
+        "sha256": "ad6f40fae7107307f6442b5cdb93dd0af4948b33efd63886576137f8d409e33c",
+        "sha256_in_prefix": "ad6f40fae7107307f6442b5cdb93dd0af4948b33efd63886576137f8d409e33c",
+        "size_in_bytes": 849
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/class.tmpl",
+        "path_type": "hardlink",
+        "sha256": "3211149b416e0d487938f8d267e6c8c9349f03c63965bb7ff52bc390ba6257f5",
+        "sha256_in_prefix": "3211149b416e0d487938f8d267e6c8c9349f03c63965bb7ff52bc390ba6257f5",
+        "size_in_bytes": 593
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/constructor.tmpl",
+        "path_type": "hardlink",
+        "sha256": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "sha256_in_prefix": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "size_in_bytes": 35
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/default.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "sha256_in_prefix": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "size_in_bytes": 30
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/enum.tmpl",
+        "path_type": "hardlink",
+        "sha256": "d129917486e16ff4686233d74faa9095a130bbf489c8d5f96f7c2ad069c5aa32",
+        "sha256_in_prefix": "d129917486e16ff4686233d74faa9095a130bbf489c8d5f96f7c2ad069c5aa32",
+        "size_in_bytes": 264
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/field.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "sha256_in_prefix": "aec20fd82f85fa417c2a6c6ee5d2d97acbf1a309dfd2094adf7709bc4387e7fb",
+        "size_in_bytes": 30
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/function.tmpl",
+        "path_type": "hardlink",
+        "sha256": "79b7de9a046285fa10ad7185ccd6286b6d40c2c80a96d3858d556729c3279434",
+        "sha256_in_prefix": "79b7de9a046285fa10ad7185ccd6286b6d40c2c80a96d3858d556729c3279434",
+        "size_in_bytes": 1572
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/interface.tmpl",
+        "path_type": "hardlink",
+        "sha256": "a9bedbbd1b839be1897ff686dd4e1c4e7d365884a815d2ecaaa5722200086465",
+        "sha256_in_prefix": "a9bedbbd1b839be1897ff686dd4e1c4e7d365884a815d2ecaaa5722200086465",
+        "size_in_bytes": 535
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/method.tmpl",
+        "path_type": "hardlink",
+        "sha256": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "sha256_in_prefix": "3ca4a6130846f2259873b30de4342827026571fe0ae95351cd335208c161486c",
+        "size_in_bytes": 35
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/namespace.tmpl",
+        "path_type": "hardlink",
+        "sha256": "db32daffa97476b6159eeedb6f2ca93e1bd9109c7a0ab8a5959103815da558ea",
+        "sha256_in_prefix": "db32daffa97476b6159eeedb6f2ca93e1bd9109c7a0ab8a5959103815da558ea",
+        "size_in_bytes": 61
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/property.tmpl",
+        "path_type": "hardlink",
+        "sha256": "42f959fc15ad16da39b2100c30cb1c86836f56a64936edd4b1312bc23df8c32e",
+        "sha256_in_prefix": "42f959fc15ad16da39b2100c30cb1c86836f56a64936edd4b1312bc23df8c32e",
+        "size_in_bytes": 407
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/record.tmpl",
+        "path_type": "hardlink",
+        "sha256": "aac4ef75b70cacc718349a3449b18b9c1964dee337a64057dfaee1a4d9b725ee",
+        "sha256_in_prefix": "aac4ef75b70cacc718349a3449b18b9c1964dee337a64057dfaee1a4d9b725ee",
+        "size_in_bytes": 56
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/signal.tmpl",
+        "path_type": "hardlink",
+        "sha256": "cabfced3c13e3fcb11cecee386ffa2ffa3efc30491656d847e7d6d9bc6fc4b0c",
+        "sha256_in_prefix": "cabfced3c13e3fcb11cecee386ffa2ffa3efc30491656d847e7d6d9bc6fc4b0c",
+        "size_in_bytes": 1235
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/Python/vfunc.tmpl",
+        "path_type": "hardlink",
+        "sha256": "cb7ffa1e71531010d46745b21af2223ff18d11c2f5bf35b6d099e611c92436b5",
+        "sha256_in_prefix": "cb7ffa1e71531010d46745b21af2223ff18d11c2f5bf35b6d099e611c92436b5",
+        "size_in_bytes": 849
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/base.tmpl",
+        "path_type": "hardlink",
+        "sha256": "ed4a58dc794248c887a0df4ef5e90f0fd045e57b2e88abd1e200d7bc905893b9",
+        "sha256_in_prefix": "ed4a58dc794248c887a0df4ef5e90f0fd045e57b2e88abd1e200d7bc905893b9",
+        "size_in_bytes": 765
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/class.tmpl",
+        "path_type": "hardlink",
+        "sha256": "c5b47951494da33c4311157630ac475fcd0414f15605f13e456fd7c1536402b8",
+        "sha256_in_prefix": "c5b47951494da33c4311157630ac475fcd0414f15605f13e456fd7c1536402b8",
+        "size_in_bytes": 1982
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/doctemplates/namespace.tmpl",
+        "path_type": "hardlink",
+        "sha256": "a44a22bcd64244d56dcb9df0c7b5cff65b3801688b237606c1842063d682f390",
+        "sha256_in_prefix": "a44a22bcd64244d56dcb9df0c7b5cff65b3801688b237606c1842063d682f390",
+        "size_in_bytes": 551
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/docwriter.py",
+        "path_type": "hardlink",
+        "sha256": "3c92f4b372aa244ac4e880dd5bfb088d93167502db964c73b712df35cde5c636",
+        "sha256_in_prefix": "3c92f4b372aa244ac4e880dd5bfb088d93167502db964c73b712df35cde5c636",
+        "size_in_bytes": 33885
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/dumper.py",
+        "path_type": "hardlink",
+        "sha256": "514758283c6f6454744714211032231265f0f300ff234f07e09f7ff4dd8e7e9c",
+        "sha256_in_prefix": "514758283c6f6454744714211032231265f0f300ff234f07e09f7ff4dd8e7e9c",
+        "size_in_bytes": 10948
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/gdumpparser.py",
+        "path_type": "hardlink",
+        "sha256": "b447f991cd5344db1a16478b433961468580ff1f52c3ba3a24f67e2614b5f16e",
+        "sha256_in_prefix": "b447f991cd5344db1a16478b433961468580ff1f52c3ba3a24f67e2614b5f16e",
+        "size_in_bytes": 21470
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/girparser.py",
+        "path_type": "hardlink",
+        "sha256": "5efcafa04039e8a3d9e900cddd666170b5deaea511905e25cec62c2fa461f2b1",
+        "sha256_in_prefix": "5efcafa04039e8a3d9e900cddd666170b5deaea511905e25cec62c2fa461f2b1",
+        "size_in_bytes": 26729
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/girwriter.py",
+        "path_type": "hardlink",
+        "sha256": "1d10bf4d7ba26650736b7976a207f00007cab471b2902936d1a8fe9332290ca9",
+        "sha256_in_prefix": "1d10bf4d7ba26650736b7976a207f00007cab471b2902936d1a8fe9332290ca9",
+        "size_in_bytes": 26257
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/introspectablepass.py",
+        "path_type": "hardlink",
+        "sha256": "916c87dda7bb09cd775a23e7496ab5b3460a65b83560c6298bd3f56db3e05198",
+        "sha256_in_prefix": "916c87dda7bb09cd775a23e7496ab5b3460a65b83560c6298bd3f56db3e05198",
+        "size_in_bytes": 9545
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/libtoolimporter.py",
+        "path_type": "hardlink",
+        "sha256": "b6a4874320ea9609fbf01935345651f84671854e877c1467c69717fc0fd70679",
+        "sha256_in_prefix": "b6a4874320ea9609fbf01935345651f84671854e877c1467c69717fc0fd70679",
+        "size_in_bytes": 2704
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/maintransformer.py",
+        "path_type": "hardlink",
+        "sha256": "91242cc16a7f106f2fd5d16e781b8d9fb981f218bc61185f6c5ac4575d994361",
+        "sha256_in_prefix": "91242cc16a7f106f2fd5d16e781b8d9fb981f218bc61185f6c5ac4575d994361",
+        "size_in_bytes": 64810
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/message.py",
+        "path_type": "hardlink",
+        "sha256": "13ed92b69b0f205e2527b5412097afe31f87beef80555796fbc9c5bfa0d8b276",
+        "sha256_in_prefix": "13ed92b69b0f205e2527b5412097afe31f87beef80555796fbc9c5bfa0d8b276",
+        "size_in_bytes": 7936
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/msvccompiler.py",
+        "path_type": "hardlink",
+        "sha256": "f59b712ada78cf788cf6ed6d953cfbf60c3429d4ab9c41df3583141d1ed7a5c9",
+        "sha256_in_prefix": "f59b712ada78cf788cf6ed6d953cfbf60c3429d4ab9c41df3583141d1ed7a5c9",
+        "size_in_bytes": 3827
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/scannermain.py",
+        "path_type": "hardlink",
+        "sha256": "6a0780a5fd73b4f1a251db4edbb0fbfe37140bb86e6b4ce0033c19f86258d724",
+        "sha256_in_prefix": "6a0780a5fd73b4f1a251db4edbb0fbfe37140bb86e6b4ce0033c19f86258d724",
+        "size_in_bytes": 24768
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/sectionparser.py",
+        "path_type": "hardlink",
+        "sha256": "6aa846199532d5815c28c7b1a9151c77a863bb86e5218b3975c1e304dce3a774",
+        "sha256_in_prefix": "6aa846199532d5815c28c7b1a9151c77a863bb86e5218b3975c1e304dce3a774",
+        "size_in_bytes": 4940
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/shlibs.py",
+        "path_type": "hardlink",
+        "sha256": "8b2222f95ab8638e878f350fe6d27bd2aaf0d0b988d26bdd8456af429f2caabb",
+        "sha256_in_prefix": "8b2222f95ab8638e878f350fe6d27bd2aaf0d0b988d26bdd8456af429f2caabb",
+        "size_in_bytes": 5678
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/sourcescanner.py",
+        "path_type": "hardlink",
+        "sha256": "3bc617d6c981db28b863144654bfa4326cc68d326abc62e9342b6b4e8e768e6e",
+        "sha256_in_prefix": "3bc617d6c981db28b863144654bfa4326cc68d326abc62e9342b6b4e8e768e6e",
+        "size_in_bytes": 9497
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/testcodegen.py",
+        "path_type": "hardlink",
+        "sha256": "a31eb2cec22c9ed7826eb0f758eacefadb4a07901030a5716050e1f568b740e6",
+        "sha256_in_prefix": "a31eb2cec22c9ed7826eb0f758eacefadb4a07901030a5716050e1f568b740e6",
+        "size_in_bytes": 5936
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/transformer.py",
+        "path_type": "hardlink",
+        "sha256": "1aeae69f697464c300a229ac150588275ad58905d2bc64469bc11b2ee8c39752",
+        "sha256_in_prefix": "1aeae69f697464c300a229ac150588275ad58905d2bc64469bc11b2ee8c39752",
+        "size_in_bytes": 43088
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/utils.py",
+        "path_type": "hardlink",
+        "sha256": "3f82598a0a88f4a57c5d036b3069121d0d53f4e1660593080116f1b48ed793c3",
+        "sha256_in_prefix": "3f82598a0a88f4a57c5d036b3069121d0d53f4e1660593080116f1b48ed793c3",
+        "size_in_bytes": 9670
+      },
+      {
+        "_path": "lib/gobject-introspection/giscanner/xmlwriter.py",
+        "path_type": "hardlink",
+        "sha256": "c51e476d1f8046f721805eea4a6b0bae01a31bc49d2bb675fc0016788451cd8d",
+        "sha256_in_prefix": "c51e476d1f8046f721805eea4a6b0bae01a31bc49d2bb675fc0016788451cd8d",
+        "size_in_bytes": 5431
+      },
+      {
+        "_path": "lib/libgirepository-1.0.so",
+        "path_type": "softlink",
+        "sha256": "38a3cc1305d41f80a5fee0f21a635c41497d646e94bf5327e8fd4de8c3c491f7",
+        "size_in_bytes": 319919
+      },
+      {
+        "_path": "lib/libgirepository-1.0.so.1",
+        "path_type": "softlink",
+        "sha256": "38a3cc1305d41f80a5fee0f21a635c41497d646e94bf5327e8fd4de8c3c491f7",
+        "size_in_bytes": 319919
+      },
+      {
+        "_path": "lib/libgirepository-1.0.so.1.0.0",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/gobject-introspection_1539194504969/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold",
+        "sha256": "38a3cc1305d41f80a5fee0f21a635c41497d646e94bf5327e8fd4de8c3c491f7",
+        "sha256_in_prefix": "cc1bf1740725cabf13cb706f6936ad0a4c3c2852a334e45370d0240cf59b4a07",
+        "size_in_bytes": 319919
+      },
+      {
+        "_path": "lib/pkgconfig/gobject-introspection-1.0.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "1d15f6b2bbb358121ab18cae7e206ba9cc2999b988536ef1dc4e6e522715aed7",
+        "sha256_in_prefix": "46bba0e6ed8569cbfd5c15cd78a6b9a8ff57e8c34320421f45209e928eeeb84c",
+        "size_in_bytes": 670
+      },
+      {
+        "_path": "lib/pkgconfig/gobject-introspection-no-export-1.0.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "cfd210fab65a5d4ea48fcbc1a98821c89cca45edd9567c5d5add0b0d264653ae",
+        "sha256_in_prefix": "f8f6d1bfd87aaad6526bde910e4160215b22d202a4d1acb4975a7592fc1602e0",
+        "size_in_bytes": 633
+      },
+      {
+        "_path": "share/aclocal/introspection.m4",
+        "path_type": "hardlink",
+        "sha256": "a32bc0a317234914503a0e841da3f7ca770ee84c8126f3b353180bf16feb40e9",
+        "sha256_in_prefix": "a32bc0a317234914503a0e841da3f7ca770ee84c8126f3b353180bf16feb40e9",
+        "size_in_bytes": 3550
+      },
+      {
+        "_path": "share/gir-1.0/DBus-1.0.gir",
+        "path_type": "hardlink",
+        "sha256": "a840a69aa8fe4862f9522a43c01744d8efc919ff1450fb5fb46ec30b2e157692",
+        "sha256_in_prefix": "a840a69aa8fe4862f9522a43c01744d8efc919ff1450fb5fb46ec30b2e157692",
+        "size_in_bytes": 1185
+      },
+      {
+        "_path": "share/gir-1.0/DBusGLib-1.0.gir",
+        "path_type": "hardlink",
+        "sha256": "691f4148a531e87bd43dae3f5023c97a430059a364692f1d3e6d957bc11906c4",
+        "sha256_in_prefix": "691f4148a531e87bd43dae3f5023c97a430059a364692f1d3e6d957bc11906c4",
+        "size_in_bytes": 797
+      },
+      {
+        "_path": "share/gir-1.0/GIRepository-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "af4e459934977ffc3fe30af4cd6f233167b8877971687cf546a8b40bf8f18df7",
+        "sha256_in_prefix": "af4e459934977ffc3fe30af4cd6f233167b8877971687cf546a8b40bf8f18df7",
+        "size_in_bytes": 192300
+      },
+      {
+        "_path": "share/gir-1.0/GL-1.0.gir",
+        "path_type": "hardlink",
+        "sha256": "3a45fd8a802c84ac66099d10f7f64a89a28f678be623f6fde61962e0924db849",
+        "sha256_in_prefix": "3a45fd8a802c84ac66099d10f7f64a89a28f678be623f6fde61962e0924db849",
+        "size_in_bytes": 1122
+      },
+      {
+        "_path": "share/gir-1.0/GLib-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "95b54c41af88d3f9be10812b9ef98f51a0848845b8e12a5da5559e97047374d4",
+        "sha256_in_prefix": "95b54c41af88d3f9be10812b9ef98f51a0848845b8e12a5da5559e97047374d4",
+        "size_in_bytes": 2276977
+      },
+      {
+        "_path": "share/gir-1.0/GModule-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "03e4ea04391f28c5fb98b30b1e1be512e914fbe6a119d69e50ececb73a7bcbf0",
+        "sha256_in_prefix": "03e4ea04391f28c5fb98b30b1e1be512e914fbe6a119d69e50ececb73a7bcbf0",
+        "size_in_bytes": 13767
+      },
+      {
+        "_path": "share/gir-1.0/GObject-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "f9ce1a1611383ad3754d4ccd4190aefe363eda1ea1918d61178214c973d44860",
+        "sha256_in_prefix": "f9ce1a1611383ad3754d4ccd4190aefe363eda1ea1918d61178214c973d44860",
+        "size_in_bytes": 755379
+      },
+      {
+        "_path": "share/gir-1.0/Gio-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "6449b366cc7731af78ea352c4573f8456a39ddb35906a6ee23ad46ee11995bfc",
+        "sha256_in_prefix": "6449b366cc7731af78ea352c4573f8456a39ddb35906a6ee23ad46ee11995bfc",
+        "size_in_bytes": 4298076
+      },
+      {
+        "_path": "share/gir-1.0/cairo-1.0.gir",
+        "path_type": "hardlink",
+        "sha256": "be1f863d4556be5514f01a3f5d2bb038d3a946564bb88358a9e34dd91f99cae0",
+        "sha256_in_prefix": "be1f863d4556be5514f01a3f5d2bb038d3a946564bb88358a9e34dd91f99cae0",
+        "size_in_bytes": 23104
+      },
+      {
+        "_path": "share/gir-1.0/fontconfig-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "a88f81756549bffc4f8892a04ca5f100ac8b918947312894627419c4da9834c0",
+        "sha256_in_prefix": "a88f81756549bffc4f8892a04ca5f100ac8b918947312894627419c4da9834c0",
+        "size_in_bytes": 620
+      },
+      {
+        "_path": "share/gir-1.0/freetype2-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "33f7ae65ea4fd91508da0ff15eb8fad5db6ce064a6dd75bc7f923b7ffb9dab59",
+        "sha256_in_prefix": "33f7ae65ea4fd91508da0ff15eb8fad5db6ce064a6dd75bc7f923b7ffb9dab59",
+        "size_in_bytes": 768
+      },
+      {
+        "_path": "share/gir-1.0/gir-1.2.rnc",
+        "path_type": "hardlink",
+        "sha256": "7c57629ec93a4dbd9c7b7cfa41ad13beebf50cbaf81ee09745316b9a9a346551",
+        "sha256_in_prefix": "7c57629ec93a4dbd9c7b7cfa41ad13beebf50cbaf81ee09745316b9a9a346551",
+        "size_in_bytes": 10857
+      },
+      {
+        "_path": "share/gir-1.0/libxml2-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "3d771c3b8de38e859818de34fc2cb3f75adeb71deadb42622e29f02a71a17b13",
+        "sha256_in_prefix": "3d771c3b8de38e859818de34fc2cb3f75adeb71deadb42622e29f02a71a17b13",
+        "size_in_bytes": 938
+      },
+      {
+        "_path": "share/gir-1.0/win32-1.0.gir",
+        "path_type": "hardlink",
+        "sha256": "c3a3d65f79dade7673ca7b28bd819b84bc2551c16f0d3fa1610ab5f48f75c78e",
+        "sha256_in_prefix": "c3a3d65f79dade7673ca7b28bd819b84bc2551c16f0d3fa1610ab5f48f75c78e",
+        "size_in_bytes": 611
+      },
+      {
+        "_path": "share/gir-1.0/xfixes-4.0.gir",
+        "path_type": "hardlink",
+        "sha256": "adc2936cda68dbbe6a37e8e6a57de696fe8c172dc75b9ffb19c596382a6aa309",
+        "sha256_in_prefix": "adc2936cda68dbbe6a37e8e6a57de696fe8c172dc75b9ffb19c596382a6aa309",
+        "size_in_bytes": 361
+      },
+      {
+        "_path": "share/gir-1.0/xft-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "62e1b24dcd1ce0d3de7127638bf21033a00f29a621243f15c7c46aba0d6ce108",
+        "sha256_in_prefix": "62e1b24dcd1ce0d3de7127638bf21033a00f29a621243f15c7c46aba0d6ce108",
+        "size_in_bytes": 745
+      },
+      {
+        "_path": "share/gir-1.0/xlib-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "17ab89c7ca961a8002a3a7f8375b1f1c0385846ac00489c103d23b2f28b7f17e",
+        "sha256_in_prefix": "17ab89c7ca961a8002a3a7f8375b1f1c0385846ac00489c103d23b2f28b7f17e",
+        "size_in_bytes": 2325
+      },
+      {
+        "_path": "share/gir-1.0/xrandr-1.3.gir",
+        "path_type": "hardlink",
+        "sha256": "5adfce558f743d62cbeb1d005f89999902cbfa06ad2ec298b3e41016fd680813",
+        "sha256_in_prefix": "5adfce558f743d62cbeb1d005f89999902cbfa06ad2ec298b3e41016fd680813",
+        "size_in_bytes": 808
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/Makefile.introspection",
+        "path_type": "hardlink",
+        "sha256": "81f12693dc4fd8070d52ef27b12b8b128f229fa18c9c09c3306b0acf6f6cec7e",
+        "sha256_in_prefix": "81f12693dc4fd8070d52ef27b12b8b128f229fa18c9c09c3306b0acf6f6cec7e",
+        "size_in_bytes": 7539
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/gdump.c",
+        "path_type": "hardlink",
+        "sha256": "7f1d2cecbfd146466221a87e075960df7dfada5cbc1002078ecfc764987c5526",
+        "sha256_in_prefix": "7f1d2cecbfd146466221a87e075960df7dfada5cbc1002078ecfc764987c5526",
+        "size_in_bytes": 15228
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/annotation.c",
+        "path_type": "hardlink",
+        "sha256": "c30f9634ab1c83a50a8bd75623c6644af18ccbc258427b905dd793b92c357b47",
+        "sha256_in_prefix": "c30f9634ab1c83a50a8bd75623c6644af18ccbc258427b905dd793b92c357b47",
+        "size_in_bytes": 20560
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/annotation.h",
+        "path_type": "hardlink",
+        "sha256": "23f6b059ac1cc93c1073c6fe08cec37e111cee6a9e33252bc310182853b5cee8",
+        "sha256_in_prefix": "23f6b059ac1cc93c1073c6fe08cec37e111cee6a9e33252bc310182853b5cee8",
+        "size_in_bytes": 8944
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/drawable.c",
+        "path_type": "hardlink",
+        "sha256": "5a0f2bb1c4add05e22d36b23e66f798dfa9e939c4928fbe0f7e89ce96900b044",
+        "sha256_in_prefix": "5a0f2bb1c4add05e22d36b23e66f798dfa9e939c4928fbe0f7e89ce96900b044",
+        "size_in_bytes": 1162
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/drawable.h",
+        "path_type": "hardlink",
+        "sha256": "887ce66293b7b89bd45bad3ee212b365e74d7034599b4cc2cb8eb5320deeec4e",
+        "sha256_in_prefix": "887ce66293b7b89bd45bad3ee212b365e74d7034599b4cc2cb8eb5320deeec4e",
+        "size_in_bytes": 1248
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/everything.c",
+        "path_type": "hardlink",
+        "sha256": "5a50f6465f1e0e3f9fd4f247cab7f1c2fc9ffe02fb0cce3e094ce55e9948b3f6",
+        "sha256_in_prefix": "5a50f6465f1e0e3f9fd4f247cab7f1c2fc9ffe02fb0cce3e094ce55e9948b3f6",
+        "size_in_bytes": 18484
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/everything.h",
+        "path_type": "hardlink",
+        "sha256": "f2f0c02fddde7639064954da4f9bf6397d64ee3e6fbabb3bd4bc801c3c120879",
+        "sha256_in_prefix": "f2f0c02fddde7639064954da4f9bf6397d64ee3e6fbabb3bd4bc801c3c120879",
+        "size_in_bytes": 7695
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/foo.c",
+        "path_type": "hardlink",
+        "sha256": "586360f4794fcbbbcda7afb71fe22c024555f10dfcefeb3f5e6eb0bc68898719",
+        "sha256_in_prefix": "586360f4794fcbbbcda7afb71fe22c024555f10dfcefeb3f5e6eb0bc68898719",
+        "size_in_bytes": 17809
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/foo.h",
+        "path_type": "hardlink",
+        "sha256": "acaebedbc9dae17aaedde0d8d1029a9cc618eea196fe2dd9023f4a9438314f2c",
+        "sha256_in_prefix": "acaebedbc9dae17aaedde0d8d1029a9cc618eea196fe2dd9023f4a9438314f2c",
+        "size_in_bytes": 15764
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/gimarshallingtests.c",
+        "path_type": "hardlink",
+        "sha256": "58ef282ac9a2e60fd3a5900cba5998e8a9455eac105acfb34a9ecc80b6dec68b",
+        "sha256_in_prefix": "58ef282ac9a2e60fd3a5900cba5998e8a9455eac105acfb34a9ecc80b6dec68b",
+        "size_in_bytes": 142481
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/gimarshallingtests.h",
+        "path_type": "hardlink",
+        "sha256": "1aae7ecc1f0243d9396fce27ce5ea0c96a57dd024ff6689874ad51e01c6aa4e2",
+        "sha256_in_prefix": "1aae7ecc1f0243d9396fce27ce5ea0c96a57dd024ff6689874ad51e01c6aa4e2",
+        "size_in_bytes": 57848
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/gitestmacros.h",
+        "path_type": "hardlink",
+        "sha256": "c9a8ede44dde022c17cd871810149f65e368183cf9dffbac137ec9a87706b705",
+        "sha256_in_prefix": "c9a8ede44dde022c17cd871810149f65e368183cf9dffbac137ec9a87706b705",
+        "size_in_bytes": 151
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/regress.c",
+        "path_type": "hardlink",
+        "sha256": "7edb2c282c26fc806b8d4da1100cf98bfbc8c966da8b59a7344911fe38f860ae",
+        "sha256_in_prefix": "7edb2c282c26fc806b8d4da1100cf98bfbc8c966da8b59a7344911fe38f860ae",
+        "size_in_bytes": 100685
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/regress.h",
+        "path_type": "hardlink",
+        "sha256": "14edcd0a4c47fa8b1b048dc13948d8b9db5065b33f19325d35c80eb79399a302",
+        "sha256_in_prefix": "14edcd0a4c47fa8b1b048dc13948d8b9db5065b33f19325d35c80eb79399a302",
+        "size_in_bytes": 40845
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/utility.c",
+        "path_type": "hardlink",
+        "sha256": "726a863ec969ca3814202b3782dcdb3f2565ee134de9ca171997e679a7693c56",
+        "sha256_in_prefix": "726a863ec969ca3814202b3782dcdb3f2565ee134de9ca171997e679a7693c56",
+        "size_in_bytes": 799
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/utility.h",
+        "path_type": "hardlink",
+        "sha256": "5a5c6f04e6e83895a1dca2dca04c3ccbcac6b8e99186c95eb44fe699be580e03",
+        "sha256_in_prefix": "5a5c6f04e6e83895a1dca2dca04c3ccbcac6b8e99186c95eb44fe699be580e03",
+        "size_in_bytes": 2232
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/warnlib.c",
+        "path_type": "hardlink",
+        "sha256": "6e1a08bead01f5bfc1a9ee98e220ccc71a9af3a3f0af428ac2b15ec7d6a347c0",
+        "sha256_in_prefix": "6e1a08bead01f5bfc1a9ee98e220ccc71a9af3a3f0af428ac2b15ec7d6a347c0",
+        "size_in_bytes": 988
+      },
+      {
+        "_path": "share/gobject-introspection-1.0/tests/warnlib.h",
+        "path_type": "hardlink",
+        "sha256": "f8104485119fdd0a3be2a841b0c4eecff42ca315d67f419208b553bd9960d30a",
+        "sha256_in_prefix": "f8104485119fdd0a3be2a841b0c4eecff42ca315d67f419208b553bd9960d30a",
+        "size_in_bytes": 1413
+      },
+      {
+        "_path": "share/man/man1/g-ir-compiler.1",
+        "path_type": "hardlink",
+        "sha256": "2cd1a4039d8d95652d6fea1ceec7437c4b547b3d4859db2bb0d1547d87f526c0",
+        "sha256_in_prefix": "2cd1a4039d8d95652d6fea1ceec7437c4b547b3d4859db2bb0d1547d87f526c0",
+        "size_in_bytes": 984
+      },
+      {
+        "_path": "share/man/man1/g-ir-generate.1",
+        "path_type": "hardlink",
+        "sha256": "bb06cbd2c965cc80893cc82802a5cfa03693d2f88471fab42f3358c6df372a4e",
+        "sha256_in_prefix": "bb06cbd2c965cc80893cc82802a5cfa03693d2f88471fab42f3358c6df372a4e",
+        "size_in_bytes": 726
+      },
+      {
+        "_path": "share/man/man1/g-ir-scanner.1",
+        "path_type": "hardlink",
+        "sha256": "2eda23f3f14c0ee451b1866a9f5c1917477f1d3e6b10f91eff14adbe0e09e115",
+        "sha256_in_prefix": "2eda23f3f14c0ee451b1866a9f5c1917477f1d3e6b10f91eff14adbe0e09e115",
+        "size_in_bytes": 5419
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 1347166,
+  "subdir": "linux-64",
+  "timestamp": 1539194657197,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/gobject-introspection-1.56.1-py36haaf12d0_1.tar.bz2",
+  "version": "1.56.1"
+}

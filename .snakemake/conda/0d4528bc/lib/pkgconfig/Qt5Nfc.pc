@@ -1,0 +1,14 @@
+prefix=/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 Nfc
+Description: Qt Nfc module
+Version: 5.6.2
+Libs: -L${libdir} -lQt5Nfc 
+Libs.private: -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -lQt5Core -lpthread -lQt5DBus -L/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc/lib -lQt5Core -lpthread  
+Cflags: -I${includedir}/QtNfc -I${includedir}
+Requires: Qt5Core
+

@@ -1,3 +1,0 @@
-ModuleNotFoundError in line 2 of /home/sattle00/Fachprojekt/Fachprojekt-Reproduzierbare-Datenanlyse-Gruppe1/Snakefile:
-No module named 'pandas'
-  File "/home/sattle00/Fachprojekt/Fachprojekt-Reproduzierbare-Datenanlyse-Gruppe1/Snakefile", line 2, in <module>

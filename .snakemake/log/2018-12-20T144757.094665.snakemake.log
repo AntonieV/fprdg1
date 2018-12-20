@@ -1,3 +1,0 @@
-NameError in line 25 of /home/jansen00/Fachprojekt/fprdg1/Snakefile:
-name 'sample' is not defined
-  File "/home/jansen00/Fachprojekt/fprdg1/Snakefile", line 25, in <module>

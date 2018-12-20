@@ -1,7 +1,0 @@
-KeyError in line 10 of /home/jansen00/Fachprojekt/fprdg1/Snakefile:
-'the label [sample] is not in the [index]'
-  File "/home/jansen00/Fachprojekt/fprdg1/Snakefile", line 10, in <module>
-  File "/home/jansen00/miniconda3/envs/fprdg1/lib/python3.6/site-packages/pandas/core/indexing.py", line 1478, in __getitem__
-  File "/home/jansen00/miniconda3/envs/fprdg1/lib/python3.6/site-packages/pandas/core/indexing.py", line 1911, in _getitem_axis
-  File "/home/jansen00/miniconda3/envs/fprdg1/lib/python3.6/site-packages/pandas/core/indexing.py", line 1798, in _validate_key
-  File "/home/jansen00/miniconda3/envs/fprdg1/lib/python3.6/site-packages/pandas/core/indexing.py", line 1785, in error

@@ -1,0 +1,200 @@
+{
+  "arch": "x86_64",
+  "build": "ha92aebf_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=4.9",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/home/jana/Programme/miniconda3/pkgs/libpng-1.6.36-ha92aebf_0",
+  "features": "",
+  "files": [
+    "bin/libpng-config",
+    "bin/libpng16-config",
+    "bin/png-fix-itxt",
+    "bin/pngfix",
+    "include/libpng16/png.h",
+    "include/libpng16/pngconf.h",
+    "include/libpng16/pnglibconf.h",
+    "include/png.h",
+    "include/pngconf.h",
+    "include/pnglibconf.h",
+    "lib/libpng.a",
+    "lib/libpng.so",
+    "lib/libpng16.a",
+    "lib/libpng16.so",
+    "lib/libpng16.so.16",
+    "lib/libpng16.so.16.36.0",
+    "lib/pkgconfig/libpng.pc",
+    "lib/pkgconfig/libpng16.pc",
+    "share/man/man3/libpng.3",
+    "share/man/man3/libpngpf.3",
+    "share/man/man5/png.5"
+  ],
+  "fn": "libpng-1.6.36-ha92aebf_0.tar.bz2",
+  "license": "zlib/libpng",
+  "link": {
+    "source": "/home/jana/Programme/miniconda3/pkgs/libpng-1.6.36-ha92aebf_0",
+    "type": 1
+  },
+  "md5": "85663cdf259f6548fa4de73c8f508360",
+  "name": "libpng",
+  "package_tarball_full_path": "/home/jana/Programme/miniconda3/pkgs/libpng-1.6.36-ha92aebf_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/libpng-config",
+        "path_type": "softlink",
+        "sha256": "ba43b7bddadff4fbe5107ab786127704b2f4730a7a41c188ad56dde6e6623e23",
+        "size_in_bytes": 2349
+      },
+      {
+        "_path": "bin/libpng16-config",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "ba43b7bddadff4fbe5107ab786127704b2f4730a7a41c188ad56dde6e6623e23",
+        "sha256_in_prefix": "8a4b4b6cb046342d3637e829eb069d97cd30760fe5bc79710e6165348c33ce9a",
+        "size_in_bytes": 2349
+      },
+      {
+        "_path": "bin/png-fix-itxt",
+        "path_type": "hardlink",
+        "sha256": "d789db3d4e7501c4f57998620c9fc3b84589115b7d2d8ab3a6db9130b4284c84",
+        "sha256_in_prefix": "d789db3d4e7501c4f57998620c9fc3b84589115b7d2d8ab3a6db9130b4284c84",
+        "size_in_bytes": 9277
+      },
+      {
+        "_path": "bin/pngfix",
+        "path_type": "hardlink",
+        "sha256": "48773ba602a5d41c7e410e074783ae2c877fc5daae689b0ee873138d7cf887ae",
+        "sha256_in_prefix": "48773ba602a5d41c7e410e074783ae2c877fc5daae689b0ee873138d7cf887ae",
+        "size_in_bytes": 59303
+      },
+      {
+        "_path": "include/libpng16/png.h",
+        "path_type": "hardlink",
+        "sha256": "31be588c8931d62c28c05c2e3df48c27de1dbbb0b014daa2cacafe7440d28d57",
+        "sha256_in_prefix": "31be588c8931d62c28c05c2e3df48c27de1dbbb0b014daa2cacafe7440d28d57",
+        "size_in_bytes": 142837
+      },
+      {
+        "_path": "include/libpng16/pngconf.h",
+        "path_type": "hardlink",
+        "sha256": "9b1f2c5abfe5aad9ea0e24498ce2111e68535ea1b088a027a83fd79a3041537a",
+        "sha256_in_prefix": "9b1f2c5abfe5aad9ea0e24498ce2111e68535ea1b088a027a83fd79a3041537a",
+        "size_in_bytes": 22841
+      },
+      {
+        "_path": "include/libpng16/pnglibconf.h",
+        "path_type": "hardlink",
+        "sha256": "6421ca1e14dee831651b4a6d50be6d34d881a47d62ab755b0e3c644451a6db53",
+        "sha256_in_prefix": "6421ca1e14dee831651b4a6d50be6d34d881a47d62ab755b0e3c644451a6db53",
+        "size_in_bytes": 7597
+      },
+      {
+        "_path": "include/png.h",
+        "path_type": "softlink",
+        "sha256": "31be588c8931d62c28c05c2e3df48c27de1dbbb0b014daa2cacafe7440d28d57",
+        "size_in_bytes": 142837
+      },
+      {
+        "_path": "include/pngconf.h",
+        "path_type": "softlink",
+        "sha256": "9b1f2c5abfe5aad9ea0e24498ce2111e68535ea1b088a027a83fd79a3041537a",
+        "size_in_bytes": 22841
+      },
+      {
+        "_path": "include/pnglibconf.h",
+        "path_type": "softlink",
+        "sha256": "6421ca1e14dee831651b4a6d50be6d34d881a47d62ab755b0e3c644451a6db53",
+        "size_in_bytes": 7597
+      },
+      {
+        "_path": "lib/libpng.a",
+        "path_type": "softlink",
+        "sha256": "ad08c97d1e043db9edb5f16279a931cedd47e4d0f2965c2a5ffdb4d848dc6f42",
+        "size_in_bytes": 390780
+      },
+      {
+        "_path": "lib/libpng.so",
+        "path_type": "softlink",
+        "sha256": "32a96a5fd2790ce420a72a8b936b939acda38827c319c1e026e0dd83f3b70641",
+        "size_in_bytes": 295660
+      },
+      {
+        "_path": "lib/libpng16.a",
+        "path_type": "hardlink",
+        "sha256": "ad08c97d1e043db9edb5f16279a931cedd47e4d0f2965c2a5ffdb4d848dc6f42",
+        "sha256_in_prefix": "ad08c97d1e043db9edb5f16279a931cedd47e4d0f2965c2a5ffdb4d848dc6f42",
+        "size_in_bytes": 390780
+      },
+      {
+        "_path": "lib/libpng16.so",
+        "path_type": "softlink",
+        "sha256": "32a96a5fd2790ce420a72a8b936b939acda38827c319c1e026e0dd83f3b70641",
+        "size_in_bytes": 295660
+      },
+      {
+        "_path": "lib/libpng16.so.16",
+        "path_type": "softlink",
+        "sha256": "32a96a5fd2790ce420a72a8b936b939acda38827c319c1e026e0dd83f3b70641",
+        "size_in_bytes": 295660
+      },
+      {
+        "_path": "lib/libpng16.so.16.36.0",
+        "path_type": "hardlink",
+        "sha256": "32a96a5fd2790ce420a72a8b936b939acda38827c319c1e026e0dd83f3b70641",
+        "sha256_in_prefix": "32a96a5fd2790ce420a72a8b936b939acda38827c319c1e026e0dd83f3b70641",
+        "size_in_bytes": 295660
+      },
+      {
+        "_path": "lib/pkgconfig/libpng.pc",
+        "path_type": "softlink",
+        "sha256": "d3144c7f1d7ab9efc5dbcf4864118e5b2a3d313769a17fa8f58e22e7b041b135",
+        "size_in_bytes": 287
+      },
+      {
+        "_path": "lib/pkgconfig/libpng16.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "d3144c7f1d7ab9efc5dbcf4864118e5b2a3d313769a17fa8f58e22e7b041b135",
+        "sha256_in_prefix": "e60ef1d5bad663fd9899e33e0fea273421822b07dc6028a73c1e0020838a4ec1",
+        "size_in_bytes": 287
+      },
+      {
+        "_path": "share/man/man3/libpng.3",
+        "path_type": "hardlink",
+        "sha256": "32efb2b5cb12141d0c25c0e56ba18ae1de46c928b3ed59bba78737feb0d6334a",
+        "sha256_in_prefix": "32efb2b5cb12141d0c25c0e56ba18ae1de46c928b3ed59bba78737feb0d6334a",
+        "size_in_bytes": 266197
+      },
+      {
+        "_path": "share/man/man3/libpngpf.3",
+        "path_type": "hardlink",
+        "sha256": "f0ed76281f7c0e6ab4d44e4297444e59e444fc8cd818e52108c53d860745680b",
+        "sha256_in_prefix": "f0ed76281f7c0e6ab4d44e4297444e59e444fc8cd818e52108c53d860745680b",
+        "size_in_bytes": 803
+      },
+      {
+        "_path": "share/man/man5/png.5",
+        "path_type": "hardlink",
+        "sha256": "691c48da0f36710f8875e4504a03854f391c92ceccbc7e002ad10456ba7a2cb9",
+        "sha256_in_prefix": "691c48da0f36710f8875e4504a03854f391c92ceccbc7e002ad10456ba7a2cb9",
+        "size_in_bytes": 2490
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 282848,
+  "subdir": "linux-64",
+  "timestamp": 1543780847561,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.36-ha92aebf_0.tar.bz2",
+  "version": "1.6.36"
+}

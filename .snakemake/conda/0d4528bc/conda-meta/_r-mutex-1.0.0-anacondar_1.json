@@ -1,0 +1,32 @@
+{
+  "arch": "x86_64",
+  "build": "anacondar_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/r/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/jana/Programme/miniconda3/pkgs/_r-mutex-1.0.0-anacondar_1",
+  "features": "",
+  "files": [],
+  "fn": "_r-mutex-1.0.0-anacondar_1.tar.bz2",
+  "license": "BSD",
+  "link": {
+    "source": "/home/jana/Programme/miniconda3/pkgs/_r-mutex-1.0.0-anacondar_1",
+    "type": 1
+  },
+  "md5": "4b678895ad61a5ff81b7c7249d2d09c1",
+  "name": "_r-mutex",
+  "package_tarball_full_path": "/home/jana/Programme/miniconda3/pkgs/_r-mutex-1.0.0-anacondar_1.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 2472,
+  "subdir": "linux-64",
+  "timestamp": 1518197313289,
+  "track_features": "anacondar",
+  "url": "https://repo.anaconda.com/pkgs/r/linux-64/_r-mutex-1.0.0-anacondar_1.tar.bz2",
+  "version": "1.0.0"
+}

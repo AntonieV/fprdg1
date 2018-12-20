@@ -1,0 +1,77 @@
+{
+  "arch": "x86_64",
+  "build": "h470a237_6",
+  "build_number": 6,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=4.9"
+  ],
+  "extracted_package_dir": "/home/jana/Programme/miniconda3/pkgs/xorg-libxau-1.0.8-h470a237_6",
+  "features": "",
+  "files": [
+    "include/X11/Xauth.h",
+    "lib/libXau.so",
+    "lib/libXau.so.6",
+    "lib/libXau.so.6.0.0",
+    "lib/pkgconfig/xau.pc"
+  ],
+  "fn": "xorg-libxau-1.0.8-h470a237_6.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/jana/Programme/miniconda3/pkgs/xorg-libxau-1.0.8-h470a237_6",
+    "type": 1
+  },
+  "md5": "9217dc9d8036c4a420febb976139c33c",
+  "name": "xorg-libxau",
+  "package_tarball_full_path": "/home/jana/Programme/miniconda3/pkgs/xorg-libxau-1.0.8-h470a237_6.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/X11/Xauth.h",
+        "path_type": "hardlink",
+        "sha256": "5c217ce77f5e1eb12dbf0353bcb7204b2f2a3d5ae586fdb17b3255a056190d02",
+        "sha256_in_prefix": "5c217ce77f5e1eb12dbf0353bcb7204b2f2a3d5ae586fdb17b3255a056190d02",
+        "size_in_bytes": 3817
+      },
+      {
+        "_path": "lib/libXau.so",
+        "path_type": "softlink",
+        "sha256": "df9b630691b6ad7afcf1086fcc89c026a4322c599304ab2eeab12dfba2985c04",
+        "size_in_bytes": 15176
+      },
+      {
+        "_path": "lib/libXau.so.6",
+        "path_type": "softlink",
+        "sha256": "df9b630691b6ad7afcf1086fcc89c026a4322c599304ab2eeab12dfba2985c04",
+        "size_in_bytes": 15176
+      },
+      {
+        "_path": "lib/libXau.so.6.0.0",
+        "path_type": "hardlink",
+        "sha256": "df9b630691b6ad7afcf1086fcc89c026a4322c599304ab2eeab12dfba2985c04",
+        "sha256_in_prefix": "df9b630691b6ad7afcf1086fcc89c026a4322c599304ab2eeab12dfba2985c04",
+        "size_in_bytes": 15176
+      },
+      {
+        "_path": "lib/pkgconfig/xau.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "1a8e53e235322640bd4ce5dd07f87ed4bff2c524c52d342670cb1cde54cf9a4c",
+        "sha256_in_prefix": "1f8fcc1b68906276a28fd5a15ff29485c840ea8979048eef8a2dce6c2f10d4cf",
+        "size_in_bytes": 260
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 12000,
+  "subdir": "linux-64",
+  "timestamp": 1532314803293,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libxau-1.0.8-h470a237_6.tar.bz2",
+  "version": "1.0.8"
+}

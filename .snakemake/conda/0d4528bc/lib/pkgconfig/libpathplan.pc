@@ -1,0 +1,10 @@
+prefix=/home/jana/Fachprojekt/fprdg1/.snakemake/conda/0d4528bc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/graphviz
+
+Name: libpathplan
+Description: Library for planning polyline and bezier paths around polygon obstacles
+Version: 2.38.0
+Libs: -L${libdir} -lpathplan
+Cflags: -I${includedir}

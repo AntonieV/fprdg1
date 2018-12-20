@@ -1,0 +1,97 @@
+{
+  "build": "py_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "/home/jana/Programme/miniconda3/pkgs/configargparse-0.13.0-py_1",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/installed-files.txt",
+    "lib/python3.6/site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/requires.txt",
+    "lib/python3.6/site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/configargparse.py",
+    "lib/python3.6/site-packages/__pycache__/configargparse.cpython-36.pyc"
+  ],
+  "fn": "configargparse-0.13.0-py_1.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/jana/Programme/miniconda3/pkgs/configargparse-0.13.0-py_1",
+    "type": 1
+  },
+  "md5": "91819e385d44f92272591a76a0881019",
+  "name": "configargparse",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/jana/Programme/miniconda3/pkgs/configargparse-0.13.0-py_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "72469634ad46624b3ba3b38941c35047f971db1b3a1f43b31589519e3c0cca19",
+        "sha256_in_prefix": "72469634ad46624b3ba3b38941c35047f971db1b3a1f43b31589519e3c0cca19",
+        "size_in_bytes": 18308
+      },
+      {
+        "_path": "site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "851b4a7d698f9f00735d2e0fba2c0b2e9e69f7f357cac6bdc53d6f7b4ee48859",
+        "sha256_in_prefix": "851b4a7d698f9f00735d2e0fba2c0b2e9e69f7f357cac6bdc53d6f7b4ee48859",
+        "size_in_bytes": 303
+      },
+      {
+        "_path": "site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "d7410cd0da30b07d544c553223038cf06b4acbe993e3c5a7d89170785076262d",
+        "sha256_in_prefix": "d7410cd0da30b07d544c553223038cf06b4acbe993e3c5a7d89170785076262d",
+        "size_in_bytes": 112
+      },
+      {
+        "_path": "site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "94a10f0811b24264e404fef644a031664b758bd8ef830edb5b692efc8e82596b",
+        "sha256_in_prefix": "94a10f0811b24264e404fef644a031664b758bd8ef830edb5b692efc8e82596b",
+        "size_in_bytes": 15
+      },
+      {
+        "_path": "site-packages/ConfigArgParse-0.13.0-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f4897031f14e0780acb0346f98d4042f7098c18826b2dfc0e05dc57704d0f8d4",
+        "sha256_in_prefix": "f4897031f14e0780acb0346f98d4042f7098c18826b2dfc0e05dc57704d0f8d4",
+        "size_in_bytes": 15
+      },
+      {
+        "_path": "site-packages/configargparse.py",
+        "path_type": "hardlink",
+        "sha256": "e9cb24bc13469486b838c37e79950bf5d3835a3fb70b3e38e2b8067e6d885644",
+        "sha256_in_prefix": "e9cb24bc13469486b838c37e79950bf5d3835a3fb70b3e38e2b8067e6d885644",
+        "size_in_bytes": 41446
+      },
+      {
+        "_path": "lib/python3.6/site-packages/__pycache__/configargparse.cpython-36.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 17421,
+  "subdir": "noarch",
+  "timestamp": 1531795470495,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/configargparse-0.13.0-py_1.tar.bz2",
+  "version": "0.13.0"
+}
