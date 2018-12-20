@@ -15,7 +15,7 @@ rule kallisto_idx:
 
 rule kallisto_quant:
 	input:
-		id = config["kallisto_index"],
+		id = "kallisto/transcripts.idx",
 		fq1 = samples["fq1"][{sample}],
 		fq2 = samples["fq2"][{sample}]
 	output:
