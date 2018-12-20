@@ -28,11 +28,9 @@ rule kallisto_quant:
 rule sleuth:
     input:
 	    expand("kallisto/{sample}.h5", sample = samples) #Liste der Kallisto-Pfade
-
-	conda:
+    conda:
 	    "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
     output:
 	    "/sleuth/significant_transcripts.csv"
-
-	script:
-		"r_scripts/sleuth_script.R"
+    script:
+	    "r_scripts/sleuth_script.R"
