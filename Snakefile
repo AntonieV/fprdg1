@@ -27,11 +27,11 @@ rule kallisto_quant:
 
 rule sleuth:
         input:
-	        expand("kallisto/{sample}.h5", sample = samples) #Liste der Kallisto-Pfade
+	        kal_path = expand("kallisto/{sample}.h5", sample = samples['sample']) #Liste der Kallisto-Pfade
+			sam_tab = config["samples"]
         conda:
 	        "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
         output:
 	        "/sleuth/significant_transcripts.csv"
         script:
 	        "r_scripts/sleuth_script.R"
-

@@ -26,15 +26,16 @@ suppressMessages({
 
 #Listen mit den Pfaden zu den einzelnen Kallisto-Dateien anlegen: 
 #kal_dirs <- file.path("...", "results", sample_id, "kallisto")  #hier Pfad zu den Kallisto-results angeben
-kal_dirs <- snakemake@input[[]]  # Liste der Pfadnamen der einzelnen Kallisto-results
+kal_dirs <- snakemake@input[["kal_path"]]  # Liste der Pfadnamen der einzelnen Kallisto-results
 
 #Betrachten der Pfad-Liste zu den Kallisto-Dateien:
 #kal_dirs
 
 #Hilfstabelle anlegen mit Angaben zum experimentellen Design der einzelnen Proben
 #aus dem Kallisto-Verzeichnis:
-s2c <- read.table(file.path("...", "metadata", "hiseq_info.txt"), #hier Pfad zu den Kallisto-results angeben
-                  header = TRUE, stringsAsFactors=FALSE)  
+#s2c <- read.table(file.path("...", "metadata", "hiseq_info.txt"), #hier Pfad zu den Kallisto-results angeben
+#                  header = TRUE, stringsAsFactors=FALSE) 
+s2c <- read.table(snakemake@input[["sam_tab"]])
 s2c <- dplyr::select(s2c, sample = run_accession, condition)
 #s2c
 
@@ -74,4 +75,6 @@ sleuth_significant <- dplyr::filter(sleuth_table, qval <= 0.05)
 
 #### TODO - Outputdatei anlegen, ggf. Hilfsdatei zur Ueberpruefung der Zwischenvariablen
 #### auf Korrektheit anlegen
+
+snakemake@output <- sleuth_table
 
