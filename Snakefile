@@ -4,11 +4,6 @@ import pandas as pd
 
 samples = pd.read_csv(config["samples"], sep = "\t")
 
-rule test:
-	input:
-	output:
-	shell:
-		print(samples.loc[samples['sample'] == 'a']['fq1'])
 
 rule kallisto_idx:
 	input:
