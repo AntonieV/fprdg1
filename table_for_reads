@@ -1,3 +1,0 @@
-	sample	fq1	fq2	condition
-0	a	data/reads/a.chr21.1.fq	data/reads/a.chr21.2.fq	treated
-1	b	data/reads/b.chr21.1.fq	data/reads/b.chr21.2.fq	untreated
