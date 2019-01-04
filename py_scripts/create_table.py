@@ -1,7 +1,9 @@
 import pandas as pd
 
-in_data = {'sample': ["a", "b"], 'fq1': ["data/reads/a.chr21.1.fq", "data/reads/b.chr21.1.fq"],
-           'fq2': ["data/reads/a.chr21.2.fq", "data/reads/b.chr21.2.fq"], 'condition': ["treated", "untreated"]}
+in_data = {'sample': ["a", "b", "c", "d"], 'fq1': ["data/reads/a.chr21.1.fq", "data/reads/b.chr21.1.fq",
+"data/reads/a.chr21.1.fq", "data/reads/b.chr21.1.fq"], 'fq2': ["data/reads/a.chr21.2.fq", 
+"data/reads/b.chr21.2.fq","data/reads/a.chr21.2.fq", "data/reads/b.chr21.2.fq"], 
+'condition': ["treated", "untreated", "treated", "untreated"]}
 
 table_path_of_reads = pd.DataFrame(data=in_data, columns=['sample', 'fq1', 'fq2', 'condition'])
 
