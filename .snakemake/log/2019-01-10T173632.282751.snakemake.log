@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1
+
+[Thu Jan 10 17:36:33 2019]
+localrule all:
+    output: sleuth/significant_transcripts.csv
+    jobid: 0
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 7 of /home/sattle00/Fachprojekt/fprdg1/Snakefile:
+Missing files after 5 seconds:
+sleuth/significant_transcripts.csv
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/sattle00/Fachprojekt/fprdg1/.snakemake/log/2019-01-10T173632.282751.snakemake.log

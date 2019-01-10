@@ -1,0 +1,16 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+glib_genmarshal=glib-genmarshal
+gobject_query=gobject-query
+glib_mkenums=glib-mkenums
+
+Name: GLib
+Description: C Utility Library
+Version: 2.56.2
+Requires.private: libpcre
+Libs: -L${libdir} -lglib-2.0 
+Libs.private: -pthread -lrt  -L/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08/lib -lpcre  -liconv  
+Cflags: -I${includedir}/glib-2.0 -I${libdir}/glib-2.0/include 

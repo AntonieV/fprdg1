@@ -1,0 +1,209 @@
+{
+  "arch": "x86_64",
+  "build": "r351hfc679d8_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=4.9",
+    "libstdcxx-ng >=4.9",
+    "r-base >=3.5.1,<3.5.2.0a0",
+    "r-digest",
+    "r-rcpp"
+  ],
+  "extracted_package_dir": "/home/sattle00/miniconda3/pkgs/r-htmltools-0.3.6-r351hfc679d8_2",
+  "features": "",
+  "files": [
+    "lib/R/library/htmltools/DESCRIPTION",
+    "lib/R/library/htmltools/INDEX",
+    "lib/R/library/htmltools/Meta/Rd.rds",
+    "lib/R/library/htmltools/Meta/features.rds",
+    "lib/R/library/htmltools/Meta/hsearch.rds",
+    "lib/R/library/htmltools/Meta/links.rds",
+    "lib/R/library/htmltools/Meta/nsInfo.rds",
+    "lib/R/library/htmltools/Meta/package.rds",
+    "lib/R/library/htmltools/NAMESPACE",
+    "lib/R/library/htmltools/NEWS",
+    "lib/R/library/htmltools/R/htmltools",
+    "lib/R/library/htmltools/R/htmltools.rdb",
+    "lib/R/library/htmltools/R/htmltools.rdx",
+    "lib/R/library/htmltools/help/AnIndex",
+    "lib/R/library/htmltools/help/aliases.rds",
+    "lib/R/library/htmltools/help/htmltools.rdb",
+    "lib/R/library/htmltools/help/htmltools.rdx",
+    "lib/R/library/htmltools/help/paths.rds",
+    "lib/R/library/htmltools/html/00Index.html",
+    "lib/R/library/htmltools/html/R.css",
+    "lib/R/library/htmltools/libs/htmltools.so"
+  ],
+  "fn": "r-htmltools-0.3.6-r351hfc679d8_2.tar.bz2",
+  "license": "GPL (>= 2)",
+  "license_family": "GPL3",
+  "link": {
+    "source": "/home/sattle00/miniconda3/pkgs/r-htmltools-0.3.6-r351hfc679d8_2",
+    "type": 1
+  },
+  "md5": "f734638821c30bc1a79887e20854dcca",
+  "name": "r-htmltools",
+  "package_tarball_full_path": "/home/sattle00/miniconda3/pkgs/r-htmltools-0.3.6-r351hfc679d8_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/htmltools/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "cd923ace3da9955b9939d2775160232fa513cf4f34d9ac544544f18012490665",
+        "sha256_in_prefix": "cd923ace3da9955b9939d2775160232fa513cf4f34d9ac544544f18012490665",
+        "size_in_bytes": 640
+      },
+      {
+        "_path": "lib/R/library/htmltools/INDEX",
+        "path_type": "hardlink",
+        "sha256": "c2e01caa58814c96d51ed9ebf06cfb150e8fc325ae87e786dd93f9ff2f5497e3",
+        "sha256_in_prefix": "c2e01caa58814c96d51ed9ebf06cfb150e8fc325ae87e786dd93f9ff2f5497e3",
+        "size_in_bytes": 1609
+      },
+      {
+        "_path": "lib/R/library/htmltools/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "72bfb4b5670e7a9868288af2f2ad52e2dcd411712738fde4f85bb37933292cdb",
+        "sha256_in_prefix": "72bfb4b5670e7a9868288af2f2ad52e2dcd411712738fde4f85bb37933292cdb",
+        "size_in_bytes": 1392
+      },
+      {
+        "_path": "lib/R/library/htmltools/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "c22d9d242fd52a4bbbe805dae5c5df6a19451d10060881260200999f9115b12d",
+        "sha256_in_prefix": "c22d9d242fd52a4bbbe805dae5c5df6a19451d10060881260200999f9115b12d",
+        "size_in_bytes": 113
+      },
+      {
+        "_path": "lib/R/library/htmltools/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "82b1fef745ed18e90278ad9bcaab33a6ec779f90e3f534cba937fabcfc8f7dce",
+        "sha256_in_prefix": "82b1fef745ed18e90278ad9bcaab33a6ec779f90e3f534cba937fabcfc8f7dce",
+        "size_in_bytes": 1332
+      },
+      {
+        "_path": "lib/R/library/htmltools/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "4aaec060b65a1cb94798997ac00d2337fa71d1698dc46d5d8ab67043bccd3c0c",
+        "sha256_in_prefix": "4aaec060b65a1cb94798997ac00d2337fa71d1698dc46d5d8ab67043bccd3c0c",
+        "size_in_bytes": 794
+      },
+      {
+        "_path": "lib/R/library/htmltools/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "8cedbec5a38dc5a6db023d6a4c429336b189248d132ed2a38db13b16ee650dbd",
+        "sha256_in_prefix": "8cedbec5a38dc5a6db023d6a4c429336b189248d132ed2a38db13b16ee650dbd",
+        "size_in_bytes": 833
+      },
+      {
+        "_path": "lib/R/library/htmltools/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "a660fec0f216f7ca9ded02185b16996ac44dd993f6ac6594a0040fdedecf8426",
+        "sha256_in_prefix": "a660fec0f216f7ca9ded02185b16996ac44dd993f6ac6594a0040fdedecf8426",
+        "size_in_bytes": 824
+      },
+      {
+        "_path": "lib/R/library/htmltools/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "6c50f0a93a973c8d610ed3564f5271a6f1e2f20ba9424561224b69f09a624900",
+        "sha256_in_prefix": "6c50f0a93a973c8d610ed3564f5271a6f1e2f20ba9424561224b69f09a624900",
+        "size_in_bytes": 1938
+      },
+      {
+        "_path": "lib/R/library/htmltools/NEWS",
+        "path_type": "hardlink",
+        "sha256": "8a335fb7eb83245edcf549eb61b98235167a6cdac35fc0efb3d399a66da36885",
+        "sha256_in_prefix": "8a335fb7eb83245edcf549eb61b98235167a6cdac35fc0efb3d399a66da36885",
+        "size_in_bytes": 3274
+      },
+      {
+        "_path": "lib/R/library/htmltools/R/htmltools",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/htmltools/R/htmltools.rdb",
+        "path_type": "hardlink",
+        "sha256": "763d22ceeaf3c1e1f9053c948d257b42caa8ee47a48e5baa4854ac9a7fd500a6",
+        "sha256_in_prefix": "763d22ceeaf3c1e1f9053c948d257b42caa8ee47a48e5baa4854ac9a7fd500a6",
+        "size_in_bytes": 71627
+      },
+      {
+        "_path": "lib/R/library/htmltools/R/htmltools.rdx",
+        "path_type": "hardlink",
+        "sha256": "bc618f514ade1ce19394d9ac369e8e82038416383a67999b91d6318414a909a8",
+        "sha256_in_prefix": "bc618f514ade1ce19394d9ac369e8e82038416383a67999b91d6318414a909a8",
+        "size_in_bytes": 1646
+      },
+      {
+        "_path": "lib/R/library/htmltools/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "7ae4633577169c756b9bb5e96d7ae50dad4a49bfd7f49a333d46061bf9670566",
+        "sha256_in_prefix": "7ae4633577169c756b9bb5e96d7ae50dad4a49bfd7f49a333d46061bf9670566",
+        "size_in_bytes": 1648
+      },
+      {
+        "_path": "lib/R/library/htmltools/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "f17fd35246f5bb4683f39cf9df17cabff0c9f7b86b1ca670a839882535925179",
+        "sha256_in_prefix": "f17fd35246f5bb4683f39cf9df17cabff0c9f7b86b1ca670a839882535925179",
+        "size_in_bytes": 650
+      },
+      {
+        "_path": "lib/R/library/htmltools/help/htmltools.rdb",
+        "path_type": "hardlink",
+        "sha256": "c8438e29d900eec9f21de18532e71e026a8dc884c3ea2caaf3bb0ca1ecf3eba9",
+        "sha256_in_prefix": "c8438e29d900eec9f21de18532e71e026a8dc884c3ea2caaf3bb0ca1ecf3eba9",
+        "size_in_bytes": 58315
+      },
+      {
+        "_path": "lib/R/library/htmltools/help/htmltools.rdx",
+        "path_type": "hardlink",
+        "sha256": "0eeb20012f1c01b5e26566635b5af71a4a30c00ce0d59dea8f2fd1a7bf0b37cf",
+        "sha256_in_prefix": "0eeb20012f1c01b5e26566635b5af71a4a30c00ce0d59dea8f2fd1a7bf0b37cf",
+        "size_in_bytes": 838
+      },
+      {
+        "_path": "lib/R/library/htmltools/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "67ea9abc1f202f9eaf8c887227a7ca9b43801bf57c23a579f72eba7342a3476c",
+        "sha256_in_prefix": "67ea9abc1f202f9eaf8c887227a7ca9b43801bf57c23a579f72eba7342a3476c",
+        "size_in_bytes": 440
+      },
+      {
+        "_path": "lib/R/library/htmltools/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "55d46a3eaf172ca55d799116f35d93b4f27d2bf27d70d782c868ac551f2717c0",
+        "sha256_in_prefix": "55d46a3eaf172ca55d799116f35d93b4f27d2bf27d70d782c868ac551f2717c0",
+        "size_in_bytes": 9243
+      },
+      {
+        "_path": "lib/R/library/htmltools/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/htmltools/libs/htmltools.so",
+        "path_type": "hardlink",
+        "sha256": "2034903cd91808d66bcef6bebc218780ec76970c6a6641125f5116c2fb4173b9",
+        "sha256_in_prefix": "2034903cd91808d66bcef6bebc218780ec76970c6a6641125f5116c2fb4173b9",
+        "size_in_bytes": 142160
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 194282,
+  "subdir": "linux-64",
+  "timestamp": 1536272187687,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/r-htmltools-0.3.6-r351hfc679d8_2.tar.bz2",
+  "version": "0.3.6"
+}

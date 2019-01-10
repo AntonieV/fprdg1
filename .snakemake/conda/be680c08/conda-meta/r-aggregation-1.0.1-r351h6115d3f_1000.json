@@ -1,0 +1,188 @@
+{
+  "build": "r351h6115d3f_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "r-base >=3.5.1,<3.5.2.0a0"
+  ],
+  "extracted_package_dir": "/home/sattle00/miniconda3/pkgs/r-aggregation-1.0.1-r351h6115d3f_1000",
+  "features": "",
+  "files": [
+    "lib/R/library/aggregation/DESCRIPTION",
+    "lib/R/library/aggregation/INDEX",
+    "lib/R/library/aggregation/Meta/Rd.rds",
+    "lib/R/library/aggregation/Meta/features.rds",
+    "lib/R/library/aggregation/Meta/hsearch.rds",
+    "lib/R/library/aggregation/Meta/links.rds",
+    "lib/R/library/aggregation/Meta/nsInfo.rds",
+    "lib/R/library/aggregation/Meta/package.rds",
+    "lib/R/library/aggregation/NAMESPACE",
+    "lib/R/library/aggregation/R/aggregation",
+    "lib/R/library/aggregation/R/aggregation.rdb",
+    "lib/R/library/aggregation/R/aggregation.rdx",
+    "lib/R/library/aggregation/help/AnIndex",
+    "lib/R/library/aggregation/help/aggregation.rdb",
+    "lib/R/library/aggregation/help/aggregation.rdx",
+    "lib/R/library/aggregation/help/aliases.rds",
+    "lib/R/library/aggregation/help/paths.rds",
+    "lib/R/library/aggregation/html/00Index.html",
+    "lib/R/library/aggregation/html/R.css"
+  ],
+  "fn": "r-aggregation-1.0.1-r351h6115d3f_1000.tar.bz2",
+  "license": "GPL-3",
+  "license_family": "GPL3",
+  "link": {
+    "source": "/home/sattle00/miniconda3/pkgs/r-aggregation-1.0.1-r351h6115d3f_1000",
+    "type": 1
+  },
+  "md5": "34b8784a4fa74b7401423b02f4246db9",
+  "name": "r-aggregation",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/sattle00/miniconda3/pkgs/r-aggregation-1.0.1-r351h6115d3f_1000.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/aggregation/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "a5ef744673d7aff5a675a4e0e03be4e20625fdcc405b38c586e4122fc2f91095",
+        "sha256_in_prefix": "a5ef744673d7aff5a675a4e0e03be4e20625fdcc405b38c586e4122fc2f91095",
+        "size_in_bytes": 839
+      },
+      {
+        "_path": "lib/R/library/aggregation/INDEX",
+        "path_type": "hardlink",
+        "sha256": "0e9d03394f5171ec7323e0e9017c0cf1c9ed672f050c86d253e16ddf24e03257",
+        "sha256_in_prefix": "0e9d03394f5171ec7323e0e9017c0cf1c9ed672f050c86d253e16ddf24e03257",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/R/library/aggregation/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "38ff58fcf46f4577afc2fe6653e3ceed32625fc1aaa1172ea92ce0618f418660",
+        "sha256_in_prefix": "38ff58fcf46f4577afc2fe6653e3ceed32625fc1aaa1172ea92ce0618f418660",
+        "size_in_bytes": 278
+      },
+      {
+        "_path": "lib/R/library/aggregation/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "c22d9d242fd52a4bbbe805dae5c5df6a19451d10060881260200999f9115b12d",
+        "sha256_in_prefix": "c22d9d242fd52a4bbbe805dae5c5df6a19451d10060881260200999f9115b12d",
+        "size_in_bytes": 113
+      },
+      {
+        "_path": "lib/R/library/aggregation/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "543668a6a11a423f522b1330b2e262d18dcb4f996279e331e232221b2c021af1",
+        "sha256_in_prefix": "543668a6a11a423f522b1330b2e262d18dcb4f996279e331e232221b2c021af1",
+        "size_in_bytes": 304
+      },
+      {
+        "_path": "lib/R/library/aggregation/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "bce044e4db038ba0144f14032bb49174f29268b5ca81fb276470a5ef62050a33",
+        "sha256_in_prefix": "bce044e4db038ba0144f14032bb49174f29268b5ca81fb276470a5ef62050a33",
+        "size_in_bytes": 133
+      },
+      {
+        "_path": "lib/R/library/aggregation/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "ebd6052201a76072d8962f34abf2a4bf9cb0378a120e843d1ddd39d08018d5f6",
+        "sha256_in_prefix": "ebd6052201a76072d8962f34abf2a4bf9cb0378a120e843d1ddd39d08018d5f6",
+        "size_in_bytes": 225
+      },
+      {
+        "_path": "lib/R/library/aggregation/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "a4ee1c457ad63154749ac71fe4a2056b5b9089ac431ebbd26c64097a54d0ceb7",
+        "sha256_in_prefix": "a4ee1c457ad63154749ac71fe4a2056b5b9089ac431ebbd26c64097a54d0ceb7",
+        "size_in_bytes": 823
+      },
+      {
+        "_path": "lib/R/library/aggregation/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "6ae6045a67a38b54dc589afefb892034b2e16b1012ab0a435fe1879626ab4cdc",
+        "sha256_in_prefix": "6ae6045a67a38b54dc589afefb892034b2e16b1012ab0a435fe1879626ab4cdc",
+        "size_in_bytes": 88
+      },
+      {
+        "_path": "lib/R/library/aggregation/R/aggregation",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/aggregation/R/aggregation.rdb",
+        "path_type": "hardlink",
+        "sha256": "54c6d29cb351de75c20055f376104fbffc7fd2dcea9ba342ef2efd7164264872",
+        "sha256_in_prefix": "54c6d29cb351de75c20055f376104fbffc7fd2dcea9ba342ef2efd7164264872",
+        "size_in_bytes": 4913
+      },
+      {
+        "_path": "lib/R/library/aggregation/R/aggregation.rdx",
+        "path_type": "hardlink",
+        "sha256": "09adf3511910b53a4a61fd158aba2d89c4424611c326445685eb3a45b9aebcdf",
+        "sha256_in_prefix": "09adf3511910b53a4a61fd158aba2d89c4424611c326445685eb3a45b9aebcdf",
+        "size_in_bytes": 287
+      },
+      {
+        "_path": "lib/R/library/aggregation/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "26bbc13c3b47342361ce3860449a6c8b387ee56a8d937b0ab6a69853349331ad",
+        "sha256_in_prefix": "26bbc13c3b47342361ce3860449a6c8b387ee56a8d937b0ab6a69853349331ad",
+        "size_in_bytes": 46
+      },
+      {
+        "_path": "lib/R/library/aggregation/help/aggregation.rdb",
+        "path_type": "hardlink",
+        "sha256": "1f0c867883e3f00f23aa43a9841d04e1d22f085aa2228ce57c1c57e87774922c",
+        "sha256_in_prefix": "1f0c867883e3f00f23aa43a9841d04e1d22f085aa2228ce57c1c57e87774922c",
+        "size_in_bytes": 3314
+      },
+      {
+        "_path": "lib/R/library/aggregation/help/aggregation.rdx",
+        "path_type": "hardlink",
+        "sha256": "7f38f1a77bc3e0f5646c044607c9019ee1b44d2cfd1fd581d245c3ef08d70bbd",
+        "sha256_in_prefix": "7f38f1a77bc3e0f5646c044607c9019ee1b44d2cfd1fd581d245c3ef08d70bbd",
+        "size_in_bytes": 191
+      },
+      {
+        "_path": "lib/R/library/aggregation/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "7a34991128b689eac9cd0fb80ce5c00ef46568ee359489b746db15142fdfd499",
+        "sha256_in_prefix": "7a34991128b689eac9cd0fb80ce5c00ef46568ee359489b746db15142fdfd499",
+        "size_in_bytes": 88
+      },
+      {
+        "_path": "lib/R/library/aggregation/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "6a99296948b4f6279e28c83e6bc6c3c2107f56f2c0d12d80930b05a2b234fab7",
+        "sha256_in_prefix": "6a99296948b4f6279e28c83e6bc6c3c2107f56f2c0d12d80930b05a2b234fab7",
+        "size_in_bytes": 176
+      },
+      {
+        "_path": "lib/R/library/aggregation/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "09633466230bac8dde99fe3c3a703c5f9b7e607706c1aee21befb245fe84bde3",
+        "sha256_in_prefix": "09633466230bac8dde99fe3c3a703c5f9b7e607706c1aee21befb245fe84bde3",
+        "size_in_bytes": 1236
+      },
+      {
+        "_path": "lib/R/library/aggregation/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 30672,
+  "subdir": "noarch",
+  "timestamp": 1543206978072,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/r-aggregation-1.0.1-r351h6115d3f_1000.tar.bz2",
+  "version": "1.0.1"
+}

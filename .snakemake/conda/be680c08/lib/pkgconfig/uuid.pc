@@ -1,0 +1,11 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+exec_prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+libdir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08/lib
+includedir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

@@ -1,0 +1,534 @@
+{
+  "arch": "x86_64",
+  "build": "pl526h470a237_9",
+  "build_number": 9,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=4.9",
+    "m4",
+    "perl >=5.26.2,<5.26.3.0a0"
+  ],
+  "extracted_package_dir": "/home/sattle00/miniconda3/pkgs/autoconf-2.69-pl526h470a237_9",
+  "features": "",
+  "files": [
+    "bin/autoconf",
+    "bin/autoheader",
+    "bin/autom4te",
+    "bin/autoreconf",
+    "bin/autoscan",
+    "bin/autoupdate",
+    "bin/ifnames",
+    "share/autoconf/Autom4te/C4che.pm",
+    "share/autoconf/Autom4te/ChannelDefs.pm",
+    "share/autoconf/Autom4te/Channels.pm",
+    "share/autoconf/Autom4te/Configure_ac.pm",
+    "share/autoconf/Autom4te/FileUtils.pm",
+    "share/autoconf/Autom4te/General.pm",
+    "share/autoconf/Autom4te/Getopt.pm",
+    "share/autoconf/Autom4te/Request.pm",
+    "share/autoconf/Autom4te/XFile.pm",
+    "share/autoconf/INSTALL",
+    "share/autoconf/autoconf/autoconf.m4",
+    "share/autoconf/autoconf/autoconf.m4f",
+    "share/autoconf/autoconf/autoheader.m4",
+    "share/autoconf/autoconf/autoscan.m4",
+    "share/autoconf/autoconf/autotest.m4",
+    "share/autoconf/autoconf/autoupdate.m4",
+    "share/autoconf/autoconf/c.m4",
+    "share/autoconf/autoconf/erlang.m4",
+    "share/autoconf/autoconf/fortran.m4",
+    "share/autoconf/autoconf/functions.m4",
+    "share/autoconf/autoconf/general.m4",
+    "share/autoconf/autoconf/go.m4",
+    "share/autoconf/autoconf/headers.m4",
+    "share/autoconf/autoconf/lang.m4",
+    "share/autoconf/autoconf/libs.m4",
+    "share/autoconf/autoconf/oldnames.m4",
+    "share/autoconf/autoconf/programs.m4",
+    "share/autoconf/autoconf/specific.m4",
+    "share/autoconf/autoconf/status.m4",
+    "share/autoconf/autoconf/types.m4",
+    "share/autoconf/autom4te.cfg",
+    "share/autoconf/autoscan/autoscan.list",
+    "share/autoconf/autotest/autotest.m4",
+    "share/autoconf/autotest/autotest.m4f",
+    "share/autoconf/autotest/general.m4",
+    "share/autoconf/autotest/specific.m4",
+    "share/autoconf/m4sugar/foreach.m4",
+    "share/autoconf/m4sugar/m4sh.m4",
+    "share/autoconf/m4sugar/m4sh.m4f",
+    "share/autoconf/m4sugar/m4sugar.m4",
+    "share/autoconf/m4sugar/m4sugar.m4f",
+    "share/autoconf/m4sugar/version.m4",
+    "share/info/autoconf.info",
+    "share/info/standards.info",
+    "share/man/man1/autoconf.1",
+    "share/man/man1/autoheader.1",
+    "share/man/man1/autom4te.1",
+    "share/man/man1/autoreconf.1",
+    "share/man/man1/autoscan.1",
+    "share/man/man1/autoupdate.1",
+    "share/man/man1/config.guess.1",
+    "share/man/man1/config.sub.1",
+    "share/man/man1/ifnames.1"
+  ],
+  "fn": "autoconf-2.69-pl526h470a237_9.tar.bz2",
+  "license": "GPL-3.0",
+  "link": {
+    "source": "/home/sattle00/miniconda3/pkgs/autoconf-2.69-pl526h470a237_9",
+    "type": 1
+  },
+  "md5": "5480da578f169ee01d7d70d3bcce3c9d",
+  "name": "autoconf",
+  "package_tarball_full_path": "/home/sattle00/miniconda3/pkgs/autoconf-2.69-pl526h470a237_9.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/autoconf",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "eeb8d37ca03e38d7eceeac4757cac71a074eaca477ad1a59ce11103279f23916",
+        "sha256_in_prefix": "98cb6e1179c92b563c16cd6e4d0764d59c9ede4e4f2c4b9d86ea0f183e8c263d",
+        "size_in_bytes": 14796
+      },
+      {
+        "_path": "bin/autoheader",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "0839e9af5c4b0dc215aae4585303a2f2405ce91c7c5e6809cd2283d54d94e40a",
+        "sha256_in_prefix": "02e4481f89db7e1156c7e1146c7b238e695bebf740117a062792b9a5d13e8fce",
+        "size_in_bytes": 8789
+      },
+      {
+        "_path": "bin/autom4te",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "2430888fa08ddfe21101ceeb91b5d67be9144f8b2e45e77be1dc87ad6b335a1f",
+        "sha256_in_prefix": "b4fa436384274e463a71f1cb95d42d23c2a55a63233bdf43efea2d5918f83789",
+        "size_in_bytes": 32273
+      },
+      {
+        "_path": "bin/autoreconf",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "bc114ece926bc4b4b63358a1b2f3c5d320a942556ee57c442c5fb5d9ba468718",
+        "sha256_in_prefix": "7407f7ddd4f2caf1223c227372e241f9d80ebc6e006ae6cab4f71313231c076e",
+        "size_in_bytes": 21186
+      },
+      {
+        "_path": "bin/autoscan",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "fb3fdf5f0878ceb482a41a8ca430faaad8461ee260d8436918ed8297378252f5",
+        "sha256_in_prefix": "e08afc8ab1e308eb462b7db7f78b38aa4cad0661c4769f8fcf2af0831a61501c",
+        "size_in_bytes": 17404
+      },
+      {
+        "_path": "bin/autoupdate",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "2f3caabf76302b27bac0a83bc2e3058023ca7d2ed09d515b306667408a0bd616",
+        "sha256_in_prefix": "752bfff3d214f6606e43e197e41d672788ce5990a368d746295d4636017bc7ae",
+        "size_in_bytes": 33992
+      },
+      {
+        "_path": "bin/ifnames",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "aa3edbce1d88a9ebdec4c28b7a3c8534a54b9e6a0b8475fab4bc9ca61d5dcd16",
+        "sha256_in_prefix": "fea224840ae941ac6dd3039bc7dc7678f6d2dac2ae28e9457371d35f62910b1f",
+        "size_in_bytes": 4164
+      },
+      {
+        "_path": "share/autoconf/Autom4te/C4che.pm",
+        "path_type": "hardlink",
+        "sha256": "ec1394c2fecb51c02a08668b55073a9fb2ca545caffab4173a7591ea6b133788",
+        "sha256_in_prefix": "ec1394c2fecb51c02a08668b55073a9fb2ca545caffab4173a7591ea6b133788",
+        "size_in_bytes": 4913
+      },
+      {
+        "_path": "share/autoconf/Autom4te/ChannelDefs.pm",
+        "path_type": "hardlink",
+        "sha256": "db85d39ea698ea6668f475602239f60eb4e889608adfcd42e809b7153590e56e",
+        "sha256_in_prefix": "db85d39ea698ea6668f475602239f60eb4e889608adfcd42e809b7153590e56e",
+        "size_in_bytes": 9174
+      },
+      {
+        "_path": "share/autoconf/Autom4te/Channels.pm",
+        "path_type": "hardlink",
+        "sha256": "cd658de65c01f0f5737053baf918253aaf710a8cf433050c3b7710a9d7f0239b",
+        "sha256_in_prefix": "cd658de65c01f0f5737053baf918253aaf710a8cf433050c3b7710a9d7f0239b",
+        "size_in_bytes": 20955
+      },
+      {
+        "_path": "share/autoconf/Autom4te/Configure_ac.pm",
+        "path_type": "hardlink",
+        "sha256": "3a871758fbacbdf572d463ced1cd220ddc35a88de9f4085fa7539230f3a44028",
+        "sha256_in_prefix": "3a871758fbacbdf572d463ced1cd220ddc35a88de9f4085fa7539230f3a44028",
+        "size_in_bytes": 3359
+      },
+      {
+        "_path": "share/autoconf/Autom4te/FileUtils.pm",
+        "path_type": "hardlink",
+        "sha256": "e30885ec59bdcfb018dc9b159f2b5b73d783932bd02085ac5ee1908fb31cca63",
+        "sha256_in_prefix": "e30885ec59bdcfb018dc9b159f2b5b73d783932bd02085ac5ee1908fb31cca63",
+        "size_in_bytes": 10095
+      },
+      {
+        "_path": "share/autoconf/Autom4te/General.pm",
+        "path_type": "hardlink",
+        "sha256": "4ae6640e6db856842980eb861c485ac3929e650055902c627f6d23d3bcd82801",
+        "sha256_in_prefix": "4ae6640e6db856842980eb861c485ac3929e650055902c627f6d23d3bcd82801",
+        "size_in_bytes": 8984
+      },
+      {
+        "_path": "share/autoconf/Autom4te/Getopt.pm",
+        "path_type": "hardlink",
+        "sha256": "61dfbd0e51d1554f33c914234007022f8670c1d0f9bf9698ee948436fcd320cc",
+        "sha256_in_prefix": "61dfbd0e51d1554f33c914234007022f8670c1d0f9bf9698ee948436fcd320cc",
+        "size_in_bytes": 2774
+      },
+      {
+        "_path": "share/autoconf/Autom4te/Request.pm",
+        "path_type": "hardlink",
+        "sha256": "c8bb4bc4db0210d0c9868b5adfe3b87d1a0e1114e6695a80ab8d1b7569f2b9d4",
+        "sha256_in_prefix": "c8bb4bc4db0210d0c9868b5adfe3b87d1a0e1114e6695a80ab8d1b7569f2b9d4",
+        "size_in_bytes": 2550
+      },
+      {
+        "_path": "share/autoconf/Autom4te/XFile.pm",
+        "path_type": "hardlink",
+        "sha256": "85564dfdf49ffae6e7ae508d5216ee1cbc019080a8d59095a7d3a0a275fd9bd5",
+        "sha256_in_prefix": "85564dfdf49ffae6e7ae508d5216ee1cbc019080a8d59095a7d3a0a275fd9bd5",
+        "size_in_bytes": 7775
+      },
+      {
+        "_path": "share/autoconf/INSTALL",
+        "path_type": "hardlink",
+        "sha256": "b0287f038bcc1af4ca163109b86f9f87a746206187e2a18943ba949e9ea6ee84",
+        "sha256_in_prefix": "b0287f038bcc1af4ca163109b86f9f87a746206187e2a18943ba949e9ea6ee84",
+        "size_in_bytes": 15749
+      },
+      {
+        "_path": "share/autoconf/autoconf/autoconf.m4",
+        "path_type": "hardlink",
+        "sha256": "bf7cc48ffe1ccf18f3df29c1bd0645289ea30ec5cd70c390777724e18b83c345",
+        "sha256_in_prefix": "bf7cc48ffe1ccf18f3df29c1bd0645289ea30ec5cd70c390777724e18b83c345",
+        "size_in_bytes": 3698
+      },
+      {
+        "_path": "share/autoconf/autoconf/autoconf.m4f",
+        "path_type": "hardlink",
+        "sha256": "3c0995597533e5139abe7ce1d93360568709227a7d7f1d29db04136158cc2da4",
+        "sha256_in_prefix": "3c0995597533e5139abe7ce1d93360568709227a7d7f1d29db04136158cc2da4",
+        "size_in_bytes": 485095
+      },
+      {
+        "_path": "share/autoconf/autoconf/autoheader.m4",
+        "path_type": "hardlink",
+        "sha256": "d1b0dfd1441273eb55e596a30b697e422afcda8af4eef7204cc3f910f5bec718",
+        "sha256_in_prefix": "d1b0dfd1441273eb55e596a30b697e422afcda8af4eef7204cc3f910f5bec718",
+        "size_in_bytes": 2741
+      },
+      {
+        "_path": "share/autoconf/autoconf/autoscan.m4",
+        "path_type": "hardlink",
+        "sha256": "1b7ef1cf0b024ccc7b0af36f467a6ccc0fca6613663aabc5fdad48f57105d942",
+        "sha256_in_prefix": "1b7ef1cf0b024ccc7b0af36f467a6ccc0fca6613663aabc5fdad48f57105d942",
+        "size_in_bytes": 2024
+      },
+      {
+        "_path": "share/autoconf/autoconf/autotest.m4",
+        "path_type": "hardlink",
+        "sha256": "a5bbcbb495af85b869ca4fa7f4680c4b74dae90f40a26072790510a17fd55491",
+        "sha256_in_prefix": "a5bbcbb495af85b869ca4fa7f4680c4b74dae90f40a26072790510a17fd55491",
+        "size_in_bytes": 2904
+      },
+      {
+        "_path": "share/autoconf/autoconf/autoupdate.m4",
+        "path_type": "hardlink",
+        "sha256": "a27c65266fe78930bed3d886fca413f672ffe51736f31e3bae51e0d6315e94d4",
+        "sha256_in_prefix": "a27c65266fe78930bed3d886fca413f672ffe51736f31e3bae51e0d6315e94d4",
+        "size_in_bytes": 4319
+      },
+      {
+        "_path": "share/autoconf/autoconf/c.m4",
+        "path_type": "hardlink",
+        "sha256": "78cc4ffe0873fd52eedb65ca9e87a79c70713d66a84d4d2b11d9eb5a97b2d090",
+        "sha256_in_prefix": "78cc4ffe0873fd52eedb65ca9e87a79c70713d66a84d4d2b11d9eb5a97b2d090",
+        "size_in_bytes": 60976
+      },
+      {
+        "_path": "share/autoconf/autoconf/erlang.m4",
+        "path_type": "hardlink",
+        "sha256": "3e7770dd06b961c74657e70ef65c32cc55f1ab8a34d68299f15dab7da80f3fdf",
+        "sha256_in_prefix": "3e7770dd06b961c74657e70ef65c32cc55f1ab8a34d68299f15dab7da80f3fdf",
+        "size_in_bytes": 9912
+      },
+      {
+        "_path": "share/autoconf/autoconf/fortran.m4",
+        "path_type": "hardlink",
+        "sha256": "f1eb8f8cffee73903fc4d251b2d0c1c7cc737d1b0463c8bc03078523915ed1f7",
+        "sha256_in_prefix": "f1eb8f8cffee73903fc4d251b2d0c1c7cc737d1b0463c8bc03078523915ed1f7",
+        "size_in_bytes": 65183
+      },
+      {
+        "_path": "share/autoconf/autoconf/functions.m4",
+        "path_type": "hardlink",
+        "sha256": "9db04c55586dc0e5d578b905a3bc768c3d0803bd7fe67706a8e96e9176150519",
+        "sha256_in_prefix": "9db04c55586dc0e5d578b905a3bc768c3d0803bd7fe67706a8e96e9176150519",
+        "size_in_bytes": 63592
+      },
+      {
+        "_path": "share/autoconf/autoconf/general.m4",
+        "path_type": "hardlink",
+        "sha256": "b93fc7a2f38da3c436a4d89eb84ad0214c1a8c07fbb125aa3b17dc98d21d9641",
+        "sha256_in_prefix": "b93fc7a2f38da3c436a4d89eb84ad0214c1a8c07fbb125aa3b17dc98d21d9641",
+        "size_in_bytes": 102370
+      },
+      {
+        "_path": "share/autoconf/autoconf/go.m4",
+        "path_type": "hardlink",
+        "sha256": "7e870154be172df31f663cb75926348c0995442e12bdb10bdafb816353f016b2",
+        "sha256_in_prefix": "7e870154be172df31f663cb75926348c0995442e12bdb10bdafb816353f016b2",
+        "size_in_bytes": 4637
+      },
+      {
+        "_path": "share/autoconf/autoconf/headers.m4",
+        "path_type": "hardlink",
+        "sha256": "e2fad43c2b9a02ea1664b15cf7111fffe511eaf6e9655f7de39561c371320617",
+        "sha256_in_prefix": "e2fad43c2b9a02ea1664b15cf7111fffe511eaf6e9655f7de39561c371320617",
+        "size_in_bytes": 30513
+      },
+      {
+        "_path": "share/autoconf/autoconf/lang.m4",
+        "path_type": "hardlink",
+        "sha256": "fa5eff7217ee3c48e6432a380fa8330dda9539c451282c6c938ac03bc2ee8398",
+        "sha256_in_prefix": "fa5eff7217ee3c48e6432a380fa8330dda9539c451282c6c938ac03bc2ee8398",
+        "size_in_bytes": 23852
+      },
+      {
+        "_path": "share/autoconf/autoconf/libs.m4",
+        "path_type": "hardlink",
+        "sha256": "984ccd7dba8617408dd88f42cb8de842570eb4396ff4af0a9a19660e32744e51",
+        "sha256_in_prefix": "984ccd7dba8617408dd88f42cb8de842570eb4396ff4af0a9a19660e32744e51",
+        "size_in_bytes": 16224
+      },
+      {
+        "_path": "share/autoconf/autoconf/oldnames.m4",
+        "path_type": "hardlink",
+        "sha256": "a2131308f6092fc7ee313ff472860f5c05118175a81036035bdfd2fcc962e49a",
+        "sha256_in_prefix": "a2131308f6092fc7ee313ff472860f5c05118175a81036035bdfd2fcc962e49a",
+        "size_in_bytes": 3871
+      },
+      {
+        "_path": "share/autoconf/autoconf/programs.m4",
+        "path_type": "hardlink",
+        "sha256": "a0308edffa634badaa6a1c17f7f26e72e349e6bb66d7e17048e0d4ebc8725101",
+        "sha256_in_prefix": "a0308edffa634badaa6a1c17f7f26e72e349e6bb66d7e17048e0d4ebc8725101",
+        "size_in_bytes": 29627
+      },
+      {
+        "_path": "share/autoconf/autoconf/specific.m4",
+        "path_type": "hardlink",
+        "sha256": "92396192d678bc48679eef61a1ca0441d969f3c7304a1143239d17987e22b6c6",
+        "sha256_in_prefix": "92396192d678bc48679eef61a1ca0441d969f3c7304a1143239d17987e22b6c6",
+        "size_in_bytes": 14376
+      },
+      {
+        "_path": "share/autoconf/autoconf/status.m4",
+        "path_type": "hardlink",
+        "sha256": "07f6cb0cc3b62e890ab181b88d2a30aa2b93913c22cdc0365e2f9b9e3904ade5",
+        "sha256_in_prefix": "07f6cb0cc3b62e890ab181b88d2a30aa2b93913c22cdc0365e2f9b9e3904ade5",
+        "size_in_bytes": 55776
+      },
+      {
+        "_path": "share/autoconf/autoconf/types.m4",
+        "path_type": "hardlink",
+        "sha256": "68b19a8ec0804bc8f04b5b361486583cc99e9f91c1f3baa1488d014b4de2dc6f",
+        "sha256_in_prefix": "68b19a8ec0804bc8f04b5b361486583cc99e9f91c1f3baa1488d014b4de2dc6f",
+        "size_in_bytes": 36190
+      },
+      {
+        "_path": "share/autoconf/autom4te.cfg",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "b7b65ce79967d254b1bb9b769749fcb1b642eb64958642d59f009bbf8dbf41de",
+        "sha256_in_prefix": "f19c43231a1b1dead4e063778f91aa044ec075bf71725ff8384a271e7aed0643",
+        "size_in_bytes": 4909
+      },
+      {
+        "_path": "share/autoconf/autoscan/autoscan.list",
+        "path_type": "hardlink",
+        "sha256": "88b940d6e7d661c139acbc01f57ee6de94864ca2da8fb6a1ef97ed12ce875702",
+        "sha256_in_prefix": "88b940d6e7d661c139acbc01f57ee6de94864ca2da8fb6a1ef97ed12ce875702",
+        "size_in_bytes": 9637
+      },
+      {
+        "_path": "share/autoconf/autotest/autotest.m4",
+        "path_type": "hardlink",
+        "sha256": "291a590eb7d27e75bfe20cfc1ee52f9f89dd021316c4cd281e08c577fa20f239",
+        "sha256_in_prefix": "291a590eb7d27e75bfe20cfc1ee52f9f89dd021316c4cd281e08c577fa20f239",
+        "size_in_bytes": 1213
+      },
+      {
+        "_path": "share/autoconf/autotest/autotest.m4f",
+        "path_type": "hardlink",
+        "sha256": "f9c451cd992bd2cb8162dde659bb48606e6b5ce7063be5726ab3d4ecb1526251",
+        "sha256_in_prefix": "f9c451cd992bd2cb8162dde659bb48606e6b5ce7063be5726ab3d4ecb1526251",
+        "size_in_bytes": 129557
+      },
+      {
+        "_path": "share/autoconf/autotest/general.m4",
+        "path_type": "hardlink",
+        "sha256": "3ca34d7bb99b9f2e0c76ecf5a23e9b8032a042845f896e943b29c2d4d22382eb",
+        "sha256_in_prefix": "3ca34d7bb99b9f2e0c76ecf5a23e9b8032a042845f896e943b29c2d4d22382eb",
+        "size_in_bytes": 73617
+      },
+      {
+        "_path": "share/autoconf/autotest/specific.m4",
+        "path_type": "hardlink",
+        "sha256": "a37715cf6bb0d40b7167a97b9afbac062ce97e6f233d6ee91dd625d5486b5bca",
+        "sha256_in_prefix": "a37715cf6bb0d40b7167a97b9afbac062ce97e6f233d6ee91dd625d5486b5bca",
+        "size_in_bytes": 3042
+      },
+      {
+        "_path": "share/autoconf/m4sugar/foreach.m4",
+        "path_type": "hardlink",
+        "sha256": "8fffaa30965cca6095bff4e5d385949216dff4739dd3c7e3d6727141962f9599",
+        "sha256_in_prefix": "8fffaa30965cca6095bff4e5d385949216dff4739dd3c7e3d6727141962f9599",
+        "size_in_bytes": 14754
+      },
+      {
+        "_path": "share/autoconf/m4sugar/m4sh.m4",
+        "path_type": "hardlink",
+        "sha256": "46a0a94356d9bd5ccbe89e03dac34d86816582627517ae2fc77730ff126d17ea",
+        "sha256_in_prefix": "46a0a94356d9bd5ccbe89e03dac34d86816582627517ae2fc77730ff126d17ea",
+        "size_in_bytes": 75554
+      },
+      {
+        "_path": "share/autoconf/m4sugar/m4sh.m4f",
+        "path_type": "hardlink",
+        "sha256": "648c4b38f99e1a58ab2273b82c33cecadb0048a3e28dd584b47452b8a285f683",
+        "sha256_in_prefix": "648c4b38f99e1a58ab2273b82c33cecadb0048a3e28dd584b47452b8a285f683",
+        "size_in_bytes": 71886
+      },
+      {
+        "_path": "share/autoconf/m4sugar/m4sugar.m4",
+        "path_type": "hardlink",
+        "sha256": "b72ed39bb2e68b71f9644fb2dad3f257479d17a981ba5058bf0c2ebc4f3d9b68",
+        "sha256_in_prefix": "b72ed39bb2e68b71f9644fb2dad3f257479d17a981ba5058bf0c2ebc4f3d9b68",
+        "size_in_bytes": 121864
+      },
+      {
+        "_path": "share/autoconf/m4sugar/m4sugar.m4f",
+        "path_type": "hardlink",
+        "sha256": "c5eceed31dbeb8555da0ee23ce87049663aceb218ae47dd45d77bddfd72dcae9",
+        "sha256_in_prefix": "c5eceed31dbeb8555da0ee23ce87049663aceb218ae47dd45d77bddfd72dcae9",
+        "size_in_bytes": 30636
+      },
+      {
+        "_path": "share/autoconf/m4sugar/version.m4",
+        "path_type": "hardlink",
+        "sha256": "cc5737b67e22c98d9e0ad2a601ca6c5124475d9564146a3078839264bce09064",
+        "sha256_in_prefix": "cc5737b67e22c98d9e0ad2a601ca6c5124475d9564146a3078839264bce09064",
+        "size_in_bytes": 523
+      },
+      {
+        "_path": "share/info/autoconf.info",
+        "path_type": "hardlink",
+        "sha256": "7619c6211e24229d1d93a6cab24ca0506bb06aeb411846fbd41a789c61c94485",
+        "sha256_in_prefix": "7619c6211e24229d1d93a6cab24ca0506bb06aeb411846fbd41a789c61c94485",
+        "size_in_bytes": 1142045
+      },
+      {
+        "_path": "share/info/standards.info",
+        "path_type": "hardlink",
+        "sha256": "9cd426216f8ea0e5563dd4bac4a270b01aab936483ae2a34bbcd6048024df66b",
+        "sha256_in_prefix": "9cd426216f8ea0e5563dd4bac4a270b01aab936483ae2a34bbcd6048024df66b",
+        "size_in_bytes": 227199
+      },
+      {
+        "_path": "share/man/man1/autoconf.1",
+        "path_type": "hardlink",
+        "sha256": "b7faef356553b2f08449f84efc22ffcbb15ebd9c52d4b8ff22b071877f558d5f",
+        "sha256_in_prefix": "b7faef356553b2f08449f84efc22ffcbb15ebd9c52d4b8ff22b071877f558d5f",
+        "size_in_bytes": 2900
+      },
+      {
+        "_path": "share/man/man1/autoheader.1",
+        "path_type": "hardlink",
+        "sha256": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "sha256_in_prefix": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "size_in_bytes": 47
+      },
+      {
+        "_path": "share/man/man1/autom4te.1",
+        "path_type": "hardlink",
+        "sha256": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "sha256_in_prefix": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "size_in_bytes": 47
+      },
+      {
+        "_path": "share/man/man1/autoreconf.1",
+        "path_type": "hardlink",
+        "sha256": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "sha256_in_prefix": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "size_in_bytes": 47
+      },
+      {
+        "_path": "share/man/man1/autoscan.1",
+        "path_type": "hardlink",
+        "sha256": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "sha256_in_prefix": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "size_in_bytes": 47
+      },
+      {
+        "_path": "share/man/man1/autoupdate.1",
+        "path_type": "hardlink",
+        "sha256": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "sha256_in_prefix": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "size_in_bytes": 47
+      },
+      {
+        "_path": "share/man/man1/config.guess.1",
+        "path_type": "hardlink",
+        "sha256": "4fd33eea3c8fc5eae1fb5299509ca66cbd877063f50783fe1c8cca5594c6031d",
+        "sha256_in_prefix": "4fd33eea3c8fc5eae1fb5299509ca66cbd877063f50783fe1c8cca5594c6031d",
+        "size_in_bytes": 2083
+      },
+      {
+        "_path": "share/man/man1/config.sub.1",
+        "path_type": "hardlink",
+        "sha256": "946b555cde85a86cb3a04b00a0578f5a1771778a67319184b6c8e01a830565c3",
+        "sha256_in_prefix": "946b555cde85a86cb3a04b00a0578f5a1771778a67319184b6c8e01a830565c3",
+        "size_in_bytes": 1230
+      },
+      {
+        "_path": "share/man/man1/ifnames.1",
+        "path_type": "hardlink",
+        "sha256": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "sha256_in_prefix": "33f69d127599421a3258d29d600c1368b36c4849cd03242167150514175b25ed",
+        "size_in_bytes": 47
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 672886,
+  "subdir": "linux-64",
+  "timestamp": 1546908836580,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/autoconf-2.69-pl526h470a237_9.tar.bz2",
+  "version": "2.69"
+}
