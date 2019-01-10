@@ -1,5 +1,10 @@
 channels:
+  - r
   - bioconda
+  - icm-iconics
 dependencies:
+  - r-base =3.5
+  - r-circlize =0.4.5
+  - r-biocmanager =1.30.4
   - bioconductor-complexheatmap =1.18
 
