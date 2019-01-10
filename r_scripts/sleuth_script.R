@@ -150,6 +150,7 @@ head(sleuth_significant, 20)
 #### TODO - Outputdatei anlegen, ggf. Hilfsdatei zur Ueberpruefung der Zwischenvariablen
 #### auf Korrektheit anlegen
 
+sleuth_save(so, "sleuth/sleuth_object")
 
 write.table(sleuth_table, file = "sleuth/p-values_all_transcripts.csv", sep = "\t")
 write.table(sleuth_significant, file = "sleuth/significant_transcripts.csv", sep = "\t")

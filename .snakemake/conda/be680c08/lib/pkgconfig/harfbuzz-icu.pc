@@ -1,0 +1,13 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+exec_prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+libdir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08/lib
+includedir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library ICU integration
+Version: 1.9.0
+
+Requires: harfbuzz
+Requires.private: icu-uc
+Libs: -L${libdir} -lharfbuzz-icu
+Cflags: -I${includedir}/harfbuzz
