@@ -1,9 +1,0 @@
-prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-includedir=${prefix}/include
- 
-Name: KBProto
-Description: KB extension headers
-Version: 1.0.7
-Cflags: -I${includedir}
