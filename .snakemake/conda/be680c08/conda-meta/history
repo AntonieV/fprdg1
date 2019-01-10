@@ -1,6 +1,6 @@
-==> 2019-01-10 14:54:52 <==
+==> 2019-01-10 16:44:10 <==
 # cmd: /home/sattle00/miniconda3/bin/conda-env create --file /home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08.yaml --prefix /home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
-# conda version: 4.5.11
+# conda version: 4.5.12
 +bioconda::r-sleuth-0.30.0-r351_0
 +conda-forge::autoconf-2.69-pl526h470a237_9
 +conda-forge::automake-1.16.1-pl526_1003
@@ -119,4 +119,4 @@
 +defaults::tktable-2.10-h14c3975_0
 +icm-iconics::bioconductor-rhdf5-2.26.0-r351
 +icm-iconics::bioconductor-rhdf5lib-1.4.1-r351
-# update specs: ['bioconductor-rhdf5lib=1.4', 'r-sleuth=0.30', 'bioconductor-rhdf5=2.26', 'r-dplyr=0.7.8']
+# update specs: ['bioconductor-rhdf5=2.26', 'r-dplyr=0.7.8', 'r-sleuth=0.30', 'bioconductor-rhdf5lib=1.4']

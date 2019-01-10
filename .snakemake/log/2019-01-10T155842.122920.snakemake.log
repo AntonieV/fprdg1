@@ -1,0 +1,77 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	kallisto_idx
+	4	kallisto_quant
+	1	sleuth
+	6
+
+[Thu Jan 10 15:58:42 2019]
+rule kallisto_idx:
+    input: data/ref/transcriptome.chr21.fa
+    output: kallisto/transcripts.idx
+    jobid: 5
+
+Activating conda environment: /home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/00faa953
+[Thu Jan 10 15:58:46 2019]
+Finished job 5.
+1 of 6 steps (17%) done
+
+[Thu Jan 10 15:58:46 2019]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx, data/reads/b.chr21.1.fq, data/reads/b.chr21.2.fq
+    output: kallisto/d
+    jobid: 2
+    wildcards: sample=d
+
+[Thu Jan 10 15:58:46 2019]
+Finished job 2.
+2 of 6 steps (33%) done
+
+[Thu Jan 10 15:58:46 2019]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx, data/reads/b.chr21.1.fq, data/reads/b.chr21.2.fq
+    output: kallisto/b
+    jobid: 4
+    wildcards: sample=b
+
+[Thu Jan 10 15:58:47 2019]
+Finished job 4.
+3 of 6 steps (50%) done
+
+[Thu Jan 10 15:58:47 2019]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx, data/reads/a.chr21.1.fq, data/reads/a.chr21.2.fq
+    output: kallisto/a
+    jobid: 1
+    wildcards: sample=a
+
+[Thu Jan 10 15:58:47 2019]
+Finished job 1.
+4 of 6 steps (67%) done
+
+[Thu Jan 10 15:58:47 2019]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx, data/reads/a.chr21.1.fq, data/reads/a.chr21.2.fq
+    output: kallisto/c
+    jobid: 3
+    wildcards: sample=c
+
+[Thu Jan 10 15:58:47 2019]
+Finished job 3.
+5 of 6 steps (83%) done
+
+[Thu Jan 10 15:58:47 2019]
+rule sleuth:
+    input: kallisto/a, kallisto/b, kallisto/c, kallisto/d, table_for_reads.csv
+    output: sleuth/significant_transcripts.csv
+    jobid: 0
+
+Activating conda environment: /home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+[Thu Jan 10 15:58:51 2019]
+Finished job 0.
+6 of 6 steps (100%) done
+Complete log: /home/sattle00/Fachprojekt/fprdg1/.snakemake/log/2019-01-10T155842.122920.snakemake.log

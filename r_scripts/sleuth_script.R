@@ -26,6 +26,8 @@ path <- getwd() # aktuelles Verzeichnis speichern
 
 kal_dirs <- file.path(gsub(" ","", paste(path, "/", snakemake@input[["kal_path"]])))  # Liste der Pfadnamen der einzelnen Kallisto-results
 
+#kal_dirs <- file.path(gsub(" ","", paste(path, "/", "kallisto/", c("a","b","c", "d"))))
+
 ####################################################################
 ####### ZUM DEBUGGEN: verschiedene Varianten der Pfadangaben #######
 
@@ -66,6 +68,9 @@ kal_dirs
 
 #s2c <- read.table(file.path("..", "metadata", "hiseq_info.txt"), 
 #                  header = TRUE, stringsAsFactors=FALSE) 
+
+#s2c <- read.table(file = "../table_for_reads.csv" , sep = "\t", 
+#                  header = TRUE, stringsAsFactors = FALSE)
 
 s2c <- read.table(file = snakemake@input[["sam_tab"]] , sep = "\t", 
                   header = TRUE, stringsAsFactors = FALSE)
