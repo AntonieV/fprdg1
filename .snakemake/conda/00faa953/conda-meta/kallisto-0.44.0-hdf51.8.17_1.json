@@ -1,0 +1,46 @@
+{
+  "arch": "x86_64",
+  "build": "hdf51.8.17_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/bioconda/linux-64",
+  "constrains": [],
+  "depends": [
+    "hdf5 1.8.17*",
+    "libgcc"
+  ],
+  "extracted_package_dir": "/home/sattle00/miniconda3/pkgs/kallisto-0.44.0-hdf51.8.17_1",
+  "features": "",
+  "files": [
+    "bin/kallisto"
+  ],
+  "fn": "kallisto-0.44.0-hdf51.8.17_1.tar.bz2",
+  "license": "BSD_2_Clause",
+  "link": {
+    "source": "/home/sattle00/miniconda3/pkgs/kallisto-0.44.0-hdf51.8.17_1",
+    "type": 1
+  },
+  "md5": "b65602973437a1860edc6422ff318279",
+  "name": "kallisto",
+  "package_tarball_full_path": "/home/sattle00/miniconda3/pkgs/kallisto-0.44.0-hdf51.8.17_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/kallisto",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/kallisto_1523436615846/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "c8fbc6510462df487f167701157e0c6727ad1ae23e54ef38610658ba2513f4e6",
+        "sha256_in_prefix": "8b38f2eb05a81043b046af8ca976214640ef6c7d5961ca43569242acbeebc52a",
+        "size_in_bytes": 2687907
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "kallisto=0.44",
+  "size": 935245,
+  "subdir": "linux-64",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/linux-64/kallisto-0.44.0-hdf51.8.17_1.tar.bz2",
+  "version": "0.44.0"
+}

@@ -1,0 +1,12 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 1.0.2p
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Libs.private: -Wl,-rpath,/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08/lib -L/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08/lib -ldl
+Cflags: -I${includedir} 

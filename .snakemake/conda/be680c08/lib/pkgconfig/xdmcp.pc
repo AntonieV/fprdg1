@@ -1,0 +1,11 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Xdmcp
+Description: X Display Manager Control Protocol library
+Version: 1.1.2
+Requires: xproto
+Cflags: -I${includedir}
+Libs: -L${libdir} -lXdmcp

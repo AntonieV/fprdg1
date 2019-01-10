@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	sleuth
+	1
+
+[Thu Jan 10 15:08:27 2019]
+rule sleuth:
+    input: kallisto/a, kallisto/b, kallisto/c, kallisto/d, table_for_reads.csv
+    output: sleuth/significant_transcripts.csv
+    jobid: 0
+
+Activating conda environment: /home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+[Thu Jan 10 15:08:31 2019]
+Error in rule sleuth:
+    jobid: 0
+    output: sleuth/significant_transcripts.csv
+    conda-env: /home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+
+RuleException:
+CalledProcessError in line 37 of /home/sattle00/Fachprojekt/fprdg1/Snakefile:
+Command 'source activate /home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08; set -euo pipefail;  Rscript /home/sattle00/Fachprojekt/fprdg1/.snakemake/scripts/tmp0hfoyhbe.sleuth_script.R ' returned non-zero exit status 1.
+  File "/home/sattle00/Fachprojekt/fprdg1/Snakefile", line 37, in __rule_sleuth
+  File "/home/sattle00/miniconda3/envs/fprdg1/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/sattle00/Fachprojekt/fprdg1/.snakemake/log/2019-01-10T150826.882030.snakemake.log

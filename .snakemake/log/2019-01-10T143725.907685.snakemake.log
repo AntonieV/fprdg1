@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 49 of /home/sattle00/Fachprojekt/fprdg1/Snakefile:
+Missing input files for rule pizzly:
+transcripts.gtf

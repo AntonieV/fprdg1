@@ -1,0 +1,11 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/be680c08
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Xau
+Description: X authorization file management libary
+Version: 1.0.8
+Requires: xproto
+Cflags: -I${includedir}
+Libs: -L${libdir} -lXau

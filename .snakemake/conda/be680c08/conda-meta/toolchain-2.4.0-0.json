@@ -1,0 +1,50 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/sattle00/miniconda3/pkgs/toolchain-2.4.0-0",
+  "features": "",
+  "files": [
+    "etc/conda/activate.d/toolchain_activate.sh",
+    "etc/conda/deactivate.d/toolchain_deactivate.sh"
+  ],
+  "fn": "toolchain-2.4.0-0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "/home/sattle00/miniconda3/pkgs/toolchain-2.4.0-0",
+    "type": 1
+  },
+  "md5": "3a2f25b07a3e295b6fdc517db1789494",
+  "name": "toolchain",
+  "package_tarball_full_path": "/home/sattle00/miniconda3/pkgs/toolchain-2.4.0-0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "etc/conda/activate.d/toolchain_activate.sh",
+        "path_type": "hardlink",
+        "sha256": "78145cac37bdb0081f7f66f408b44246ac199a7310e70565e668be79186b823c",
+        "sha256_in_prefix": "78145cac37bdb0081f7f66f408b44246ac199a7310e70565e668be79186b823c",
+        "size_in_bytes": 2572
+      },
+      {
+        "_path": "etc/conda/deactivate.d/toolchain_deactivate.sh",
+        "path_type": "hardlink",
+        "sha256": "30e4f7feff6bf44e799252e7f7a798325b210c272414c92fa2b2491b6cad3f40",
+        "sha256_in_prefix": "30e4f7feff6bf44e799252e7f7a798325b210c272414c92fa2b2491b6cad3f40",
+        "size_in_bytes": 834
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 4585,
+  "subdir": "linux-64",
+  "timestamp": 1546156758592,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/toolchain-2.4.0-0.tar.bz2",
+  "version": "2.4.0"
+}
