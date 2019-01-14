@@ -4,9 +4,9 @@ import pandas as pd
 
 samples = pd.read_csv(config["samples"], sep = "\t")
 
-rule all:
-	input:
-		"sleuth/significant_transcripts.csv"
+#rule all:
+#	input:
+#		"sleuth/significant_transcripts.csv"
 
 rule kallisto_idx:
 	input:
