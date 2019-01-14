@@ -26,7 +26,7 @@ rule kallisto_quant:
 	output:
 		directory("kallisto/{sample}")
 	shell:
-		"kallisto quant --bootstrap-samples=2 -i {input.id} -o  {output} {input.fq1} {input.fq2}"
+		"kallisto quant -i {input.id} -o  {output} {input.fq1} {input.fq2}"
 
 rule sleuth:
 	input:
