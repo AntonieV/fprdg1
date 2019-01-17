@@ -19,14 +19,16 @@ rule kallisto_idx:
         "kallisto index -i {output} {input}"
 
 rule kallisto_quant:
-    input:
-        id = "kallisto/transcripts.idx",
-        fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
-        fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
-    output:
-        directory("kallisto/{sample}")
-    shell:
-        "kallisto quant --bootstrap-samples=2 -i {input.id} -o  {output} {input.fq1} {input.fq2}"
+	input:
+		id = "kallisto/transcripts.idx",
+		fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
+		fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
+	conda:
+		"envs/kallisto.yaml"
+	output:
+		directory("kallisto/{sample}")
+	shell:
+		"kallisto quant --bootstrap-samples=2 -i {input.id} -o  {output} {input.fq1} {input.fq2}"
 
 rule sleuth:
     input:
