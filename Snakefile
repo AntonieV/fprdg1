@@ -23,6 +23,8 @@ rule kallisto_quant:
 		id = "kallisto/transcripts.idx",
 		fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
 		fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
+	conda:
+		"envs/kallisto.yaml"
 	output:
 		directory("kallisto/{sample}")
 	shell:
