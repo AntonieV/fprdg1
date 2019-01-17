@@ -1,5 +1,5 @@
 channels:
-  - bioconda
   - conda-forge
+  - bioconda
 dependencies:
-  - pizzly = 0.37.1
+  - r-biocmanager
