@@ -2,4 +2,4 @@ channels:
   - conda-forge/label/cf201901
   - bioconda
 dependencies:
-  - pizzly
+  - pizzly = 0.37.1

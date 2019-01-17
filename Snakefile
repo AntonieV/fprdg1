@@ -69,3 +69,13 @@ rule pizzly_flatten:
         "genetable.txt"
     shell:
         "py:scripts/flatten_json.py {input} [{output}]"
+
+rule gage:
+    input:
+        
+    conda:
+        "envs/gage.yaml"
+    output:
+        
+    script:
+        "r_scripts/gage.R"
