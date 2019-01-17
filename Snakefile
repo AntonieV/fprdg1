@@ -41,7 +41,7 @@ rule sleuth:
 
 rule pizzly_prep:
 	input:
-		id = "kallisto/transcripts.idx", #transcript ist jetzt das gleiche wie bei ursprünglich kallisto. richtig?
+		id = "kallisto/transcripts.idx",
 		fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
 		fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
 	output:
@@ -51,15 +51,16 @@ rule pizzly_prep:
 
 rule pizzly:
 	input:
-		transcript = config["transcripts"], #transcript ist jetzt das gleiche wie bei ursprünglich kallisto. richtig?; hir müssen vllt pipes rausgenommen werden
-		uno = "transcripts.gtf", #vllt aendern? woher kommt das?
-		dos = "pizzly/fusion.txt"
+		transcript = config["transcripts"],
+		uno = config["transcripts_gtf"],
+		dos = "pizzly/{sample}"
+	conda:
+		"envs/pizzly.yaml"
 	output:
-		eins = "test.fusions.fasta",
-		zwei = "test.json"
+		eins = "{sample}.fusions.fasta",
+		zwei = "{sample}.json"
 	shell:
-		"pizzly -k 31 --gtf {input.uno} --cache pizzly/index.cache.txt --align-score 2 \
-        --insert-size 400 --fasta {input.transcript} --output test {input.dos}"
+		"pizzly -k 31 --gtf {input.uno} --cache {input.dos}/index.cache.txt --align-score 2 --insert-size 400 --fasta {input.transcript} --output test {input.dos}/fusion.txt"
 
 rule pizzly_flatten:
     input:

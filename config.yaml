@@ -4,3 +4,5 @@ samples:
 transcripts:
     data/ref/transcriptome.chr21.fa
 
+transcripts_gtf:
+    data/ref/annotation.chr21.gtf
