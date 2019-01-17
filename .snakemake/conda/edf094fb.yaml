@@ -1,9 +1,0 @@
-channels:
-  - conda-forge/label/cf201901
-  - icm-iconics
-  - bioconda
-dependencies:
-  - r-sleuth =0.30
-  - bioconductor-rhdf5lib =1.4
-  - bioconductor-rhdf5 =2.26
-  - r-dplyr =0.7.8
