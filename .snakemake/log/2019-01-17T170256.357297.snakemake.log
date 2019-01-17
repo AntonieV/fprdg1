@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	pizzly
+	1	pizzly_prep
+	2
+
+[Thu Jan 17 17:02:56 2019]
+rule pizzly_prep:
+    input: kallisto/transcripts.idx, data/reads/a.chr21.1.fq, data/reads/a.chr21.2.fq
+    output: pizzly/a
+    jobid: 1
+    wildcards: sample=a
+
+[Thu Jan 17 17:02:57 2019]
+Finished job 1.
+1 of 2 steps (50%) done
+
+[Thu Jan 17 17:02:57 2019]
+rule pizzly:
+    input: data/ref/transcriptome.chr21.fa, data/ref/annotation.chr21.gtf, pizzly/a
+    output: a.fusions.fasta, a.json
+    jobid: 0
+    wildcards: sample=a
+
+[Thu Jan 17 17:02:57 2019]
+Error in rule pizzly:
+    jobid: 0
+    output: a.fusions.fasta, a.json
+
+RuleException:
+CalledProcessError in line 63 of /home/jansen00/Fachprojekt/fprdg1/Snakefile:
+Command ' set -euo pipefail;  pizzly -k 31 --gtf data/ref/annotation.chr21.gtf --cache pizzly/a/index.cache.txt --align-score 2 --insert-size 400 --fasta data/ref/transcriptome.chr21.fa --output test pizzly/a/fusion.txt ' returned non-zero exit status 127.
+  File "/home/jansen00/Fachprojekt/fprdg1/Snakefile", line 63, in __rule_pizzly
+  File "/home/jansen00/miniconda3/envs/fprdg1/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/jansen00/Fachprojekt/fprdg1/.snakemake/log/2019-01-17T170256.357297.snakemake.log

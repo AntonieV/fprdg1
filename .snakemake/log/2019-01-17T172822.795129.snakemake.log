@@ -1,0 +1,10 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules pizzly_prep and pizzly are ambiguous for the file pizzly/a.json.
+Consider starting rule output with a unique prefix or constrain your wildcards.
+Wildcards:
+	pizzly_prep: sample=a.json
+	pizzly: sample=a
+Expected input files:
+	pizzly_prep: kallisto/transcripts.idx
+	pizzly: data/ref/transcriptome.chr21.fa data/ref/annotation.chr21.gtf pizzly/a
