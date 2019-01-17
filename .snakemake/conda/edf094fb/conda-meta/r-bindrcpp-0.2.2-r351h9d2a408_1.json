@@ -1,0 +1,242 @@
+{
+  "arch": "x86_64",
+  "build": "r351h9d2a408_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/label/cf201901/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=4.9",
+    "libstdcxx-ng >=4.9",
+    "r-base >=3.5.1,<3.5.2.0a0",
+    "r-bindr >=0.1.1",
+    "r-plogr",
+    "r-rcpp >=0.12.16"
+  ],
+  "extracted_package_dir": "/home/sattle00/miniconda3/pkgs/r-bindrcpp-0.2.2-r351h9d2a408_1",
+  "features": "",
+  "files": [
+    "lib/R/library/bindrcpp/DESCRIPTION",
+    "lib/R/library/bindrcpp/INDEX",
+    "lib/R/library/bindrcpp/LICENSE",
+    "lib/R/library/bindrcpp/Meta/Rd.rds",
+    "lib/R/library/bindrcpp/Meta/features.rds",
+    "lib/R/library/bindrcpp/Meta/hsearch.rds",
+    "lib/R/library/bindrcpp/Meta/links.rds",
+    "lib/R/library/bindrcpp/Meta/nsInfo.rds",
+    "lib/R/library/bindrcpp/Meta/package.rds",
+    "lib/R/library/bindrcpp/NAMESPACE",
+    "lib/R/library/bindrcpp/NEWS.md",
+    "lib/R/library/bindrcpp/R/bindrcpp",
+    "lib/R/library/bindrcpp/R/bindrcpp.rdb",
+    "lib/R/library/bindrcpp/R/bindrcpp.rdx",
+    "lib/R/library/bindrcpp/help/AnIndex",
+    "lib/R/library/bindrcpp/help/aliases.rds",
+    "lib/R/library/bindrcpp/help/bindrcpp.rdb",
+    "lib/R/library/bindrcpp/help/bindrcpp.rdx",
+    "lib/R/library/bindrcpp/help/paths.rds",
+    "lib/R/library/bindrcpp/html/00Index.html",
+    "lib/R/library/bindrcpp/html/R.css",
+    "lib/R/library/bindrcpp/include/bindrcpp.h",
+    "lib/R/library/bindrcpp/include/bindrcpp_RcppExports.h",
+    "lib/R/library/bindrcpp/include/bindrcpp_types.h",
+    "lib/R/library/bindrcpp/libs/bindrcpp.so"
+  ],
+  "fn": "r-bindrcpp-0.2.2-r351h9d2a408_1.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/sattle00/miniconda3/pkgs/r-bindrcpp-0.2.2-r351h9d2a408_1",
+    "type": 1
+  },
+  "md5": "8edb59b2a43d477a49d28e20ed9e3af0",
+  "name": "r-bindrcpp",
+  "package_tarball_full_path": "/home/sattle00/miniconda3/pkgs/r-bindrcpp-0.2.2-r351h9d2a408_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/bindrcpp/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "efce5a4ee80c3b49bb370972f9cd2c7cafa215bdf1371d82898aa90872ae349e",
+        "sha256_in_prefix": "efce5a4ee80c3b49bb370972f9cd2c7cafa215bdf1371d82898aa90872ae349e",
+        "size_in_bytes": 1039
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/INDEX",
+        "path_type": "hardlink",
+        "sha256": "4db07e24f472583e7ddaba65bddd19c7dd12065fc4c75b06b3bcc5caeaed9048",
+        "sha256_in_prefix": "4db07e24f472583e7ddaba65bddd19c7dd12065fc4c75b06b3bcc5caeaed9048",
+        "size_in_bytes": 97
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "dedbd9556ae00e53a723dbd70e98121fd4f0ab3d6d4c9089456a0d9f74d851f6",
+        "sha256_in_prefix": "dedbd9556ae00e53a723dbd70e98121fd4f0ab3d6d4c9089456a0d9f74d851f6",
+        "size_in_bytes": 37
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "fbd034c3fbdf13d3f0cbbcc5e7aaba464ffc3124cc20d4d740af1ccd882d87b6",
+        "sha256_in_prefix": "fbd034c3fbdf13d3f0cbbcc5e7aaba464ffc3124cc20d4d740af1ccd882d87b6",
+        "size_in_bytes": 366
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "c22d9d242fd52a4bbbe805dae5c5df6a19451d10060881260200999f9115b12d",
+        "sha256_in_prefix": "c22d9d242fd52a4bbbe805dae5c5df6a19451d10060881260200999f9115b12d",
+        "size_in_bytes": 113
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "0592f8f026f01c83c47a3748f9624902eda8955b36373b1ed68aef50288d5998",
+        "sha256_in_prefix": "0592f8f026f01c83c47a3748f9624902eda8955b36373b1ed68aef50288d5998",
+        "size_in_bytes": 393
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "0419ec12b3f6f5d597e5208df60c440dd2cce5126fa422e67cf2255d1f7996c0",
+        "sha256_in_prefix": "0419ec12b3f6f5d597e5208df60c440dd2cce5126fa422e67cf2255d1f7996c0",
+        "size_in_bytes": 171
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "10057b3de0620b6b67ff47cc927f4b3587dc1489bfb375671af67fb7b8ce1579",
+        "sha256_in_prefix": "10057b3de0620b6b67ff47cc927f4b3587dc1489bfb375671af67fb7b8ce1579",
+        "size_in_bytes": 249
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "816530e97117f018bf83bbd105833592652faf532e9c1fd58e2f50b1f357b645",
+        "sha256_in_prefix": "816530e97117f018bf83bbd105833592652faf532e9c1fd58e2f50b1f357b645",
+        "size_in_bytes": 1048
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "87de54e4b94ff2a7fba8567dfc184be8b02841087a39e31bd067867f687b27fc",
+        "sha256_in_prefix": "87de54e4b94ff2a7fba8567dfc184be8b02841087a39e31bd067867f687b27fc",
+        "size_in_bytes": 193
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "708613b89165a8866908b46239e9fa1297682aefc332f4796a1bbc64fd5c0afc",
+        "sha256_in_prefix": "708613b89165a8866908b46239e9fa1297682aefc332f4796a1bbc64fd5c0afc",
+        "size_in_bytes": 1702
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/R/bindrcpp",
+        "path_type": "hardlink",
+        "sha256": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "sha256_in_prefix": "2fb8b16be23c820daf2e51b7ddfef61ca4978e561b1d228d546d1b356041f79e",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/R/bindrcpp.rdb",
+        "path_type": "hardlink",
+        "sha256": "58206fef45f0f1301c9622001cad825485224de03acc7b28eb8eb79c27f8d2ce",
+        "sha256_in_prefix": "58206fef45f0f1301c9622001cad825485224de03acc7b28eb8eb79c27f8d2ce",
+        "size_in_bytes": 3252
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/R/bindrcpp.rdx",
+        "path_type": "hardlink",
+        "sha256": "821831dc4e5711d47add0fdd2173e2eea8de5f2adbdbb686c03ac0f228c2a730",
+        "sha256_in_prefix": "821831dc4e5711d47add0fdd2173e2eea8de5f2adbdbb686c03ac0f228c2a730",
+        "size_in_bytes": 376
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "578161c4ac9579e1261d5efc453d68db5ac3010bedaca75498609cd56dcdd822",
+        "sha256_in_prefix": "578161c4ac9579e1261d5efc453d68db5ac3010bedaca75498609cd56dcdd822",
+        "size_in_bytes": 150
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "19dd9334e3012505d86eb456aac37d63e2678ae49917bc14219b004630e79ab7",
+        "sha256_in_prefix": "19dd9334e3012505d86eb456aac37d63e2678ae49917bc14219b004630e79ab7",
+        "size_in_bytes": 141
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/help/bindrcpp.rdb",
+        "path_type": "hardlink",
+        "sha256": "eae3b7d81bde8ffc244148ad9ad5c784a33241b39ebf4030ed83d64df2f7466f",
+        "sha256_in_prefix": "eae3b7d81bde8ffc244148ad9ad5c784a33241b39ebf4030ed83d64df2f7466f",
+        "size_in_bytes": 4796
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/help/bindrcpp.rdx",
+        "path_type": "hardlink",
+        "sha256": "ddcc1a386d07b182e09e55ae39d676d58ba5bbb6cd3da6adde055448066ceda6",
+        "sha256_in_prefix": "ddcc1a386d07b182e09e55ae39d676d58ba5bbb6cd3da6adde055448066ceda6",
+        "size_in_bytes": 213
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "b156254dca6e4dddd41452be2d4b63643ada34914ee89e294f435a02c216baa3",
+        "sha256_in_prefix": "b156254dca6e4dddd41452be2d4b63643ada34914ee89e294f435a02c216baa3",
+        "size_in_bytes": 185
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "97c9b46bb1a6f7c26f41b000454d8bdb1aef110578658378933d7b26aac5f727",
+        "sha256_in_prefix": "97c9b46bb1a6f7c26f41b000454d8bdb1aef110578658378933d7b26aac5f727",
+        "size_in_bytes": 1242
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "sha256_in_prefix": "0f4849ab1757247808d54da2c371e992364371c942ad7d629dae8d62327ed068",
+        "size_in_bytes": 1335
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/include/bindrcpp.h",
+        "path_type": "hardlink",
+        "sha256": "2e7f01e3f8a352addd4d08fa032947cdd7c60c752cef663673cd237c3c3ae370",
+        "sha256_in_prefix": "2e7f01e3f8a352addd4d08fa032947cdd7c60c752cef663673cd237c3c3ae370",
+        "size_in_bytes": 254
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/include/bindrcpp_RcppExports.h",
+        "path_type": "hardlink",
+        "sha256": "b03cfd499398a0427765d60d01c4bc93396db5fa902220c194624e08bef1aff2",
+        "sha256_in_prefix": "b03cfd499398a0427765d60d01c4bc93396db5fa902220c194624e08bef1aff2",
+        "size_in_bytes": 15796
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/include/bindrcpp_types.h",
+        "path_type": "hardlink",
+        "sha256": "4a179e72bb021034a12b8c4c6b5225b79d951a8f8d7dcd0758e18a0d8b1f843f",
+        "sha256_in_prefix": "4a179e72bb021034a12b8c4c6b5225b79d951a8f8d7dcd0758e18a0d8b1f843f",
+        "size_in_bytes": 2381
+      },
+      {
+        "_path": "lib/R/library/bindrcpp/libs/bindrcpp.so",
+        "path_type": "hardlink",
+        "sha256": "b3d316718505cabb71fb19e0727c7b45c2c4bc0969d0fe541a756d7bc2f4b30e",
+        "sha256_in_prefix": "b3d316718505cabb71fb19e0727c7b45c2c4bc0969d0fe541a756d7bc2f4b30e",
+        "size_in_bytes": 436966
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 116948,
+  "subdir": "linux-64",
+  "timestamp": 1536480105192,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/label/cf201901/linux-64/r-bindrcpp-0.2.2-r351h9d2a408_1.tar.bz2",
+  "version": "0.2.2"
+}

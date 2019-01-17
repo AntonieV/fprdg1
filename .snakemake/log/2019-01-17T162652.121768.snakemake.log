@@ -1,0 +1,68 @@
+Building DAG of jobs...
+Creating conda environment envs/sleuth.yaml...
+Downloading remote packages.
+Environment for envs/sleuth.yaml created (location: .snakemake/conda/edf094fb)
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	4	kallisto_quant
+	1	sleuth
+	5
+
+[Thu Jan 17 16:28:11 2019]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx, data/reads/b.chr21.1.fq, data/reads/b.chr21.2.fq
+    output: kallisto/d
+    jobid: 3
+    wildcards: sample=d
+
+[Thu Jan 17 16:28:12 2019]
+Finished job 3.
+1 of 5 steps (20%) done
+
+[Thu Jan 17 16:28:12 2019]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx, data/reads/b.chr21.1.fq, data/reads/b.chr21.2.fq
+    output: kallisto/b
+    jobid: 1
+    wildcards: sample=b
+
+[Thu Jan 17 16:28:12 2019]
+Finished job 1.
+2 of 5 steps (40%) done
+
+[Thu Jan 17 16:28:12 2019]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx, data/reads/a.chr21.1.fq, data/reads/a.chr21.2.fq
+    output: kallisto/a
+    jobid: 4
+    wildcards: sample=a
+
+[Thu Jan 17 16:28:12 2019]
+Finished job 4.
+3 of 5 steps (60%) done
+
+[Thu Jan 17 16:28:12 2019]
+rule kallisto_quant:
+    input: kallisto/transcripts.idx, data/reads/a.chr21.1.fq, data/reads/a.chr21.2.fq
+    output: kallisto/c
+    jobid: 2
+    wildcards: sample=c
+
+[Thu Jan 17 16:28:13 2019]
+Finished job 2.
+4 of 5 steps (80%) done
+
+[Thu Jan 17 16:28:13 2019]
+rule sleuth:
+    input: kallisto/a, kallisto/b, kallisto/c, kallisto/d, table_for_reads.csv
+    output: sleuth/significant_transcripts.csv
+    jobid: 0
+
+Activating conda environment: /home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb
+[Thu Jan 17 16:28:18 2019]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: /home/sattle00/Fachprojekt/fprdg1/.snakemake/log/2019-01-17T162652.121768.snakemake.log

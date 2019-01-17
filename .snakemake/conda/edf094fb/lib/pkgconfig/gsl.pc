@@ -1,0 +1,11 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb
+exec_prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb
+libdir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/lib
+includedir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.2.1
+Libs: -L/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/include

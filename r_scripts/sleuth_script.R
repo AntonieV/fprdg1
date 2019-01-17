@@ -152,6 +152,9 @@ head(sleuth_significant, 20)
 
 sleuth_save(so, "sleuth/sleuth_object")
 
+sleuth_matrix = sleuth_to_matrix(so, 'obs_norm', 'est_counts')
+
+write.table(sleuth_matrix, file = "sleuth/sleuth_matrix.csv", sep = "\t")
 write.table(sleuth_table, file = "sleuth/p-values_all_transcripts.csv", sep = "\t")
 write.table(sleuth_significant, file = "sleuth/significant_transcripts.csv", sep = "\t")
 

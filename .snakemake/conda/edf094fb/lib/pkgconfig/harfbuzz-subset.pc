@@ -1,0 +1,12 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb
+exec_prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb
+libdir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/lib
+includedir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/include
+
+Name: harfbuzz
+Description: HarfBuzz font subsetter
+Version: 1.9.0
+
+Requires: harfbuzz
+Libs: -L${libdir} -lharfbuzz-subset
+Cflags: -I${includedir}/harfbuzz

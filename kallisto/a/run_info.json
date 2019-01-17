@@ -8,6 +8,6 @@
 	"p_unique": 11.9,
 	"kallisto_version": "0.44.0",
 	"index_version": 10,
-	"start_time": "Thu Jan 10 15:58:47 2019",
+	"start_time": "Thu Jan 17 16:28:12 2019",
 	"call": "kallisto quant --bootstrap-samples=2 -i kallisto/transcripts.idx -o kallisto/a data/reads/a.chr21.1.fq data/reads/a.chr21.2.fq"
 }

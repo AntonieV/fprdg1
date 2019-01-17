@@ -1,0 +1,14 @@
+prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb
+exec_prefix=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb
+libdir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/lib
+includedir=/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 22.1.16
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -L/home/sattle00/Fachprojekt/fprdg1/.snakemake/conda/edf094fb/lib -lpng16 -lm -lz -lm
+Cflags: -I${includedir}/freetype2

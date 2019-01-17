@@ -1,6 +1,6 @@
 channels:
+  - conda-forge/label/cf201901
   - bioconda
-  - conda-forge
 dependencies:
   - snakemake-minimal =5.2.4
   - python =3.6

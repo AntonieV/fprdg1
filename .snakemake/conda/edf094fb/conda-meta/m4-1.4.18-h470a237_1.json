@@ -1,0 +1,78 @@
+{
+  "arch": "x86_64",
+  "build": "h470a237_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/label/cf201901/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=4.9"
+  ],
+  "extracted_package_dir": "/home/sattle00/miniconda3/pkgs/m4-1.4.18-h470a237_1",
+  "features": "",
+  "files": [
+    "bin/m4",
+    "share/info/m4.info",
+    "share/info/m4.info-1",
+    "share/info/m4.info-2",
+    "share/man/man1/m4.1"
+  ],
+  "fn": "m4-1.4.18-h470a237_1.tar.bz2",
+  "license": "GPL-3.0",
+  "link": {
+    "source": "/home/sattle00/miniconda3/pkgs/m4-1.4.18-h470a237_1",
+    "type": 1
+  },
+  "md5": "20668c3b37a9c2023c0a14359e138323",
+  "name": "m4",
+  "package_tarball_full_path": "/home/sattle00/miniconda3/pkgs/m4-1.4.18-h470a237_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/m4",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/m4_1538434516201/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "7e327dc683d92ab5b9543f4994cd7043d63bc8658dcfc367a14b3af2f4ce403d",
+        "sha256_in_prefix": "ff5ec3356bb0072c34d63af8389f0fdb4ccdc65b65ba73b939303fc4dbf3faa8",
+        "size_in_bytes": 215575
+      },
+      {
+        "_path": "share/info/m4.info",
+        "path_type": "hardlink",
+        "sha256": "206459e2a9f5e0d50bc4ccdbb4b229d15b8276438b3d9cdab8a0eb26089901d6",
+        "sha256_in_prefix": "206459e2a9f5e0d50bc4ccdbb4b229d15b8276438b3d9cdab8a0eb26089901d6",
+        "size_in_bytes": 3508
+      },
+      {
+        "_path": "share/info/m4.info-1",
+        "path_type": "hardlink",
+        "sha256": "93a5a387ba2372ca2369c2fa7d38ab9b555ad86e52c6e549f82d2715af7097ed",
+        "sha256_in_prefix": "93a5a387ba2372ca2369c2fa7d38ab9b555ad86e52c6e549f82d2715af7097ed",
+        "size_in_bytes": 300766
+      },
+      {
+        "_path": "share/info/m4.info-2",
+        "path_type": "hardlink",
+        "sha256": "df031bc141c3786ce72d6a1de602f100be993865568e2d86dca64a32907a3b63",
+        "sha256_in_prefix": "df031bc141c3786ce72d6a1de602f100be993865568e2d86dca64a32907a3b63",
+        "size_in_bytes": 54317
+      },
+      {
+        "_path": "share/man/man1/m4.1",
+        "path_type": "hardlink",
+        "sha256": "e9c1e0416cea9b7613ba1a4b538009a7efe080670b3adb1b75e5b223254a2552",
+        "sha256_in_prefix": "e9c1e0416cea9b7613ba1a4b538009a7efe080670b3adb1b75e5b223254a2552",
+        "size_in_bytes": 3854
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 169066,
+  "subdir": "linux-64",
+  "timestamp": 1538434569400,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/label/cf201901/linux-64/m4-1.4.18-h470a237_1.tar.bz2",
+  "version": "1.4.18"
+}
