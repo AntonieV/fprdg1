@@ -6,3 +6,6 @@ transcripts:
 
 transcripts_gtf:
     data/ref/annotation.chr21.gtf
+
+clust_dist:
+    clustering_distance.txt
