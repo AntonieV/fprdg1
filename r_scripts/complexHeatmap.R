@@ -11,94 +11,57 @@
 
 ##############################################################
 
-suppressMessages({
-  library("sleuth")
-})
-
 library(ComplexHeatmap)
-library(circlize)
+library(rsvg)
+#library(circlize)
 
-######################## Laden der csv-Sleuth-Daten #############################
+#Input zum direkten Testen ohne Workflow
+#path.matr <- "../sleuth/sleuth_matrix.csv"
+#path.dist <- "../clustering_distance.txt"
 
+#Snakemake-Input
+path.matr <- snakemake@input[["matrix"]]
+path.dist <- snakemake@input[["dist"]]
 
-current.dir <- getwd()
-setwd("../sleuth")
-path <- getwd()
+write("\n", file = path.dist, append = TRUE)
 
+matr.so <- read.table(path.matr)
+dist <- gsub("[[:space:]]", "", unlist(read.table(path.dist, stringsAsFactors = FALSE)))
 
-sleuth.tmp <- read.table("significant_transcripts.csv", header = TRUE, 
-                                 stringsAsFactors = FALSE)
+#NA-Zeilen entfernen
 
-names(sleuth.tmp)[1] <- "target_id" # Korrektur des Spaltennamens fuer die Transcript-IDs
+matr.so <- na.omit(matr.so)
 
-sleuth.sig <- data.frame(sleuth.tmp$target_id, stringsAsFactors = FALSE)
+#Null-Zeilen entfernen
 
-##################### Alternativ Laden des Sleuth-Objektes #####################
-#readRDS()
-#sleuth_load('sleuth/so')
-
-setwd(current.dir)
-
-#Liste der csv-Dateien im Verzeichnis /sleuth, also Ergebnisse der Sleuth-Analyse
-#regular Expressions: ".*" (jedes Zeichen beliebig oft, "^" (leeres Wort am Anfang), 
-#                     "$"(leeres Wort am Ende))
+matr.so <- subset.matrix(matr.so, rowSums(matr.so)!=0)
 
 
 
-sleuth_path <- list.files(path, pattern = ".*significant_transcripts{1}.*\\.csv$")
-#sleuth_path <- gsub(" ","",paste(path, "/", sleuth_path))
-sleuth_path <- unlist(sleuth_path)
+#Heatmap(matr.notnull, clustering_distance_rows = "canberra")
 
-setwd(path)
+#matr.med <- median(apply(matr.notnull, 2, median))
+#matr.mean <- mean(apply(matr.notnull, 2, mean))
+#matr.range <- apply(matr.notnull, 2, range)
+#matr.stdev <- mean(apply(matr.notnull, 2, sd))
 
-for(i in seq(along=sleuth_path)){
-  result.sleuth <- read.table(sleuth_path[i], header = TRUE)
-  sleuth.sig <- rbind(c(sleuth.sig, result.sleuth[names(result.sleuth) == "pval"]))
-}
-  
-extract.sleuth.datas <- function(sleuth_path, sleuth.sig){
-  
-  results.sleuth <- read.table(sleuth_path, header = TRUE)
-  sleuth.sig <- rbind(sleuth.sig, result.sleuth[names(result.sleuth) == "pval"])
-}
+#Bestimmung von Median(.5-Quantil) und der Quartile fuer die Faerbung der Heatmap
+so.min <- min(matr.so)
+so.quantiles <- rowMeans(apply(matr.so, 2, quantile, probs = c(.25, .5, .75)))
 
-sleuth.sig <- lapply(sleuth_path, sleuth_path[1], extract.sleuth.datas(sleuth_path, sleuth.sig))
+#Heatmap wird aufgebaut
 
-#######################################################################
-######## ZUM DEBUGGEN: Ausgabe der Hilfstabelle in der Konsole ########
+svg(filename = "../plots/heatmap.svg")
+Heatmap(matr.so, 
+        name = "normalized\nestimated\ncounts", 
+        column_title = "Samples",
+        column_names_side = "top",
+        row_title = "Transcripts",
+        row_names_side = "right",
+        row_dend_side = "left",
+        col = colorRamp2(c(so.min, so.quantiles), c("darkgreen", "green", "darkred", "red")), 
+        cluster_rows = TRUE, 
+        cluster_columns = TRUE, 
+        clustering_distance_rows = dist)
 
-
-#matr.sleuth.sig <-
-
-
-
-
-
-
-
-
-
-set.seed(123)
-
-mat = cbind(rbind(matrix(rnorm(16, -1), 4), matrix(rnorm(32, 1), 8)),
-            rbind(matrix(rnorm(24, 1), 4), matrix(rnorm(48, -1), 8)))
-
-# permute the rows and columns
-mat = mat[sample(nrow(mat), nrow(mat)), sample(ncol(mat), ncol(mat))]
-
-rownames(mat) = paste0("R", 1:12)
-colnames(mat) = paste0("C", 1:10)
-
-Heatmap(mat, clustering_distance_rows = "pearson")
-
-mat2 = mat
-mat2[1, 1] = 100000
-Heatmap(mat2, col = colorRamp2(c(-3, 0, 3), c("darkgreen", "white", "darkred")), 
-        cluster_rows = FALSE, cluster_columns = FALSE, clustering_distance_rows = "pearson")
-
-mat_with_na = mat
-mat_with_na[sample(c(TRUE, FALSE), nrow(mat)*ncol(mat), replace = TRUE, prob = c(1, 9))] = NA
-Heatmap(mat_with_na, na_col = "black", clustering_distance_rows = "pearson")
-  
-  
-  
+dev.off()
