@@ -2,7 +2,6 @@ channels:
   - bioconda
   - icm-iconics
 dependencies:
-  - r-circlize =0.4.5
   - r-biocmanager =1.30.4
   - bioconductor-complexheatmap =1.18
 
