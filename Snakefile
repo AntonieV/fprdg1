@@ -41,6 +41,17 @@ rule sleuth:
     script:
         "r_scripts/sleuth_script.R"
 
+rule heatmap:
+    input:
+        matrix = "sleuth/sleuth_matrix.csv"
+        dist = open(config["clust_dist"], "r").read()
+    conda:
+        "envs/complexHeatmap.yaml"
+    output:
+        "plots/heatmap.svg"
+    script:
+        "r_scripts/complexHeatmap.R"
+
 rule pizzly_prep:
     input:
         id = "kallisto/transcripts.idx",
