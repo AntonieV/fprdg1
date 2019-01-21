@@ -1,6 +1,9 @@
 samples:
     table_for_reads.csv
 
+kallisto_idx:
+    kallisto/transcripts.idx
+
 transcripts:
     data/ref/transcriptome.chr21.fa
 
