@@ -58,7 +58,7 @@ rule heatmap:
         matrix = "sleuth/sleuth_matrix.csv"
         dist = open(config["clust_dist"], "r").read()
     conda:
-        "envs/complexHeatmap.yaml"
+        "envs/heatmap.yaml"
     output:
         "plots/heatmap.svg"
     script:
