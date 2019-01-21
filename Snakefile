@@ -93,9 +93,9 @@ rule pizzly:
 
 rule pizzly_flatten:
     input:
-        "pizzly/{sample}/result.json"# ueber alle; expand("pizly/{sample}/result.json", sample = samples['sample'])
+        "pizzly/{sample}/result.json"# ueber alle; expand("pizzly/{sample}/result.json", sample = samples['sample'])
     output:
-        "pizzly/{sample}/genetable.txt" #TODO ort aendern
+        "plots/pizzly_genetable_{sample}.txt" #TODO eine datei pro sample aber svg
     shell:
         "python py_scripts/flatten_json.py {input} {output}"
 
@@ -105,7 +105,7 @@ rule pizzly_fragment_length:
     conda:
         "envs/pizzly_fragment_length.yaml"
     output:
-        "pizzly/{sample}/fragment_length.txt" #TODO ot aendern
+        "plots/{sample}pizzly_fragment_length_{sample}.txt" #TODO als svg
     shell:
         "python py_scripts/get_fragment_length.py {input} 0.95 {output} " #evtl andees percentil angeben
 
