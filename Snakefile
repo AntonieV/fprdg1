@@ -108,3 +108,13 @@ rule gage:
         
     script:
         "r_scripts/gage.R"
+
+rule svg_pdf:
+    input:
+        directory("plots")
+    conda:
+        "envs/svg_pdf.yaml"
+    output:
+        "rna-seq_plots.pdf"
+    script:
+        "r_scripts/svg_to_pdf.R"
