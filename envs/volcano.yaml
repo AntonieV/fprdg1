@@ -1,0 +1,6 @@
+channels:
+  -r
+  - conda-forge
+dependencies:
+  - mass =7.3
+  - calibrate =1.7.2
