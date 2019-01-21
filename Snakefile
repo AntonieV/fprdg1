@@ -19,16 +19,16 @@ rule kallisto_idx:
         "kallisto index -i {output} {input}"
 
 rule kallisto_quant:
-	input:
-		id = "kallisto/transcripts.idx",
-		fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
-		fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
-	conda:
-		"envs/kallisto.yaml"
-	output:
-		directory("kallisto/{sample}")
-	shell:
-		"kallisto quant --bootstrap-samples=2 -i {input.id} -o  {output} {input.fq1} {input.fq2}"
+    input:
+        id = "kallisto/transcripts.idx",
+        fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
+        fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
+    conda:
+        "envs/kallisto.yaml"
+    output:
+        directory("kallisto/{sample}")
+    shell:
+        "kallisto quant --bootstrap-samples=2 -i {input.id} -o  {output} {input.fq1} {input.fq2}"
 
 rule sleuth:
     input:
@@ -43,8 +43,8 @@ rule sleuth:
 
 rule volcano:
     input:
-        pval = "p-values_all_transcripts.csv"
-        matrix = "sleuth/sleuth_matrix.csv"
+        pval = "p-values_all_transcripts.csv",
+        matrix = "sleuth/sleuth_matrix.csv",
         samples = config["samples"]
     conda:
         "envs/volcano"
@@ -55,7 +55,7 @@ rule volcano:
 
 rule heatmap:
     input:
-        matrix = "sleuth/sleuth_matrix.csv"
+        matrix = "sleuth/sleuth_matrix.csv",
         dist = open(config["clust_dist"], "r").read()
     conda:
         "envs/heatmap.yaml"
@@ -74,7 +74,7 @@ rule pizzly_prep:
         file1 = "pizzly/{sample}/fusion.txt",
         file2 = "pizzly/{sample}/index.cache.txt"
     shell:
-        "kallisto quant -i {input.id} --fusion -o {output.ordner} {input.fq1} {input.fq2}"       
+        "kallisto quant -i {input.id} --fusion -o {output.ordner} {input.fq1} {input.fq2}"
 
 rule pizzly:
     input:
@@ -87,7 +87,7 @@ rule pizzly:
     output:
         eins = "{sample}.fusions.fasta",
         zwei = "{sample}.json",
-        drei = "{sample}"
+        drei = "directoy({sample})"
     shell:
         "pizzly -k 31 --gtf {input.uno} --cache {input.file2} --align-score 2 --insert-size 400 --fasta {input.transcript} --output {output.drei} {input.file1}"
 
