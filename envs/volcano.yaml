@@ -1,5 +1,5 @@
 channels:
-  -r
+  - r
   - conda-forge
 dependencies:
   - mass =7.3
