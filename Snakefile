@@ -41,6 +41,18 @@ rule sleuth:
     script:
         "r_scripts/sleuth_script.R"
 
+rule volcano:
+    input:
+        pval = "p-values_all_transcripts.csv"
+        matrix = "sleuth/sleuth_matrix.csv"
+        samples = config["samples"]
+    conda:
+        "envs/volcano"
+    output:
+        "plots/volcano.svg"
+    script:
+        "r_scripts/volcano.R"
+
 rule heatmap:
     input:
         matrix = "sleuth/sleuth_matrix.csv"
