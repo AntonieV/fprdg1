@@ -1,6 +1,7 @@
 configfile: "config.yaml"
 import pandas as pd
 
+#kallisto: kerne in config file?
 
 samples = pd.read_csv(config["samples"], sep = "\t")
 
@@ -15,13 +16,13 @@ rule kallisto_idx:
     conda:
         "envs/kallisto.yaml"
     output:
-        "kallisto/transcripts.idx"
+        config["kallisto_idx"]
     shell:
         "kallisto index -i {output} {input}"
 
 rule kallisto_quant:
     input:
-        id = "kallisto/transcripts.idx",
+        id = config["kallisto_idx"],
         fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
         fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
     conda:
@@ -67,38 +68,47 @@ rule heatmap:
 
 rule pizzly_prep:
     input:
-        id = "kallisto/transcripts.idx",
+        id = config["kallisto_idx"],
         fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
         fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
+    conda:
+        "envs/kallisto.yaml"
     output:
-        ordner = directory("pizzly/{sample}"),
-        file1 = "pizzly/{sample}/fusion.txt",
-        file2 = "pizzly/{sample}/index.cache.txt"
+        directory("pizzly/{sample}/prep")
     shell:
-        "kallisto quant -i {input.id} --fusion -o {output.ordner} {input.fq1} {input.fq2}"
+        "kallisto quant -i {input.id} --fusion -o {output} {input.fq1} {input.fq2}"
 
 rule pizzly:
     input:
         transcript = config["transcripts"],
-        uno = config["transcripts_gtf"],
-        file1 = "pizzly/{sample}/fusion.txt",
-        file2 = "pizzly/{sample}/index.cache.txt"
+        gtf = config["transcripts_gtf"],
+        dir = directory("pizzly/{sample}/prep")
     conda:
         "envs/pizzly.yaml"
+    params:
+        "pizzly/{sample}/result"
     output:
-        eins = "{sample}.fusions.fasta",
-        zwei = "{sample}.json",
-        drei = "directoy({sample})"
+        "pizzly/{sample}/result.json"
     shell:
-        "pizzly -k 31 --gtf {input.uno} --cache {input.file2} --align-score 2 --insert-size 400 --fasta {input.transcript} --output {output.drei} {input.file1}"
+        "pizzly -k 31 --gtf {input.gtf} --cache {input.dir}/indx.cache.txt --align-score 2 --insert-size 400 --fasta {input.transcript} --output {params} {input.dir}/fusion.txt"
 
 rule pizzly_flatten:
     input:
-        "test.json"
+        "pizzly/{sample}/result.json"# ueber alle; expand("pizzly/{sample}/result.json", sample = samples['sample'])
     output:
-        "genetable.txt"
+        "plots/pizzly_genetable_{sample}.txt" #TODO eine datei pro sample aber svg
     shell:
-        "py:scripts/flatten_json.py {input} [{output}]"
+        "python py_scripts/flatten_json.py {input} {output}"
+
+rule pizzly_fragment_length:
+    input:
+        "kallisto/{sample}/abundance.h5"#ueber alle; expand("kallisto/{sample}/abundance.h5", sample = samples['sample'])
+    conda:
+        "envs/pizzly_fragment_length.yaml"
+    output:
+        "plots/{sample}pizzly_fragment_length_{sample}.txt" #TODO als svg
+    shell:
+        "python py_scripts/get_fragment_length.py {input} 0.95 {output} " #evtl andees percentil angeben
 
 rule gage:
     input:

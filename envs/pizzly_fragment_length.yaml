@@ -1,0 +1,6 @@
+channels:
+  - conda-forge/label/cf201901
+  - bioconda
+dependencies:
+  - h5py
+  - numpy
