@@ -5,6 +5,7 @@ import pandas as pd
 
 samples = pd.read_csv(config["samples"], sep = "\t")
 
+
 rule all:
     input:
         "sleuth/significant_transcripts.csv"
@@ -57,7 +58,7 @@ rule volcano:
 rule heatmap:
     input:
         matrix = "sleuth/sleuth_matrix.csv",
-        dist = open(config["clust_dist"], "r").read()
+        dist = config["clust_dist"]
     conda:
         "envs/heatmap.yaml"
     output:

@@ -8,12 +8,15 @@
 ## try http:// if https:// URLs are not supported
 #source("https://bioconductor.org/biocLite.R")
 #biocLite("ComplexHeatmap")
+#install.packages("Cairo")
 
 ##############################################################
 
 library(ComplexHeatmap)
 library(rsvg)
-#library(circlize)
+library(circlize)
+#library(cairo)
+#library(svglite)
 
 #Input zum direkten Testen ohne Workflow
 #path.matr <- "../sleuth/sleuth_matrix.csv"
@@ -51,7 +54,8 @@ so.quantiles <- rowMeans(apply(matr.so, 2, quantile, probs = c(.25, .5, .75)))
 
 #Heatmap wird aufgebaut
 
-svg(filename = "../plots/heatmap.svg")
+svg(file=snakemake@output[[1]])
+#svg(filename = "../plots/heatmap.svg")
 Heatmap(matr.so, 
         name = "normalized\nestimated\ncounts", 
         column_title = "Samples",
@@ -63,5 +67,4 @@ Heatmap(matr.so,
         cluster_rows = TRUE, 
         cluster_columns = TRUE, 
         clustering_distance_rows = dist)
-
 dev.off()
