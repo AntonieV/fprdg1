@@ -140,7 +140,7 @@ rule boxen_plot:
     script: 
         "py_scripts/boxen_plot.py"
 
-rule p-value_hist:
+rule p_value_hist:
     input: 
         "sleuth/p-values_all_transcripts.csv"  #sleuth-tabelle mit 'pval'-Spalte
     conda:
