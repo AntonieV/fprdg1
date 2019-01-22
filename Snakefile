@@ -129,3 +129,33 @@ rule svg_pdf:
         "rna-seq_plots.pdf"
     script:
         "r_scripts/svg_to_pdf.R"
+
+rule boxen_plot:
+    input: 
+        "sleuth/sleuth_matrix.csv"
+    conda:
+        "envs/boxen.yaml"
+    output: 
+        "plots/boxen.svg"
+    script: 
+        "py_scripts/boxen_plot.py"
+
+rule p-value_hist:
+    input: 
+        "sleuth/p-values_all_transcripts.csv"  #sleuth-tabelle mit 'pval'-Spalte
+    conda:
+        "envs/boxen.yaml"
+    output: 
+        "plots/p-value.svg"
+    script: 
+        "py_scripts/p-value_histogramm.py"
+
+rule strip_plot:
+    input: 
+        "sleuth/significant_transcripts.csv"  #sleuth-matrix, mit den Spalten target_id, which_units???
+    conda:
+        "envs/boxen.yaml"
+    output: 
+        "plots/strip.svg"
+    script: 
+        "py_scripts/strip_plot.py"
