@@ -8,7 +8,9 @@ samples = pd.read_csv(config["samples"], sep = "\t")
 
 rule all:
     input:
-        "sleuth/significant_transcripts.csv"
+        "plots/heatmap.svg",
+        "plots/volcano.svg"
+
 
 rule kallisto_idx:
     input:
@@ -39,7 +41,10 @@ rule sleuth:
     conda:
         "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
     output:
-        "sleuth/significant_transcripts.csv"
+        "sleuth/significant_transcripts.csv",
+        "sleuth/p-values_all_transcripts.csv",
+        "sleuth/sleuth_matrix.csv",
+        "sleuth/sleuth_object"
     script:
         "r_scripts/sleuth_script.R"
 

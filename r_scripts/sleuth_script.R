@@ -1,3 +1,4 @@
+library(biomaRt)
 #Sleuth starten:
 
 suppressMessages({
@@ -21,7 +22,16 @@ s2c <- dplyr::select(s2c, sample, condition)
 #Die Pfade der Kallisto-Dateien muessen nun als neue Spalte an die Hilfstabelle angefuegt werden:
 s2c <- dplyr::mutate(s2c, path = kal_dirs)
 
-so <- sleuth_prep(s2c, full_model = ~condition) #extra_bootstrap_summary = FALSE) #, read_bootstrap_tpm=TRUE, full_model = ~condition)
+#Zuordnung der Transkripte zu Genen
+mart <- biomaRt::useMart(biomart = "ENSEMBL_MART_ENSEMBL",
+                         dataset = "hsapiens_gene_ensembl",
+                         host = 'ensembl.org')
+t2g <- biomaRt::getBM(attributes = c("ensembl_transcript_id", "ensembl_gene_id",
+                                     "external_gene_name"), mart = mart)
+t2g <- dplyr::rename(t2g, target_id = ensembl_transcript_id,
+                     ens_gene = ensembl_gene_id, ext_gene = external_gene_name)
+
+so <- sleuth_prep(s2c, full_model = ~condition, target_mapping = t2g) #extra_bootstrap_summary = FALSE) #, read_bootstrap_tpm=TRUE, full_model = ~condition)
 
 #estimate parameters for the sleuth response error measurement (full) model
 #Das Sleuth-Objekt an das Full-Model anpassen:
