@@ -1,5 +1,5 @@
 channels:
-  - conda-forge/label/cf201901
+  - conda-forge
 dependencies:
   - r-dplyr =0.7.8
   - r-mass =7.3

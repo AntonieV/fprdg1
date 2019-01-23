@@ -1,6 +1,5 @@
 library(MASS)
 library(calibrate)
-library(dplyr)
 
 #p_all <- read.table("../sleuth/p-values_all_transcripts.csv", header=TRUE)
 #matr <- read.table("../sleuth/sleuth_matrix.csv", header=TRUE)
