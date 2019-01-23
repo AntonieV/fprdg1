@@ -8,7 +8,9 @@ samples = pd.read_csv(config["samples"], sep = "\t")
 
 rule all:
     input:
-        "sleuth/significant_transcripts.csv"
+        "plots/heatmap.svg",
+        "plots/volcano.svg"
+
 
 rule kallisto_idx:
     input:
@@ -39,17 +41,20 @@ rule sleuth:
     conda:
         "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
     output:
-        "sleuth/significant_transcripts.csv"
+        "sleuth/significant_transcripts.csv",
+        "sleuth/p-values_all_transcripts.csv",
+        "sleuth/sleuth_matrix.csv",
+        "sleuth/sleuth_object"
     script:
         "r_scripts/sleuth_script.R"
 
 rule volcano:
     input:
-        pval = "p-values_all_transcripts.csv",
+        pval = "sleuth/p-values_all_transcripts.csv",
         matrix = "sleuth/sleuth_matrix.csv",
         samples = config["samples"]
     conda:
-        "envs/volcano"
+        "envs/volcano.yaml"
     output:
         "plots/volcano.svg"
     script:
@@ -57,8 +62,10 @@ rule volcano:
 
 rule heatmap:
     input:
+        "plots/volcano.svg",
         matrix = "sleuth/sleuth_matrix.csv",
-        dist = config["clust_dist"]
+        dist = config["clust_dist"],
+        p_all = "sleuth/p-values_all_transcripts.csv"
     conda:
         "envs/heatmap.yaml"
     output:
@@ -114,11 +121,11 @@ rule pizzly_fragment_length:
 
 rule gage:
     input:
-        
+
     conda:
         "envs/gage.yaml"
     output:
-        
+
     script:
         "r_scripts/gage.R"
 
@@ -131,3 +138,33 @@ rule svg_pdf:
         "rna-seq_plots.pdf"
     script:
         "r_scripts/svg_to_pdf.R"
+
+rule boxen_plot:
+    input:
+        "sleuth/sleuth_matrix.csv"
+    conda:
+        "envs/boxen.yaml"
+    output:
+        "plots/boxen.svg"
+    script:
+        "py_scripts/boxen_plot.py"
+
+rule p_value_hist:
+    input:
+        "sleuth/p-values_all_transcripts.csv"  #sleuth-tabelle mit 'pval'-Spalte
+    conda:
+        "envs/boxen.yaml"
+    output:
+        "plots/p-value.svg"
+    script:
+        "py_scripts/p-value_histogramm.py"
+
+rule strip_plot:
+    input:
+        "sleuth/significant_transcripts.csv"  #sleuth-matrix, mit den Spalten target_id, which_units???
+    conda:
+        "envs/boxen.yaml"
+    output:
+        "plots/strip.svg"
+    script:
+        "py_scripts/strip_plot.py"

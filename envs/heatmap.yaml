@@ -1,12 +1,9 @@
 channels:
-  - icm-iconics
   - conda-forge
   - bioconda
 dependencies:
-  - r-biocmanager =1.30.4
   - r-circlize =0.4.5
   - bioconductor-complexheatmap =1.18
-  - r-rsvg =1.3
-  - librsvg =2.40.19
+
 
 
