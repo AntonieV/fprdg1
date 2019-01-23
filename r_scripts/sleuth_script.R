@@ -39,7 +39,7 @@ so <- sleuth_lrt(so, 'reduced', 'full')
 models(so)
 
 #Betrachen der signifikanten Ergebnisse aus dem Likelihood-Ratio-Test:
-sleuth_table <- sleuth_results(so, 'reduced:full', 'lrt', show_all = FALSE)
+sleuth_table <- sleuth_results(so, 'reduced:full', 'lrt', show_all = TRUE)
 sleuth_significant <- dplyr::filter(sleuth_table, qval <= 0.05)
 
 #### TODO - Gennamen zu den IDs hinzugfuegen

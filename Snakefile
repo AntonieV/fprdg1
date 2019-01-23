@@ -45,11 +45,11 @@ rule sleuth:
 
 rule volcano:
     input:
-        pval = "p-values_all_transcripts.csv",
+        pval = "sleuth/p-values_all_transcripts.csv",
         matrix = "sleuth/sleuth_matrix.csv",
         samples = config["samples"]
     conda:
-        "envs/volcano"
+        "envs/volcano.yaml"
     output:
         "plots/volcano.svg"
     script:
@@ -112,11 +112,11 @@ rule pizzly_fragment_length:
 
 rule gage:
     input:
-        
+
     conda:
         "envs/gage.yaml"
     output:
-        
+
     script:
         "r_scripts/gage.R"
 
@@ -131,31 +131,31 @@ rule svg_pdf:
         "r_scripts/svg_to_pdf.R"
 
 rule boxen_plot:
-    input: 
+    input:
         "sleuth/sleuth_matrix.csv"
     conda:
         "envs/boxen.yaml"
-    output: 
+    output:
         "plots/boxen.svg"
-    script: 
+    script:
         "py_scripts/boxen_plot.py"
 
 rule p_value_hist:
-    input: 
+    input:
         "sleuth/p-values_all_transcripts.csv"  #sleuth-tabelle mit 'pval'-Spalte
     conda:
         "envs/boxen.yaml"
-    output: 
+    output:
         "plots/p-value.svg"
-    script: 
+    script:
         "py_scripts/p-value_histogramm.py"
 
 rule strip_plot:
-    input: 
+    input:
         "sleuth/significant_transcripts.csv"  #sleuth-matrix, mit den Spalten target_id, which_units???
     conda:
         "envs/boxen.yaml"
-    output: 
+    output:
         "plots/strip.svg"
-    script: 
+    script:
         "py_scripts/strip_plot.py"
