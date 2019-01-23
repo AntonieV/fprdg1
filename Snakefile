@@ -62,8 +62,10 @@ rule volcano:
 
 rule heatmap:
     input:
+        "plots/volcano.svg",
         matrix = "sleuth/sleuth_matrix.csv",
-        dist = config["clust_dist"]
+        dist = config["clust_dist"],
+        p_all = "sleuth/p-values_all_transcripts.csv"
     conda:
         "envs/heatmap.yaml"
     output:

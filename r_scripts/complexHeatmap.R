@@ -9,6 +9,7 @@ library(circlize)
 #Snakemake-Input
 path.matr <- snakemake@input[["matrix"]]
 path.dist <- snakemake@input[["dist"]]
+path.p_all <- snakemake@input[["p_all"]]
 
 write("\n", file = path.dist, append = TRUE)
 
