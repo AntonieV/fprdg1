@@ -1,0 +1,4 @@
+	genes
+0	{'value': 'New', 'onclick': 'CreateNewDoc()'}
+1	{'value': 'Open', 'onclick': 'OpenDoc()'}
+2	{'value': 'Close', 'onclick': 'CloseDoc()'}

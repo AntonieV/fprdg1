@@ -95,8 +95,10 @@ rule pizzly:
 rule pizzly_flatten:
     input:
         "pizzly/{sample}/result.json"# ueber alle; expand("pizzly/{sample}/result.json", sample = samples['sample'])
+    conda:
+        "envs/pizzly_flatten.yaml"
     output:
-        "plots/pizzly_genetable_{sample}.txt" #TODO eine datei pro sample aber svg
+        "plots/pizzly_genetable_{sample}.csv" #TODO eine datei pro sample aber svg
     shell:
         "python py_scripts/flatten_json.py {input} {output}"
 

@@ -1,0 +1,6 @@
+channels:
+  - conda-forge/label/cf201901
+  - bioconda
+dependencies:
+  - python =3.6
+  - pandas
