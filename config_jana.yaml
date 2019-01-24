@@ -1,0 +1,14 @@
+samples:
+    ../data/samples.tsv
+
+kallisto_idx:
+    ../data/homo_sapiens_transcriptome.idx
+
+transcripts:
+    ../data/homo_sapiens_transcriptome.fa.gz
+
+transcripts_gtf:
+    ../data/Homo_sapiens.GRCh38.95.gtf.gz
+
+clust_dist:
+    clustering_distance.txt

@@ -80,30 +80,32 @@ rule pizzly_prep:
         fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
     conda:
         "envs/kallisto.yaml"
+    params:
+        "pizzly/{sample}/prep"
     output:
-        directory("pizzly/{sample}/prep")
+        "pizzly/{sample}/prep/fusion.txt",
+        "pizzly/{sample}/prep/abundance.h5"
     shell:
-        "kallisto quant -i {input.id} --fusion -o {output} {input.fq1} {input.fq2}"
+        "kallisto quant -i {input.id} --fusion -o {params} {input.fq1} {input.fq2}"
 
 rule pizzly:
     input:
         transcript = config["transcripts"],
         gtf = config["transcripts_gtf"],
-        dir = directory("pizzly/{sample}/prep")
+        fusions = "pizzly/{sample}/prep/fusion.txt"
     conda:
         "envs/pizzly.yaml"
     params:
+        "pizzly/{sample}/prep",
         "pizzly/{sample}/result"
     output:
         "pizzly/{sample}/result.json"
     shell:
-        "pizzly -k 31 --gtf {input.gtf} --cache {input.dir}/indx.cache.txt --align-score 2 --insert-size 400 --fasta {input.transcript} --output {params} {input.dir}/fusion.txt"
+        "pizzly -k 31 --gtf {input.gtf} --cache {params[0]}/indx.cache.txt --align-score 2 --insert-size 400 --fasta {input.transcript} --output {params[1]} {input.fusions}"
 
 rule pizzly_flatten:
     input:
         "pizzly/{sample}/result.json"# ueber alle; expand("pizzly/{sample}/result.json", sample = samples['sample'])
-    conda:
-        "envs/pizzly_flatten.yaml"
     output:
         "plots/pizzly_genetable_{sample}.csv" #TODO eine datei pro sample aber svg
     shell:
@@ -111,14 +113,19 @@ rule pizzly_flatten:
 
 rule pizzly_fragment_length:
     input:
-        "kallisto/{sample}/abundance.h5"#ueber alle; expand("kallisto/{sample}/abundance.h5", sample = samples['sample'])
+        "pizzly/{sample}/prep/abundance.h5"
     conda:
         "envs/pizzly_fragment_length.yaml"
     output:
-        "plots/{sample}pizzly_fragment_length_{sample}.txt" #TODO als svg
+        "plots/pizzly_fragment_length_{sample}.csv" #TODO als svg
     shell:
         "python py_scripts/get_fragment_length.py {input} 0.95 {output} " #evtl andees percentil angeben
 
+rule pizzly_all:
+    input:
+        expand("plots/pizzly_genetable_{sample}.csv", sample = samples['sample']),
+        expand("plots/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
+    
 rule gage:
     input:
 

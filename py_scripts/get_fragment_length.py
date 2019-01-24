@@ -1,6 +1,7 @@
 import h5py
 import numpy as np
 import sys
+import csv
 
 
 def get_cumulative_dist(fn):
@@ -26,9 +27,9 @@ if __name__ == "__main__":
                 cutoff = 0.95
             y = get_cumulative_dist(fn)
             fraglen = np.argmax(y > .95)
-            outf = open(sys.argv[3],'w')
-            outf.write('h')
-            print(fraglen)
-            outf.write(str(fraglen))
-            if outf != sys.stdout:
-                outf.close()
+
+            with open(sys.argv[3], 'w') as csvfile:
+                csvwriter = csv.writer(csvfile, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+                csvwriter.writerow(["95 percentile fragment length"])
+                csvwriter.writerow([fraglen])
+
