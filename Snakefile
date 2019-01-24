@@ -9,7 +9,8 @@ samples = pd.read_csv(config["samples"], sep = "\t")
 rule all:
     input:
         "plots/heatmap.svg",
-        "plots/volcano.svg"
+        "plots/volcano.svg",
+        "plots/pca.svg"
 
 
 rule kallisto_idx:
@@ -75,7 +76,7 @@ rule heatmap:
 
 rule pca:
     input:
-        "plots/heatmap.svg"
+        "plots/heatmap.svg",
         "sleuth/sleuth_matrix.csv"
     conda:
         "envs/pca.yaml"
