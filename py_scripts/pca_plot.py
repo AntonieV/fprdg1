@@ -26,6 +26,6 @@ plt.title("PCA of Transcriptexpression")
 plt.legend(loc="best", shadow=False, scatterpoints=1)
 plt.axis([-40, 40, -1.5, 1.5])
 
-plt.show()
+#plt.show()
 
 plt.savefig(snakemake.output[0])

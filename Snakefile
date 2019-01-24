@@ -75,9 +75,9 @@ rule heatmap:
         "r_scripts/complexHeatmap.R"
 
 rule pca:
-    input:
-        "plots/heatmap.svg",
-        "sleuth/sleuth_matrix.csv"
+    input:        
+        "sleuth/sleuth_matrix.csv",
+	"plots/heatmap.svg"
     conda:
         "envs/pca.yaml"
     output:
