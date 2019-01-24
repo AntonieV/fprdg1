@@ -1,5 +1,5 @@
 channels:
-  - conda-forge/label/cf201901
+  - conda-forge
   - bioconda
 dependencies:
   - matplotlib =3.0.2
