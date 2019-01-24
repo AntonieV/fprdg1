@@ -13,6 +13,8 @@ path <- getwd() # aktuelles Verzeichnis speichern
 
 kal_dirs <- file.path(gsub(" ","", paste(path, "/", snakemake@input[["kal_path"]])))  # Liste der Pfadnamen der einzelnen Kallisto-results
 
+kal_dirs <- strsplit(kal_dirs, "/abu.*")[[1]][1]
+
 
 s2c <- read.table(file = snakemake@input[["sam_tab"]] , sep = "\t", 
                   header = TRUE, stringsAsFactors = FALSE)

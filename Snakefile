@@ -1,4 +1,4 @@
-configfile: "config.yaml"
+configfile: "test_config.yaml"
 import pandas as pd
 
 #kallisto: kerne in config file?
@@ -29,14 +29,17 @@ rule kallisto_quant:
         fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
     conda:
         "envs/kallisto.yaml"
+    params:
+        "kallisto/{sample}"
     output:
-        directory("kallisto/{sample}")
+        "kallisto/{sample}/fusion.txt",
+        "kallisto/{sample}/abundance.h5"
     shell:
-        "kallisto quant --bootstrap-samples=2 -i {input.id} -o  {output} {input.fq1} {input.fq2}"
+        "kallisto quant --fusion --bootstrap-samples=2 -i {input.id} -o  {params} {input.fq1} {input.fq2}"
 
 rule sleuth:
     input:
-        kal_path = expand("kallisto/{sample}", sample = samples['sample']), #Liste der Kallisto-Pfade
+        kal_path = expand("kallisto/{sample}/abundance.h5", sample = samples['sample']), #Liste der Kallisto-Pfade
         sam_tab = config["samples"]
     conda:
         "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
@@ -73,51 +76,36 @@ rule heatmap:
     script:
         "r_scripts/complexHeatmap.R"
 
-rule pizzly_prep:
-    input:
-        id = config["kallisto_idx"],
-        fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
-        fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
-    conda:
-        "envs/kallisto.yaml"
-    params:
-        "pizzly/{sample}/prep"
-    output:
-        "pizzly/{sample}/prep/fusion.txt",
-        "pizzly/{sample}/prep/abundance.h5"
-    shell:
-        "kallisto quant -i {input.id} --fusion -o {params} {input.fq1} {input.fq2}"
-
 rule pizzly:
     input:
         transcript = config["transcripts"],
         gtf = config["transcripts_gtf"],
-        fusions = "pizzly/{sample}/prep/fusion.txt"
+        fusion = "kallisto/{sample}/fusion.txt"
     conda:
         "envs/pizzly.yaml"
     params:
-        "pizzly/{sample}/prep",
+        "kallisto/{sample}",
         "pizzly/{sample}/result"
     output:
         "pizzly/{sample}/result.json"
     shell:
-        "pizzly -k 31 --gtf {input.gtf} --cache {params[0]}/indx.cache.txt --align-score 2 --insert-size 400 --fasta {input.transcript} --output {params[1]} {input.fusions}"
+        "pizzly -k 31 --gtf {input.gtf} --cache {params[0]}/indx.cache.txt --align-score 2 --insert-size 400 --fasta {input.transcript} --output {params[1]} {input.fusion}"
 
 rule pizzly_flatten:
     input:
         "pizzly/{sample}/result.json"# ueber alle; expand("pizzly/{sample}/result.json", sample = samples['sample'])
     output:
-        "plots/pizzly_genetable_{sample}.csv" #TODO eine datei pro sample aber svg
+        "plots/pizzly/pizzly_genetable_{sample}.csv"
     shell:
         "python py_scripts/flatten_json.py {input} {output}"
 
 rule pizzly_fragment_length:
     input:
-        "pizzly/{sample}/prep/abundance.h5"
+        "kallisto/{sample}/abundance.h5"
     conda:
         "envs/pizzly_fragment_length.yaml"
     output:
-        "plots/pizzly_fragment_length_{sample}.csv" #TODO als svg
+        "plots/pizzly/pizzly_fragment_length_{sample}.csv"
     shell:
         "python py_scripts/get_fragment_length.py {input} 0.95 {output} " #evtl andees percentil angeben
 
