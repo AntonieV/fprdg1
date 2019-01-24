@@ -18,6 +18,9 @@ if(any(p_all$target_id != row.names(matr))){
   quit(status = 1, runLast = FALSE)
   
 }else{
+  #Ersetzen der target_id durch Gen-Namen
+  rownames(matr) = make.names(p_all$ext_gene, unique = TRUE)
+  
   condition_1 <- samples$sample[samples$condition == as.character(factor(samples$condition)[1])]
   condition_2 <- samples$sample[samples$condition == as.character(factor(samples$condition)[2])]
   
@@ -52,11 +55,11 @@ if(any(p_all$target_id != row.names(matr))){
       #den durch Post-Hoc-Tests normaliesierten p-Werten (qval, also Korrektur der 
             #Alphafehler-Kumulierung beim multiplen Testen) aus der Sleuth-Analyse
       
-  volcano.data <- data.frame(GeneID = p_all$target_id, log2FoldChange = plot_x, 
+  volcano.data <- data.frame(GeneID = p_all$ext_gene, log2FoldChange = plot_x, 
                              pVal = plot_y, PostHoc_pValues = p_all$qval)
   
  
-  
+  #svg("../plots/test.svg")
   svg(file=snakemake@output[[1]])
   #Volcano-Plot anlegen
   with(volcano.data, plot(log2FoldChange, pVal, pch = 20, main = "Volcano-Plot", 

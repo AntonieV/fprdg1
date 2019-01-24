@@ -2,6 +2,7 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
+  - r-dplyr =0.7.8
   - r-circlize =0.4.5
   - bioconductor-complexheatmap =1.18
 

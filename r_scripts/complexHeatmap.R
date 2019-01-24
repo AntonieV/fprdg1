@@ -5,6 +5,7 @@ library(circlize)
 #Input zum direkten Testen ohne Workflow
 #path.matr <- "../sleuth/sleuth_matrix.csv"
 #path.dist <- "../clustering_distance.txt"
+#path.p_all <- "../sleuth/p-values_all_transcripts.csv"
 
 #Snakemake-Input
 path.matr <- snakemake@input[["matrix"]]
@@ -12,9 +13,16 @@ path.dist <- snakemake@input[["dist"]]
 path.p_all <- snakemake@input[["p_all"]]
 
 write("\n", file = path.dist, append = TRUE)
+dist <- gsub("[[:space:]]", "", unlist(read.table(path.dist, stringsAsFactors = FALSE)))
 
 matr.so <- read.table(path.matr)
-dist <- gsub("[[:space:]]", "", unlist(read.table(path.dist, stringsAsFactors = FALSE)))
+genes <- read.table(path.p_all)
+
+#Sortieren Sleuth-Resultaten nach target_id
+genes <- dplyr::arrange(genes, target_id)
+
+#Ersetzen der target_id durch Gen-Namen
+rownames(matr.so) = make.names(genes$ext_gene, unique = TRUE)
 
 #NA-Zeilen entfernen
 matr.so <- na.omit(matr.so)

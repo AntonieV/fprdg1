@@ -1,10 +1,10 @@
 channels:
   - conda-forge/label/cf201901
-  - icm-iconics
+  - johanneskoester
   - bioconda
 dependencies:
   - r-sleuth =0.30
   - bioconductor-rhdf5lib =1.4
   - bioconductor-rhdf5 =2.26
   - r-dplyr =0.7.8
-  - bioconductor-biomart =2.38
+  - bioconductor-biomart =2.36

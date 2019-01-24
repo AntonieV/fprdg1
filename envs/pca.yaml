@@ -1,0 +1,6 @@
+channels:
+  - conda-forge
+dependencies:
+  - matplotlib =3.0
+  - pandas
+  - scikit-learn =0.20
