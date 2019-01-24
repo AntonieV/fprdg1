@@ -73,6 +73,17 @@ rule heatmap:
     script:
         "r_scripts/complexHeatmap.R"
 
+rule pca:
+    input:
+        "plots/heatmap.svg"
+        "sleuth/sleuth_matrix.csv"
+    conda:
+        "envs/pca.yaml"
+    output:
+        "plots/pca.svg"
+    script:
+        "py_scripts/pca_plot.py"
+
 rule pizzly_prep:
     input:
         id = config["kallisto_idx"],

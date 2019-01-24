@@ -1,0 +1,7 @@
+channels:
+  - conda-forge/label/cf201901
+  - bioconda
+dependencies:
+  - matplotlib =3.0.2
+  - pandas =0.23.4
+  - scikit-learn =0.20.2
