@@ -43,7 +43,6 @@ rule kallisto_quant:
         "kallisto/{sample}/fusion.txt",
         "kallisto/{sample}/abundance.h5"
     shell:
-        "envs/kallisto.yaml"
         "kallisto quant --fusion --bootstrap-samples=2 -i {input.id} -o  {params} {input.fq1} {input.fq2}"
 
 rule sleuth:
@@ -132,8 +131,7 @@ rule pizzly_flatten:
 
 rule pizzly_fragment_length:
     input:
-        "kallisto/{sample}/abundance.h5",
-        "plots/pizzly/pizzly_genetable_{sample}.csv" # abhängigkeit eingebaut wegen travis
+        "kallisto/{sample}/abundance.h5" 
     conda:
         "envs/pizzly_fragment_length.yaml"
     output:
@@ -143,6 +141,7 @@ rule pizzly_fragment_length:
 
 rule pizzly_all:
     input:
+        expand("plots/pizzly/pizzly_genetable_{sample}.csv", sample = samples['sample']),
         expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
     
 rule gage:
