@@ -1,14 +1,26 @@
+# The configuration in this file uses example data provided in {ordner}
+# so that you can run the full workflow on it. 
+# The results won't be {aussagekräftig} as consequence of the small data.
+
+# Further instructions on how to configure the workflow {für jede dingens} follow below.
+
+# 
 samples:
     table_for_reads.csv
 
+# where the kallisto index is saved by kallisto
+# if you have an already built kallisto index you can put the path here
 kallisto_idx:
     kallisto/transcripts.idx
 
+#
 transcripts:
     data/ref/transcriptome.chr21.fa
 
+#
 transcripts_gtf:
     data/ref/annotation.chr21.gtf
 
+#
 clust_dist:
     clustering_distance.txt

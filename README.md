@@ -8,12 +8,16 @@ This workflow creates small test datasets for NGS data analyses. The generated d
 ## Authors
 
 * Johannes Köster (@johanneskoester), https://koesterlab.github.io
+* Jana Jansen (@jana-ja)
+* Ludmila Janzen (@sophsatt)
+* Sophie Sattler (@l-janzen)
+* Antonie Vietor (@AntonieV)
 
 ## Usage
 
 ### Step 1: Install workflow
-
-If you simply want to use this workflow, download and extract the [latest release](https://github.com/snakemake-workflows/ngs-test-data/releases).
+#TODO unser link
+If you simply want to use this workflow, download and extract the [latest release]().
 If you intend to modify and further develop this workflow, fork this reposity. Please consider providing any generally applicable modifications via a pull request.
 
 In any case, if you use this workflow in a paper, don't forget to give credits to the authors by citing the URL of this repository and, if available, its DOI (see above).
@@ -21,6 +25,7 @@ In any case, if you use this workflow in a paper, don't forget to give credits t
 ### Step 2: Configure workflow
 
 Configure the workflow according to your needs via editing the file `config.yaml`.
+Further instructions can be found in the file.
 
 ### Step 3: Execute workflow
 

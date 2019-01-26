@@ -1,4 +1,4 @@
-configfile: "test_config.yaml"
+configfile: "config.yaml"
 import pandas as pd
 
 #kallisto: kerne in config file?
@@ -29,13 +29,13 @@ rule kallisto_quant:
         fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
         fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
     conda:
-        "envs/kallisto.yaml"
     params:
         "kallisto/{sample}"
     output:
         "kallisto/{sample}/fusion.txt",
         "kallisto/{sample}/abundance.h5"
     shell:
+        "envs/kallisto.yaml"
         "kallisto quant --fusion --bootstrap-samples=2 -i {input.id} -o  {params} {input.fq1} {input.fq2}"
 
 rule sleuth:

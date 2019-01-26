@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 77 of /home/sattle00/Fachprojekt/fprdg1/Snakefile:
-Missing input files for rule pca:
-plots/heatmap.svgsleuth/sleuth_matrix.csv
