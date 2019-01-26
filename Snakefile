@@ -36,6 +36,7 @@ rule kallisto_quant:
         fq1 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq1'],
         fq2 = lambda wildcards: samples.loc[samples['sample'] == wildcards.sample]['fq2']
     conda:
+        "envs/kallisto.yaml"
     params:
         "kallisto/{sample}"
     output:
@@ -131,7 +132,7 @@ rule pizzly_flatten:
 
 rule pizzly_fragment_length:
     input:
-        "kallisto/{sample}/abundance.h5"
+        "kallisto/{sample}/abundance.h5",
         "plots/pizzly/pizzly_genetable_{sample}.csv" # abhängigkeit eingebaut wegen travis
     conda:
         "envs/pizzly_fragment_length.yaml"
@@ -142,7 +143,7 @@ rule pizzly_fragment_length:
 
 rule pizzly_all:
     input:
-        expand("plots/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
+        expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
     
 rule gage:
     input:
