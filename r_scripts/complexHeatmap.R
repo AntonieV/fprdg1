@@ -14,6 +14,7 @@ path.p_all <- snakemake@input[["p_all"]]
 
 write("\n", file = path.dist, append = TRUE)
 dist <- gsub("[[:space:]]", "", unlist(read.table(path.dist, stringsAsFactors = FALSE)))
+write(dist, file = path.dist, append = FALSE)
 
 matr.so <- read.table(path.matr)
 genes <- read.table(path.p_all)
