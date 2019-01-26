@@ -1,16 +1,23 @@
 configfile: "config.yaml"
+import os
 import pandas as pd
 
 #kallisto: kerne in config file?
 
 samples = pd.read_csv(config["samples"], sep = "\t")
 
+if not os.path.exists("plots"):
+    os.makedirs("plots")
+
+if not os.path.exists("clustering_distance.txt"):
+    file = open("clustering_distance.txt", "w")
+    file.write("canberra")
+    file.close()
+
 
 rule all:
     input:
-        "plots/heatmap.svg",
-        "plots/volcano.svg",
-        "plots/pca.svg"
+        "plots/all_plots.pdf"
 
 
 rule kallisto_idx:
@@ -75,7 +82,7 @@ rule heatmap:
         "r_scripts/complexHeatmap.R"
 
 rule pca:
-    input:        
+    input:
         "sleuth/sleuth_matrix.csv",
 	"plots/heatmap.svg"
     conda:
@@ -84,6 +91,17 @@ rule pca:
         "plots/pca.svg"
     script:
         "py_scripts/pca_plot.py"
+
+rule svg_pdf:
+    input:
+        "plots/pca.svg",
+        plots = directory("plots")     
+    conda:
+        "envs/svg_pdf.yaml"
+    output:
+        "plots/all_plots.pdf"
+    script:
+        "r_scripts/svg_to_pdf.R"
 
 rule pizzly_prep:
     input:
@@ -140,16 +158,6 @@ rule gage:
 
     script:
         "r_scripts/gage.R"
-
-rule svg_pdf:
-    input:
-        directory("plots")
-    conda:
-        "envs/svg_pdf.yaml"
-    output:
-        "rna-seq_plots.pdf"
-    script:
-        "r_scripts/svg_to_pdf.R"
 
 rule boxen_plot:
     input:
