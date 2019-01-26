@@ -17,8 +17,9 @@ if not os.path.exists("clustering_distance.txt"):
 
 rule all:
     input:
-        "plots/all_plots.pdf"
-
+        "plots/all_plots.pdf",
+        expand("plots/pizzly/pizzly_genetable_{sample}.csv", sample = samples['sample']),
+        expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
 
 rule kallisto_idx:
     input:
