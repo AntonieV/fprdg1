@@ -132,16 +132,16 @@ rule pizzly_flatten:
 rule pizzly_fragment_length:
     input:
         "kallisto/{sample}/abundance.h5"
+        "plots/pizzly/pizzly_genetable_{sample}.csv" # abhängigkeit eingebaut wegen travis
     conda:
         "envs/pizzly_fragment_length.yaml"
     output:
         "plots/pizzly/pizzly_fragment_length_{sample}.csv"
     shell:
-        "python py_scripts/get_fragment_length.py {input} 0.95 {output} " #evtl andees percentil angeben
+        "python py_scripts/get_fragment_length.py {input[0]} 0.95 {output} " #evtl andees percentil angeben
 
 rule pizzly_all:
     input:
-        expand("plots/pizzly_genetable_{sample}.csv", sample = samples['sample']),
         expand("plots/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
     
 rule gage:
