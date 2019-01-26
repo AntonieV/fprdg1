@@ -17,9 +17,7 @@ if not os.path.exists("clustering_distance.txt"):
 
 rule all:
     input:
-        "plots/all_plots.pdf",
-        expand("plots/pizzly/pizzly_genetable_{sample}.csv", sample = samples['sample']),
-        expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
+        "plots/all_plots.pdf"
 
 rule kallisto_idx:
     input:
@@ -140,7 +138,7 @@ rule pizzly_fragment_length:
     shell:
         "python py_scripts/get_fragment_length.py {input[0]} 0.95 {output} " #evtl andees percentil angeben
 
-rule pizzly_all:
+rule all_csv_plots:
     input:
         expand("plots/pizzly/pizzly_genetable_{sample}.csv", sample = samples['sample']),
         expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
