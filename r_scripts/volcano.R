@@ -14,25 +14,19 @@ p_all <- dplyr::arrange(p_all, target_id)
 
 if(any(p_all$target_id != row.names(matr))){
   stop("Die Datenmatrix mit der Anzahl der Counts und der Datensatz 
-          der Signifikanzanalyse aus Sluth sind verschieden!")
+       der Signifikanzanalyse aus Sluth sind verschieden!")
   quit(status = 1, runLast = FALSE)
   
 }else{
   #Ersetzen der target_id durch Gen-Namen
   rownames(matr) = make.names(p_all$ext_gene, unique = TRUE)
   
-  #nur signifikante Gene werden verwendet
-  matr <- cbind(matr, p_val = p_all$pval)
-  matr <- cbind(matr, q_val = p_all$qval)
-  matr <- subset.matrix(matr, matr$q_val < 0.05)
-  
-  
   condition_1 <- samples$sample[samples$condition == as.character(factor(samples$condition)[1])]
   condition_2 <- samples$sample[samples$condition == as.character(factor(samples$condition)[2])]
   
   samples.cond_1 <- matr[][as.character(samples$sample[condition_1])]
   samples.cond_2 <- matr[][as.character(samples$sample[condition_2])]
- 
+  
   #Definitionsbereich: log2-FoldChange   
   FoldChange <- rowSums(samples.cond_2)/rowSums(samples.cond_1)
   log2FC <- log2(FoldChange)
@@ -45,8 +39,8 @@ if(any(p_all$target_id != row.names(matr))){
   max_x <- max(plot_x[is.finite(plot_x)])
   
   #Wertebereich: -log10 der p-Werte
-  p_val <- matr[length(matr)-1]
-  plot_y <- unlist(-log10(p_val))
+  p_val <- p_all$pval
+  plot_y <- -log10(p_val) 
   
   #ungueltige Werte anpassen, Intervall des Definitionsbereichs bestimmen
   plot_y[which(is.nan(plot_y))] = Inf
@@ -55,16 +49,16 @@ if(any(p_all$target_id != row.names(matr))){
   max_y <- max(plot_y[is.finite(plot_y)])
   
   #Anlegen des Dataframes fuer den Volcano-Plot mit:
-      #Gen/Target-ID, 
-      #FoldChange(log2), 
-      #p-Werten aus der Sleuth-Analyse und 
-      #den durch Post-Hoc-Tests normaliesierten p-Werten (qval, also Korrektur der 
-            #Alphafehler-Kumulierung beim multiplen Testen) aus der Sleuth-Analyse
-      
-  volcano.data <- data.frame(GeneID = rownames(matr), log2FoldChange = plot_x, 
-                             pVal = plot_y, PostHoc_pValues = matr$q_val)
+  #Gen/Target-ID, 
+  #FoldChange(log2), 
+  #p-Werten aus der Sleuth-Analyse und 
+  #den durch Post-Hoc-Tests normaliesierten p-Werten (qval, also Korrektur der 
+  #Alphafehler-Kumulierung beim multiplen Testen) aus der Sleuth-Analyse
   
- 
+  volcano.data <- data.frame(GeneID = p_all$ext_gene, log2FoldChange = plot_x, 
+                             pVal = plot_y, PostHoc_pValues = p_all$qval)
+  
+  
   #svg("../plots/test.svg")
   svg(file=snakemake@output[[1]])
   #Volcano-Plot anlegen
