@@ -24,7 +24,7 @@ for i, sam in zip(ind, samples):
     plt.scatter(sl_pca[i, 0], sl_pca[i, 1], color=colors(i), lw=2, label=sam)
 plt.title("PCA of Transcriptexpression")
 plt.legend(loc="best", shadow=False, scatterpoints=1)
-plt.axis([-40, 40, -1.5, 1.5])
+
 
 #plt.show()
 

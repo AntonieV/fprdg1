@@ -1,7 +1,7 @@
-# Snakemake workflow: ngs-test-data
+# Snakemake workflow: TODO titel ändern
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥4.2-brightgreen.svg)](https://snakemake.bitbucket.io)
-[![Build Status](https://travis-ci.org/snakemake-workflows/ngs-test-data.svg?branch=master)](https://travis-ci.org/snakemake-workflows/ngs-test-data)
+[![Build Status](https://travis-ci.org/AntonieV/fprdg1.svg?branch=master)](https://travis-ci.org/AntonieV/fprdg1)
 
 This workflow executes 
 
