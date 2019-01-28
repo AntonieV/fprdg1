@@ -24,3 +24,6 @@ transcripts_gtf:
 #
 clust_dist:
     clustering_distance.txt
+
+significance_niveau:
+    0.05

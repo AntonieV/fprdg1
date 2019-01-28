@@ -16,6 +16,7 @@ write("\n", file = path.dist, append = TRUE)
 dist <- gsub("[[:space:]]", "", unlist(read.table(path.dist, stringsAsFactors = FALSE)))
 write(dist, file = path.dist, append = FALSE)
 
+
 matr.so <- read.table(path.matr)
 genes <- read.table(path.p_all)
 
@@ -33,7 +34,7 @@ matr.so <- na.omit(matr.so)
 matr.so <- subset.matrix(matr.so, rowSums(matr.so)!=0)
 
 #nur signifikante Gene auswählen
-matr.so <- subset.matrix(matr.so, matr.so$p_val < 0.05)
+matr.so <- subset.matrix(matr.so, matr.so$p_val < snakemake@params[["sig"]])
 
 matr.so <- matr.so[-length(matr.so)]
 

@@ -1,4 +1,4 @@
-configfile: "config.yaml"
+configfile: "config_jana.yaml"
 import os
 import pandas as pd
 
@@ -122,9 +122,12 @@ rule volcano:
 
 rule heatmap:
     input:
+        #sig = config["significance_niveau"],
         matrix = "sleuth/sleuth_matrix.csv",
         dist = config["clust_dist"],
         p_all = "sleuth/p-values_all_transcripts.csv"
+    params:
+        sig = config["significance_niveau"]
     conda:
         "envs/heatmap.yaml"
     output:
@@ -183,8 +186,8 @@ rule svg_pdf:
         "plots/pca.svg",
 	    "plots/heatmap.svg",
         "plots/volcano.svg",
-        expand("plots/pizzly/pizzly_genetable_{sample}.csv", sample = samples['sample']),
-        expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample']),
+        #expand("plots/pizzly/pizzly_genetable_{sample}.csv", sample = samples['sample']),
+        #expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample']),
         plots = directory("plots")
     conda:
         "envs/svg_pdf.yaml"

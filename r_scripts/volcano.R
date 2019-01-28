@@ -24,7 +24,7 @@ if(any(p_all$target_id != row.names(matr))){
   #nur signifikante Gene werden verwendet
   matr <- cbind(matr, p_val = p_all$pval)
   matr <- cbind(matr, q_val = p_all$qval)
-  matr <- subset.matrix(matr, matr$q_val < 0.05)
+  #matr <- subset.matrix(matr, matr$q_val < 0.01)
   
   
   condition_1 <- samples$sample[samples$condition == as.character(factor(samples$condition)[1])]
