@@ -21,6 +21,12 @@ if(any(p_all$target_id != row.names(matr))){
   #Ersetzen der target_id durch Gen-Namen
   rownames(matr) = make.names(p_all$ext_gene, unique = TRUE)
   
+  #nur signifikante Gene werden verwendet
+  matr <- cbind(matr, p_val = p_all$pval)
+  matr <- cbind(matr, q_val = p_all$qval)
+  matr <- subset.matrix(matr, matr$q_val < 0.05)
+  
+  
   condition_1 <- samples$sample[samples$condition == as.character(factor(samples$condition)[1])]
   condition_2 <- samples$sample[samples$condition == as.character(factor(samples$condition)[2])]
   
@@ -39,8 +45,8 @@ if(any(p_all$target_id != row.names(matr))){
   max_x <- max(plot_x[is.finite(plot_x)])
   
   #Wertebereich: -log10 der p-Werte
-  p_val <- p_all$pval
-  plot_y <- -log10(p_val) 
+  p_val <- matr[length(matr)-1]
+  plot_y <- unlist(-log10(p_val))
   
   #ungueltige Werte anpassen, Intervall des Definitionsbereichs bestimmen
   plot_y[which(is.nan(plot_y))] = Inf
@@ -55,8 +61,8 @@ if(any(p_all$target_id != row.names(matr))){
       #den durch Post-Hoc-Tests normaliesierten p-Werten (qval, also Korrektur der 
             #Alphafehler-Kumulierung beim multiplen Testen) aus der Sleuth-Analyse
       
-  volcano.data <- data.frame(GeneID = p_all$ext_gene, log2FoldChange = plot_x, 
-                             pVal = plot_y, PostHoc_pValues = p_all$qval)
+  volcano.data <- data.frame(GeneID = rownames(matr), log2FoldChange = plot_x, 
+                             pVal = plot_y, PostHoc_pValues = matr$q_val)
   
  
   #svg("../plots/test.svg")
