@@ -91,7 +91,7 @@ rule pizzly_flatten:
     input:
         "pizzly/{sample}/result.json"# ueber alle; expand("pizzly/{sample}/result.json", sample = samples['sample'])
     output:
-        "plots/pizzly/pizzly_genetable_{sample}.csv"
+        "plots/pizzly/{sample}/pizzly_genetable_{sample}.csv"
     shell:
         "python py_scripts/flatten_json.py {input} {output}"
 
@@ -101,7 +101,7 @@ rule pizzly_fragment_length:
     conda:
         "envs/pizzly_fragment_length.yaml"
     output:
-        "plots/pizzly/pizzly_fragment_length_{sample}.csv"
+        "plots/pizzly/{sample}/pizzly_fragment_length_{sample}.csv"
     shell:
         "python py_scripts/get_fragment_length.py {input[0]} 0.95 {output} "
 

@@ -1,10 +1,12 @@
-# The configuration in this file uses example data provided in {ordner}
+# The configuration in this file uses example data provided in data/ref
 # so that you can run the full workflow on it. 
-# The results won't be {aussagekräftig} as consequence of the small data.
+# The results won't be really meaningful as consequence of the small data.
 
-# Further instructions on how to configure the workflow {für jede dingens} follow below.
+# Further instructions on how to configure the workflow follow below for every entry.
 
-# 
+
+# input table with references to paths of the samples
+# look into the example file "table_for_reads.csv" to see the structure
 samples:
     table_for_reads.csv
 
@@ -13,17 +15,20 @@ samples:
 kallisto_idx:
     kallisto/transcripts.idx
 
-#
+# path to the reference transcriptome
 transcripts:
     data/ref/transcriptome.chr21.fa
 
-#
+# path to gtf file of the transcriptome
 transcripts_gtf:
     data/ref/annotation.chr21.gtf
 
-#
+# write your preferred distance method in this file
+# for example: canberra, euclidean, pearson
 clust_dist:
     clustering_distance.txt
 
+# niveau of significance needed for a sample to be taken into account in the heatmap
+# if creation of the heatmap fails on big data it will help to set the significance niveau lower
 significance_niveau:
     0.05
