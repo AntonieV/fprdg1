@@ -24,12 +24,18 @@ genes <- dplyr::arrange(genes, target_id)
 
 #Ersetzen der target_id durch Gen-Namen
 rownames(matr.so) = make.names(genes$ext_gene, unique = TRUE)
+matr.so <- cbind(matr.so, p_val = genes$pval)
 
 #NA-Zeilen entfernen
 matr.so <- na.omit(matr.so)
 
 #Null-Zeilen entfernen
 matr.so <- subset.matrix(matr.so, rowSums(matr.so)!=0)
+
+#nur signifikante Gene auswählen
+matr.so <- subset.matrix(matr.so, matr.so$p_val < 0.05)
+
+matr.so <- matr.so[-length(matr.so)]
 
 #Bestimmung von Median(.5-Quantil) und der Quartile fuer die Faerbung der Heatmap
 so.min <- min(matr.so)
