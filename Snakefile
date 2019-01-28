@@ -96,10 +96,43 @@ rule pca:
     script:
         "py_scripts/pca_plot.py"
 
+rule boxen_plot:
+    input:
+        "sleuth/sleuth_matrix.csv",
+        "plots/pca.svg"
+    conda:
+        "envs/boxen.yaml"
+    output:
+        "plots/boxen.svg"
+    script:
+        "py_scripts/boxen_plot.py"
+
+rule p_value_hist:
+    input:
+        "sleuth/p-values_all_transcripts.csv",  #sleuth-tabelle mit 'pval'-Spalte
+        "plots/boxen.svg"
+    conda:
+        "envs/boxen.yaml"
+    output:
+        "plots/p-value.svg"
+    script:
+        "py_scripts/p-value_histogramm.py"
+
+rule strip_plot:
+    input:
+        "sleuth/p-values_all_transcripts.csv",  #significant_transcripts.csv",  #sleuth-matrix, mit den Spalten target_id, which_units???
+        "plots/p-value.svg"
+    conda:
+        "envs/boxen.yaml"
+    output:
+        "plots/strip.svg"
+    script:
+        "py_scripts/strip_plot.py"
+
 rule svg_pdf:
     input:
-        "plots/pca.svg",
-        plots = directory("plots")     
+        "plots/strip.svg",
+        plots = directory("plots")
     conda:
         "envs/svg_pdf.yaml"
     output:
@@ -132,7 +165,7 @@ rule pizzly_flatten:
 
 rule pizzly_fragment_length:
     input:
-        "kallisto/{sample}/abundance.h5" 
+        "kallisto/{sample}/abundance.h5"
     conda:
         "envs/pizzly_fragment_length.yaml"
     output:
@@ -144,7 +177,7 @@ rule all_csv_plots:
     input:
         expand("plots/pizzly/pizzly_genetable_{sample}.csv", sample = samples['sample']),
         expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample'])
-    
+
 rule gage:
     input:
 
@@ -154,33 +187,3 @@ rule gage:
 
     script:
         "r_scripts/gage.R"
-
-rule boxen_plot:
-    input:
-        "sleuth/sleuth_matrix.csv"
-    conda:
-        "envs/boxen.yaml"
-    output:
-        "plots/boxen.svg"
-    script:
-        "py_scripts/boxen_plot.py"
-
-rule p_value_hist:
-    input:
-        "sleuth/p-values_all_transcripts.csv"  #sleuth-tabelle mit 'pval'-Spalte
-    conda:
-        "envs/boxen.yaml"
-    output:
-        "plots/p-value.svg"
-    script:
-        "py_scripts/p-value_histogramm.py"
-
-rule strip_plot:
-    input:
-        "sleuth/significant_transcripts.csv"  #sleuth-matrix, mit den Spalten target_id, which_units???
-    conda:
-        "envs/boxen.yaml"
-    output:
-        "plots/strip.svg"
-    script:
-        "py_scripts/strip_plot.py"
