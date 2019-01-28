@@ -1,5 +1,7 @@
 channels:
-  - conda-forge
   - bioconda
 dependencies:
-  - r-biocmanager
+  - bioconductor-gage =2.30
+  - bioconductor-gagedata =2.18
+  - bioconductor-kegggraph =1.40
+  - bioconductor-pathview =1.20
