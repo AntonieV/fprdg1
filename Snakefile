@@ -129,9 +129,8 @@ rule strip_plot:
 
 rule svg_pdf:
     input:
-        "plots/pca.svg",
-        plots = directory("plots"),
-        "plots/strip.svg"     
+        "plots/strip.svg",
+        plots = directory("plots")
     conda:
         "envs/svg_pdf.yaml"
     output:
