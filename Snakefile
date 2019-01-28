@@ -18,6 +18,7 @@ if not os.path.exists("clustering_distance.txt"):
 rule all:
     input:
         "plots/all_plots.pdf"
+        
 
 rule kallisto_idx:
     input:
@@ -55,6 +56,7 @@ rule sleuth:
         "sleuth/p-values_all_transcripts.csv",
         "sleuth/sleuth_matrix.csv",
         "sleuth/sleuth_object"
+        #"sleuth/p_beta_values.csv"
     script:
         "r_scripts/sleuth_script.R"
 
@@ -86,7 +88,7 @@ rule heatmap:
 rule pca:
     input:
         "sleuth/sleuth_matrix.csv",
-	"plots/heatmap.svg"
+	    "plots/heatmap.svg"
     conda:
         "envs/pca.yaml"
     output:

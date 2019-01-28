@@ -52,6 +52,7 @@ models(so)
 
 #Betrachen der signifikanten Ergebnisse aus dem Likelihood-Ratio-Test:
 sleuth_table <- sleuth_results(so, 'reduced:full', 'lrt', show_all = TRUE)
+#sleuth_table_beta <- sleuth_results(so, 'reduced:full', 'wt', show_all = TRUE)
 sleuth_significant <- dplyr::filter(sleuth_table, qval <= 0.05)
 
 #### TODO - Gennamen zu den IDs hinzugfuegen
@@ -63,3 +64,5 @@ sleuth_matrix = sleuth_to_matrix(so, 'obs_norm', 'est_counts')
 write.table(sleuth_matrix, file = "sleuth/sleuth_matrix.csv", sep = "\t")
 write.table(sleuth_table, file = "sleuth/p-values_all_transcripts.csv", sep = "\t")
 write.table(sleuth_significant, file = "sleuth/significant_transcripts.csv", sep = "\t")
+
+#write.table(sleuth_table, file = "sleuth/p_beta_values.csv", sep = "\t")

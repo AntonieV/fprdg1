@@ -3,7 +3,7 @@
 [![Snakemake](https://img.shields.io/badge/snakemake-≥4.2-brightgreen.svg)](https://snakemake.bitbucket.io)
 [![Build Status](https://travis-ci.org/snakemake-workflows/ngs-test-data.svg?branch=master)](https://travis-ci.org/snakemake-workflows/ngs-test-data)
 
-This workflow creates small test datasets for NGS data analyses. The generated data is available in the folders `ref` and `reads`, such that the repository can be directly used as a git submodule for continuous integration tests.
+This workflow executes 
 
 ## Authors
 
@@ -28,21 +28,21 @@ Configure the workflow according to your needs via editing the file `config.yaml
 Further instructions can be found in the file.
 
 ### Step 3: Execute workflow
-
+##--use-conda benutzen
 Test your configuration by performing a dry-run via
 
     snakemake -n
 
 Execute the workflow locally via
 
-    snakemake --cores $N
+    snakemake --cores $Ns --use-conda
 
 using `$N` cores or run it in a cluster environment via
 
-    snakemake --cluster qsub --jobs 100
+    snakemake --cluster qsub --jobs 100 --use-conda
 
 or
 
-    snakemake --drmaa --jobs 100
+    snakemake --drmaa --jobs 100 --use-conda
 
 See the [Snakemake documentation](https://snakemake.readthedocs.io) for further details.
