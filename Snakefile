@@ -20,8 +20,6 @@ rule all:
         "plots/all_plots.pdf"
         
 
-
-
 rule kallisto_idx:
     input:
         config["transcripts"]
@@ -49,16 +47,15 @@ rule kallisto_quant:
 
 rule sleuth:
     input:
-        kal_path = expand("kallisto/{sample}/abundance.h5", sample = samples['sample']), #Liste der Kallisto-Pfade
+        kal_path = expand("kallisto/{sample}/abundance.h5", sample = samples['sample']), #list of Kallisto-paths
         sam_tab = config["samples"]
     conda:
-        "envs/sleuth.yaml"  #### hier noch die unnoetigen Tools entfernen
+        "envs/sleuth.yaml"
     output:
         "sleuth/significant_transcripts.csv",
         "sleuth/p-values_all_transcripts.csv",
         "sleuth/sleuth_matrix.csv",
         "sleuth/sleuth_object"
-        #"sleuth/p_beta_values.csv"
     script:
         "r_scripts/sleuth_script.R"
 
@@ -106,7 +103,7 @@ rule pizzly_fragment_length:
     output:
         "plots/pizzly/pizzly_fragment_length_{sample}.csv"
     shell:
-        "python py_scripts/get_fragment_length.py {input[0]} 0.95 {output} " #evtl andees percentil angeben
+        "python py_scripts/get_fragment_length.py {input[0]} 0.95 {output} "
 
 
 ######## PLOTS ########
