@@ -16,6 +16,31 @@ plots_png <- lapply (1:length(svg_files), function(i){
 png_files <- unlist(list.files(path, pattern = ".*\\.png$"))
 
 pdf(file=snakemake@output[[1]])
+
+#Cover pdf-Titelseite
+path.pic <- snakemake@input[["cov_pic"]]
+pic <- readPNG(path.pic)
+
+par(mar = c(0,0,0,0))
+pic <- readPNG(path.pic)
+plot(c(0, 1), c(0, 1), ann = F, bty = 'n', type = 'n', xaxt = 'n', yaxt = 'n')
+border <- par()
+rasterImage(pic, border$usr[1], border$usr[3], border$usr[2], border$usr[4])
+
+legend(x = 0.43, y = 0.75, paste("Fachprojekt Reproduzierbare Datenanalyse mit\n", 
+                             "Snakemake am Beispiel der Bioinformatik\n"), 
+       cex = 1.6, text.col = "antiquewhite2", box.col = "transparent", adj = 0.5)
+text(x = 0.50, y = 0.85, paste("RNA-seq data analysis"), 
+     cex = 4, col = "antiquewhite2", family="serif", font=2, adj=0.5)
+text(x = 0.7, y = 0.15, paste("Gruppe 1:\n",
+                              "    Jana Jansen\n",
+                              "    Ludmila Janzen\n",
+                              "    Sophie Sattler\n",
+                              "    Antonie Vietor"), 
+     cex = 1.2, col = "antiquewhite2", family="sans", font=1, adj=0)
+text(x = 0.25, y = 0.5, paste("Dr. Johannes Köster"), 
+     cex = 1.6, col = "antiquewhite2", family="mono", font=4, adj=0)
+
 for (i in seq(along=png_files)){
   im <- rasterGrob(readPNG(gsub(" ","", paste(path, "/",png_files[i])), native = FALSE), interpolate = FALSE)
   do.call(grid.arrange, c(list(im), ncol = 1))
@@ -23,24 +48,3 @@ for (i in seq(along=png_files)){
 dev.off()
 
 delete_png <- file.remove((gsub(" ","", paste(path, "/",png_files))))
-
-#x <- "test"
-#pdf("test.pdf")#,width=5,height=5)
-#plot.new()
-#plot(NA, xlim=c(0,5), ylim=c(0,5), bty='n',
-#     xaxt='n', yaxt='n', xlab='', ylab='')
-#text(x, pos = 1)
-#cat(x)
-#dev.off()
-
-#pdf("test.pdf", height=13.7, paper="special")
-#par(mfrow=c(1,2), oma=c(0,0,3,0),cex=0.5)
-#plot.new()
-#tx <- file("../sleuth/p-values_all_transcripts.csv", "r")
-#while(length(line <- readLines(tx, 1)) > 0) {
-#  text(line, "\n")
-#}
-#mtext("A nice-looking paragraph! Now this is what I call good advice!")
-#dev.off() 
-
-
