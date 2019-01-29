@@ -1,4 +1,4 @@
-configfile: "config_jana.yaml"
+configfile: "config.yaml"
 import os
 import pandas as pd
 
