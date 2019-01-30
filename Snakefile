@@ -61,11 +61,13 @@ rule sleuth:
 
 rule gage:
     input:
-
+        pval = "sleuth/p-values_all_transcripts.csv",
+        matrix = "sleuth/sleuth_matrix.csv",
+        samples = config["samples"]
     conda:
         "envs/gage.yaml"
     output:
-
+        directory("plots/gage")
     script:
         "r_scripts/gage.R"
 

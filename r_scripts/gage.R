@@ -45,16 +45,6 @@ log2FC <- log2(FoldChange)
 p_val <- p_all$pval
 q_val <- p_all$qval
 
-
-#ungueltige Werte anpassen, Intervall des Definitionsbereichs bestimmen
-log2FC[which(is.nan(log2FC))] = 0
-log2FC[which(is.na(log2FC))] = 0
-p_val[which(is.nan(p_val))] = 0
-p_val[which(is.na(p_val))] = 0
-q_val[which(is.nan(q_val))] = 0
-q_val[which(is.na(q_val))] = 0
-
-
 #Anlegen des Dataframes fuer den Gage mit:
 #Gen/Target-ID, 
 #FoldChange(log2), 
@@ -65,6 +55,9 @@ q_val[which(is.na(q_val))] = 0
 gage.data <- data.frame(TragetID = p_all$target_id, EnsembleID = p_all$ens_gene, 
                         GeneID = p_all$ext_gene, log2FoldChange = log2FC, 
                         pVal = p_val, PostHoc_pValues = q_val, Mean = p_all$mean_obs)
+gage.data <- na.omit(gage.data)
+
+detach("package:dplyr", unload=TRUE)
 
 data(kegg.sets.hs)
 data(sigmet.idx.hs)
@@ -73,12 +66,12 @@ kegg.sets.hs <- kegg.sets.hs[sigmet.idx.hs]
 # Get the results
 keggres <- gage(gage.data$log2FoldChange, gsets=kegg.sets.hs, same.dir=TRUE)
 # Look at both up (greater), down (less), and statatistics.
-lapply(keggres, head)4
+lapply(keggres, head)
 
 # Get the pathways
 keggrespathways <- data.frame(id=rownames(keggres$greater), keggres$greater) %>%
   tbl_df() %>%
-  filter(row_number()<=5) %>%
+  filter(row_number()<=10) %>%
   .$id %>%
   as.character()
 keggrespathways
@@ -87,19 +80,11 @@ keggrespathways
 keggresids <- substr(keggrespathways, start=1, stop=8)
 keggresids
 
-
-svg(file=snakemake@output[[1]])
 # Define plotting function for applying later
 plot_pathway = function(pid) pathview(gene.data=gage.data$log2FoldChange, pathway.id=pid, 
                                       species="hsa", new.signature=FALSE)
 
-# plot multiple pathways (plots saved to disk and returns a throwaway list object)
+#plot multiple pathways (plots saved to disk and returns a throwaway list object)
 tmp = sapply(keggresids, function(pid) pathview(gene.data=gage.data$log2FoldChange, 
-                                          pathway.id=pid, species="hsa"))
-
-dev.off()
-
-
-
-
+                                         pathway.id=pid, species="hsa"))
 
