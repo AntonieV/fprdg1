@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/AntonieV/fprdg1.svg?branch=master)](https://travis-ci.org/AntonieV/fprdg1)
 
 In this workflow the abundances of transcipts are quantified using kallisto and analysed with sleuth.
-The resulting data ist analysed further with the tools seaborn, scikit-learn, ComplexHeatmap and Pizzly to create summarizing plots and tables that can be stored in the folder `plots` after execution.
+The resulting data ist analysed further with the tools seaborn, scikit-learn, ComplexHeatmap and Pizzly to create summarizing plots and tables that can be found in the folder `plots` after execution.
 
 ## Authors
 
