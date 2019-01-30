@@ -1,0 +1,14 @@
+samples:
+    /home/fp5-ws18/data/samples.tsv
+
+kallisto_idx:
+    /home/fp5-ws18/data/homo_sapiens_transcriptome.idx
+
+transcripts:
+    /home/fp5-ws18/data/homo_sapiens_transcriptome.fa.gz
+
+transcripts_gtf:
+    /home/fp5-ws18/data/homo_sapiens_transcriptome.gtf.gz
+
+clust_dist:
+    clustering_distance.txt
