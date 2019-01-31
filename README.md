@@ -10,8 +10,8 @@ The resulting data ist analysed further with the tools seaborn, scikit-learn, Co
 
 * Johannes Köster (@johanneskoester), https://koesterlab.github.io
 * Jana Jansen (@jana-ja)
-* Ludmila Janzen (@sophsatt)
-* Sophie Sattler (@l-janzen)
+* Ludmila Janzen (@l-janzen)
+* Sophie Sattler (@sophsatt)
 * Antonie Vietor (@AntonieV)
 
 ## Usage
