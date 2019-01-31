@@ -188,8 +188,8 @@ rule svg_pdf:
         "plots/pca.svg",
 	    "plots/heatmap.svg",
         "plots/volcano.svg",
-        #expand("plots/pizzly/pizzly_genetable_{sample}.csv", sample = samples['sample']),
-        #expand("plots/pizzly/pizzly_fragment_length_{sample}.csv", sample = samples['sample']),
+        expand("plots/pizzly/{sample}/pizzly_genetable_{sample}.csv", sample = samples['sample']),
+        expand("plots/pizzly/{sample}/pizzly_fragment_length_{sample}.csv", sample = samples['sample']),
         plots = directory("plots"),
         cov_pic = "cover_pic.png"
     conda:
